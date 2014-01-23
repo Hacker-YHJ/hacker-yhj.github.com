@@ -1,0 +1,37 @@
+<!DOCTYPE html html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>PicShow</title>
+    <script type='text/javascript' src='../javascripts/d3.v3.min.js'></script>
+    <script type='text/javascript' src='draganddrop.js'></script>
+    <script type='text/javascript' src='PCircle.js'></script>
+    <link rel='stylesheet' type='text/css' href='style.css'/>
+  </head>
+  <body>
+    <div id='leftslidebar'>
+      <div id='dragbox'>
+          <div id='tt' align='center'>Drag your picture here.</div>
+          <div id='container' align='center'><img id='preview' src='cross.png'></img></div>
+          <div align='center'><button type='button' class='minimal-indent' onClick='/*dragandfrop.js*/setDefaultPic()'>Use default</button></div>
+      </div>
+    </div>
+    <div id='center'>
+      <div id='cont'>
+        <div id='dots'>
+        </div>
+      </div>
+    </div>
+    <div id='rightslidebar'>
+      <div id='footer'>
+        This work is mainly depended on the former work by <a href="http://vadim.ogievetsky.com">Vadim Ogievetsky</a> in <a href="http://www.koalastothemax.com/">Koalas to the Max dot Com</a>. Basically I didn't do anything but added the drag box on the left. 
+        </br></br>Written using the <a href="http://mbostock.github.com/d3/">D3 visualisation library</a>.
+        Requires a SVG-capable and HTML5-capable browser e.g. <a
+        href="http://www.mozilla.org/firefox/">Mozilla Firefox</a>, WebKit (<a
+        href="http://www.google.com/chrome">Google Chrome</a>, <a
+        href="http://www.apple.com/safari/">Safari</a> &amp;c.) or Internet Explorer 9+.
+        </br></br>Made by <a href="http://hacker-yhj.github.io/">Yang HJ</a> 2013.
+      </div>
+    </div>
+  </body>
+</html>

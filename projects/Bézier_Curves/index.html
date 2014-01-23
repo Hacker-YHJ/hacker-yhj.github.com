@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>About Bézier Curves</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="../javascripts/jquery-2.0.3.min.js"></script>
+    <script src="../javascripts/d3.v3.min.js"></script>
+    <meta name="author" content="Yang HJ">
+  </head>
+  <body>
+    <h1>What's happening when you use "Pen" tool in Photoshop</h1>
+    <div id="vis">
+      <script src="./bezier.js"></script>
+    </div>
+    <p>
+      Actually the "Pen" tool draws a <a href="http://en.wikipedia.org/wiki/Bezier_Curve">Bézier curve</a> on the screen. Moreover, all the curve that "Pen" tool generated is second-ordered, that means it use two anchors and at most four control points. The animation above show the process of the generation. White point is the starting point, the black is the ending while the rest is the anchor. Drag the points to see more features.
+    </p>
+    <p class="footer">
+    Written using the <a href="http://mbostock.github.com/d3/">D3 visualisation library</a>.
+    Requires a SVG-capable browser e.g. <a
+      href="http://www.mozilla.org/firefox/">Mozilla Firefox</a>, WebKit (<a
+      href="http://www.google.com/chrome">Google Chrome</a>, <a
+      href="http://www.apple.com/safari/">Safari</a> &amp;c.) or Internet Explorer 9+.
+    Great admiration and gratitude for<a href="http://www.jasondavies.com/animated-bezier/">the former work</a> made by Jason Davies.
+    </p>
+  </body>
+</html>
+<p class="copyright">&copy; <a href="http://hacker-yhj.github.io/">Yang HJ</a> 2013.

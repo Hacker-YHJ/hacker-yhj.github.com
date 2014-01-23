@@ -1,0 +1,283 @@
+[
+  { "name": "anger",
+    "children": [
+    {
+      "name": "hurt",
+      "children": [
+      { "name": "embarrassed", "colour": "#f9f0ab" },
+      { "name": "devastated", "colour": "#f9f0ab" }
+      ]
+    },
+    {
+      "name": "threatened",
+      "children": [
+      { "name": "jealous", "colour": "#f9f0ab" },
+      { "name": "insecure", "colour": "#f9f0ab" }
+      ]
+    },
+    {
+      "name": "hateful",
+      "children": [
+      { "name": "violated", "colour": "#f9f0ab" },
+      { "name": "resentful", "colour": "#f9f0ab" }
+      ]
+    },
+    {
+      "name": "mad",
+      "children": [
+      { "name": "enraged", "colour": "#f9f0ab" },
+      { "name": "furious", "colour": "#f9f0ab" }
+      ]
+    },
+    {
+      "name": "aggressive",
+      "children": [
+      { "name": "provoked", "colour": "#f9f0ab" },
+      { "name": "hostile", "colour": "#f9f0ab" }
+      ]
+    },
+    {
+      "name": "frustrated",
+      "children": [
+      { "name": "infuriated", "colour": "#f9f0ab" },
+      { "name": "irritated", "colour": "#f9f0ab" }
+      ]
+    },
+    {
+      "name": "distant",
+      "children": [
+      { "name": "withdrawn", "colour": "#f9f0ab" },
+      { "name": "suspiciours", "colour": "#f9f0ab" }
+      ]
+    },
+    {
+      "name": "critical",
+      "children": [
+      { "name": "skeptical", "colour": "#f9f0ab" },
+      { "name": "sarcastic", "colour": "#f9f0ab" }
+      ]
+    }
+    ]
+  },
+  {
+    "name": "disgust",
+    "children": [
+    {
+      "name": "disapproval",
+      "children": [
+        { "name": "judgmental", "colour": "#f0e2a3" },
+        { "name": "loathing", "colour": "#f0e2a3" }
+      ]
+    },
+    {
+      "name": "disappointed",
+      "children": [
+        { "name": "repugnant", "colour": "#f0e2a3" },
+        { "name": "revolted", "colour": "#f0e2a3" }
+      ]
+    },
+    {
+      "name": "awful",
+      "children": [
+        { "name": "revulsion", "colour": "#f0e2a3" },
+        { "name": "detestable", "colour": "#f0e2a3" }
+      ]
+    },
+    {
+      "name": "avoidance",
+      "children": [
+        { "name": "aversion", "colour": "#f0e2a3" },
+        { "name": "hesitant", "colour": "#f0e2a3" }
+      ]
+    }
+    ]
+  },
+  {
+    "name": "sad",
+    "children": [
+    {
+      "name": "guilty",
+      "children": [
+        { "name": "remoresful", "colour": "#ede487" },
+        { "name": "ashamed", "colour": "#ede487" }
+      ]
+    },
+    {
+      "name": "abandoned",
+      "children": [
+        { "name": "ignored", "colour": "#ede487" },
+        { "name": "victimized", "colour": "#ede487" }
+      ]
+    },
+    {
+      "name": "despair",
+      "children": [
+        { "name": "powerless", "colour": "#ede487" },
+        { "name": "vulnerable", "colour": "#ede487" }
+      ]
+    },
+    {
+      "name": "depressed",
+      "children": [
+        { "name": "inferior", "colour": "#ede487" },
+        { "name": "empty", "colour": "#ede487" }
+      ]
+    },
+    {
+      "name": "lonely",
+      "children": [
+        { "name": "abandoned", "colour": "#ede487" },
+        { "name": "isolated", "colour": "#ede487" }
+      ]
+    },
+    {
+      "name": "bored",
+      "children": [
+        { "name": "apathetic", "colour": "#ede487" },
+        { "name": "indifferent", "colour": "#ede487" }
+      ]
+    }
+    ]
+  },
+  {
+    "name": "happy",
+    "children": [
+    {
+      "name": "optimistic",
+      "children": [
+        { "name": "inspired", "colour": "#efd580" },
+        { "name": "open", "colour": "#efd580" }
+      ]
+    },
+    {
+      "name": "intimate",
+      "children": [
+        { "name": "playful", "colour": "#efd580" },
+        { "name": "sensitive", "colour": "#efd580" }
+      ]
+    },
+    {
+      "name": "peaceful",
+      "children": [
+        { "name": "hopeful", "colour": "#efd580" },
+        { "name": "loving", "colour": "#efd580" }
+      ]
+    },
+    {
+      "name": "powerful",
+      "children": [
+        { "name": "provocative", "colour": "#efd580" },
+        { "name": "courgeous", "colour": "#efd580" }
+      ]
+    },
+    {
+      "name": "accepted",
+      "children": [
+        { "name": "fulfilled", "colour": "#efd580" },
+        { "name": "respected", "colour": "#efd580" }
+      ]
+    },
+    {
+      "name": "proud",
+      "children": [
+        { "name": "confident", "colour": "#efd580" },
+        { "name": "important", "colour": "#efd580" }
+      ]
+    },
+    {
+      "name": "interested",
+      "children": [
+        { "name": "inquisitive", "colour": "#efd580" },
+        { "name": "amused", "colour": "#efd580" }
+      ]
+    },
+    {
+      "name": "joyful",
+      "children": [
+        { "name": "estatic", "colour": "#efd580" },
+        { "name": "liberated", "colour": "#efd580" }
+      ]
+    }
+    ]
+  },
+  {
+    "name": "surprise",
+    "children": [
+    {
+      "name": "excited",
+      "children": [
+        { "name": "energetic", "colour": "#d5dda1" },
+        { "name": "eager", "colour": "#d5dda1" }
+      ]
+    },
+    {
+      "name": "amazed",
+      "children": [
+        { "name": "awe", "colour": "#d5dda1" },
+        { "name": "astonished", "colour": "#d5dda1" }
+      ]
+    },
+    {
+      "name": "confused",
+      "children": [
+        { "name": "perplexed", "colour": "#d5dda1" },
+        { "name": "disillusoned", "colour": "#d5dda1" }
+      ]
+    },
+    {
+      "name": "startled",
+      "children": [
+        { "name": "dismayed", "colour": "#d5dda1" },
+        { "name": "shocked", "colour": "#d5dda1" }
+      ]
+    }
+    ]
+  },
+  {
+    "name": "fear",
+    "children": [
+    {
+      "name": "scared",
+      "children": [
+        { "name": "terrified", "colour": "#c9d2b5" },
+        { "name": "frightened", "colour": "#c9d2b5" }
+      ]
+    },
+    {
+      "name": "anxious",
+      "children": [
+        { "name": "worried", "colour": "#c9d2b5" },
+        { "name": "overwhelmed", "colour": "#c9d2b5" }
+      ]
+    },
+    {
+      "name": "insecure",
+      "children": [
+        { "name": "inferior", "colour": "#c9d2b5" },
+        { "name": "inadequate", "colour": "#c9d2b5" }
+      ]
+    },
+    {
+      "name": "submissive",
+      "children": [
+        { "name": "insignificant", "colour": "#c9d2b5" },
+        { "name": "worthless", "colour": "#c9d2b5" }
+      ]
+    },
+    {
+      "name": "rejected",
+      "children": [
+        { "name": "alienated", "colour": "#c9d2b5" },
+        { "name": "inadequate", "colour": "#c9d2b5" }
+      ]
+    },
+    {
+      "name": "humiliated",
+      "children": [
+        { "name": "ridiculed", "colour": "#c9d2b5" },
+        { "name": "disrespected", "colour": "#c9d2b5" }
+      ]
+    }
+    ]
+  }
+]

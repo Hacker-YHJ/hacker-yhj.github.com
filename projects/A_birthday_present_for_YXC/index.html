@@ -1,0 +1,150 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="utf-8"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+    
+    <title>Happy Birthday</title>
+    <meta name="author" content="YHJ">
+
+    <meta property="og:url" content="http://hacker-yhj.github.io/blog/works/A%20birthday%20present%20for%20YXC/"/>
+    <meta property="og:title" content="Happy Birthday"/>
+    <meta property="og:locale" content="UTF-8"/>
+    <meta property="og:image" content="http://hacker-yhj.github.io/blog/works/A%20birthday%20present%20for%20YXC/img/fb/default.jpg" />
+    
+        
+    <link rel="icon" href="favicon.gif" type="image/gif" />
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+    
+    <script src="js/libs/modernizr-2.0.6.min.js"></script>
+        
+    <script type="text/javascript">
+        
+        var baseUrl = "http://hacker-yhj.github.io/blog/works/A%20birthday%20present%20for%20YXC/";
+        var isMobile = false;
+        var isIpad = isUserAgentCheck(["iPad"]);
+        var isIphone4 = Modernizr.mq("all and (-webkit-min-device-pixel-ratio:2)");
+        var isMobileLow = isMobile && !isIpad && !isIphone4;
+        var isMobileVeryLow = isMobile && !isUserAgentCheck(["iPhone", "iPad", "android", "blackberry"]);
+        
+        function isUserAgentCheck(userAgents)
+        {
+            var agent = navigator.userAgent;
+            for(var i = 0; i < userAgents.length; i++)
+            {
+                if( Boolean( agent.match(new RegExp( userAgents[ i ] , "i")) ) )
+                    return true;
+            }
+            return false;
+        }
+        
+        window.scrollTo(0,0);
+    
+    </script>
+
+</head>
+
+<body>
+            
+    <div id="share">
+        <div class="white">
+            <a class="fb" href="https://www.facebook.com/sharer.php?u=http://hacker-yhj.github.io/blog/works/A%20birthday%20present%20for%20YXC/" target="_blank"></a>
+            <img class="line" src="img/nav/line_blanc.png"/>
+            <a class="tt" href="https://twitter.com/intent/tweet?text=http://hacker-yhj.github.io/blog/works/A%20birthday%20present%20for%20YXC/" target="_blank"></a>
+        </div>
+        <div class="black">
+            <a class="fb" href="https://www.facebook.com/sharer.php?u=http://hacker-yhj.github.io/blog/works/A%20birthday%20present%20for%20YXC/" target="_blank"></a>
+            <img class="line" src="img/nav/line_noir.png"/>
+            <a class="tt" href="https://twitter.com/intent/tweet?text=http://hacker-yhj.github.io/blog/works/A%20birthday%20present%20for%20YXC/" target="_blank"></a>
+        </div>
+    </div>
+    
+    <div id="scrollContainer">
+        <div id="scroller">
+            
+        </div>
+    </div>
+    
+    <div id="loader">
+                <img src="img/nav/loader.gif"/>
+            </div>
+    
+    <div id="turnYourPhone"></div>
+    
+    <div id="container">
+        <header>
+        
+        </header>
+        <div id="main" role="main">
+            
+            <ul class="bg">
+                <li id="start" style="background-color: #f3efe8;" class="noCache black">
+                    <a id="go" href="javascript:;"></a>
+                </li>
+                <li id="entertainment" style="background-color: #f47723;"></li>
+                <li id="fashion" style="background-color: #66cac9;" class="size2"></li>
+                <li id="aliens" style="background-color: #4e4a9d;"></li>
+                <li id="soleilnoir" style="background-color: #efeae1;" class="black"></li>
+                <li id="iOS" style="background-color: #308694;"></li>
+                <li id="ideas" style="background-color: #36b1c5;"></li>
+                <li id="health" style="background-color: #fdbd17;" class="black"></li>
+                <li id="flash" style="background-color: #e84613;"></li>
+                <li id="work" style="background-color: #a86839;"></li>
+                <li id="yourself" style="background-color: #a5c26e;"></li>
+                <li id="thefuture" style="background-color: #ffe101;" class="black"></li>
+                <li id="isnotmylover" style="background-color: #021e2f;"></li>
+                <li id="passion" style="background-color: #1d3d1d;"></li>
+                <li id="youtube" style="background-color: #f90f49;"></li>
+                <li id="typo" style="background-color: #22a0df;"></li>
+                <li id="love" style="background-color: #c74565;"></li>
+                <li id="end" style="background-color: #f3efe8;" class="noCache black">
+                    <a id="restart" href="javascript:;"></a>
+                </li>
+            </ul>
+            
+            <div id="nav">
+                <div id="arrow"></div>
+                <div id="dots">
+                    <ul></ul>
+                </div>
+            </div>
+            
+        </div>
+        <footer>
+        
+        </footer>
+    </div>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+    
+    <script defer src="js/libs/jquery-ui-1.8.13.custom.min.js"></script>
+    <script defer src="js/libs/jquery.scrollTo-1.4.2-min.js"></script>
+    <script defer src="js/libs/jquery.animate-enhanced.min.js"></script>
+    <script defer src="js/libs/iscroll-min.js"></script>
+    <script defer src="js/plugins.js"></script>
+    <script defer src="js/voeux.js"></script>
+    
+    <!--
+    <script>
+    window._gaq = [['_setAccount','UA-159630-2'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+    </script>
+    -->
+    
+    <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+    <![endif]-->
+
+</body>
+</html>

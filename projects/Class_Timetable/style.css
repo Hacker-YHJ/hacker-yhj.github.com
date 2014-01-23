@@ -1,0 +1,27 @@
+div#chat {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.subtitle, h1 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.indexLable , .weekLable, .counter{
+  fill: white;
+}
+
+.counter{
+  fill-opacity: 50%;
+  font-size: 50px;
+  font-family: Helvetica, arial;
+}
+
+body {
+  background: gray;
+}
