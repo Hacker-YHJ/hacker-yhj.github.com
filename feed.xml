@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://hacker-yhj.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io" />
-<updated>2014-01-26T13:28:44+00:00</updated>
+<updated>2014-01-26T13:46:18+00:00</updated>
 <id>http://hacker-yhj.github.io/</id>
 <author>
   <name>Maaooo~</name>
@@ -33,7 +33,7 @@
 
 &lt;p&gt;Hope you will like it~&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/vis_course_assignment_3/index.html&quot;&gt;Click to see the details.&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/vis_course_assignment_3/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/the-isla-del-sueno-migrant-boats/&quot;&gt;The Isla Del Sueño Migrant Boats&lt;/a&gt; was originally published by Maaooo~ at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on December 11, 2013.&lt;/p&gt;</content>
 </entry>
@@ -83,7 +83,7 @@
 
 &lt;p&gt;Hope you will like it~&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/vis_course_assignment/index.html&quot;&gt;Click to see the details.&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/vis_course_assignment/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/vis-course-assignment/&quot;&gt;Airline Visualization&lt;/a&gt; was originally published by Maaooo~ at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on November 03, 2013.&lt;/p&gt;</content>
 </entry>
@@ -382,7 +382,7 @@
     &lt;figcaption&gt;Quadratic curve&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/quadratic_curve/index.html&quot;&gt;Click to see the details.&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/quadratic_curve/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/quadratic-curve/&quot;&gt;Quadratic Curve&lt;/a&gt; was originally published by Maaooo~ at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 05, 2013.&lt;/p&gt;</content>
 </entry>
@@ -406,7 +406,7 @@
     &lt;figcaption&gt;Just for fun!&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/PicShow/index.html&quot;&gt;Click to see the details.&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/PicShow/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/picture-simulator/&quot;&gt;Circle Play&lt;/a&gt; was originally published by Maaooo~ at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 05, 2013.&lt;/p&gt;</content>
 </entry>
@@ -430,7 +430,7 @@
     &lt;figcaption&gt;Bézier curve&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/Bézier_Curves/index.html&quot;&gt;Click to see the details.&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/Bézier_Curves/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/bezier-curves/&quot;&gt;What's happening when you use "Pen" tool in Photoshop&lt;/a&gt; was originally published by Maaooo~ at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 05, 2013.&lt;/p&gt;</content>
 </entry>
