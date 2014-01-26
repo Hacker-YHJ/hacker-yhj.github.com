@@ -41,7 +41,7 @@ header>h1.entry-title a::after {
 }
 
 ul>li.entry-title a::after {
-  content: '......';
+  content: '(=￣ω￣=)';
 }
 
 header>h1.entry-title a:hover::after,
