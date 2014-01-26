@@ -23,10 +23,10 @@ div.link-button {
   text-align: center;
 }
 
-header>h1.entry-title a::after{
+header>h1.entry-title a::after,
+ul>li.entry-title a::after{
   opacity: 0;
   display: inline-block;
-  content: '> > >';
   margin-left: 10px;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
   -moz-transition: -moz-transform 0.3s, opacity 0.2s;
@@ -36,8 +36,18 @@ header>h1.entry-title a::after{
   transform: translateX(-30px);
 }
 
+header>h1.entry-title a::after {
+  content: '> > >';
+}
+
+ul>li.entry-title a::after {
+  content: '......';
+}
+
 header>h1.entry-title a:hover::after,
-header>h1.enter-title a:focus::after{
+header>h1.enter-title a:focus::after,
+ul>li.entry-title a:hover::after,
+ul>li.entry-title a:focus::after{
   opacity: 1;
   -webkit-transform: translateX(10px);
   -moz-transform: translateX(10px);
