@@ -22,34 +22,36 @@ figure {
 div.link-button {
   text-align: center;
 }
-
-header>h1.entry-title a::after,
-ul>li.entry-title a::after{
-  opacity: 0;
-  display: inline-block;
-  margin-left: 10px;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
-  transition: transform 0.3s, opacity 0.2s;
-  -webkit-transform: translateX(-30px);
-  -moz-transform: translateX(-30px);
-  transform: translateX(-30px);
+header>h1.entry-title a {
+  position: relative;
 }
 
-header>h1.entry-title a::after {
-  content: '> > >';
+header>h1.entry-title a::before {
+  position: absolute;
+  width: 0.3rem;
+  height: 2.6rem;
+  left: -1rem;
+  background: #333;
+  content: '';
+  opacity: 0.2;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  pointer-events: none;
 }
 
-ul>li.entry-title a::after {
-  content: '(=￣ω￣=)';
-}
-
-header>h1.entry-title a:hover::after,
-header>h1.enter-title a:focus::after,
-ul>li.entry-title a:hover::after,
-ul>li.entry-title a:focus::after{
+header>h1.entry-title a:hover::before,
+header>h1.enter-title a:focus::before{
   opacity: 1;
-  -webkit-transform: translateX(10px);
-  -moz-transform: translateX(10px);
-  transform: translateX(10px);
+}
+
+ul>li.entry-title a {
+  -webkit-transition: length 0.3s, opacity 0.2s;
+  -moz-transition: length 0.3s, opacity 0.2s;
+  transition: length 0.3s, opacity 0.2s;
+}
+
+ul>li.entry-title a:hover,
+ul>li.entry-title a:focus {
+  padding-left: 20px;
 }
