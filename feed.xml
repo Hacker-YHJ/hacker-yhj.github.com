@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://hacker-yhj.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io" />
-<updated>2014-01-27T10:32:47+00:00</updated>
+<updated>2014-01-27T10:51:56+00:00</updated>
 <id>http://hacker-yhj.github.io/</id>
 <author>
   <name>Maaooo~</name>
@@ -537,9 +537,11 @@ git的下载地址在&lt;a href=&quot;https://github.com&quot;&gt;github官网&l
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;如果&lt;code&gt;rake&lt;/code&gt;报错，试试&lt;code&gt;bundle exec rake install&lt;/code&gt;。这是因为rake所需版本和现存版本不一致造成的。出现类似的问题都可以如此解决。
-好的，如果顺利的到达这里，我们已经成功一半了。
-##Github Page
-&lt;a href=&quot;http://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;是一个公共的免费网页托管服务。任何人都可以非常方便的在上面发布静态网页，并且用Git控制，十分便利。不过需要注意的是不要把过于隐私的东西发布到上面，因为公共的，别人可以轻易clone下来。我们所要做的就是在这上面，将我们本地生成的静态网站挂载上去。&lt;/p&gt;
+好的，如果顺利的到达这里，我们已经成功一半了。&lt;/p&gt;
+
+&lt;h2 id=&quot;github-page&quot;&gt;Github Page&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;是一个公共的免费网页托管服务。任何人都可以非常方便的在上面发布静态网页，并且用Git控制，十分便利。不过需要注意的是不要把过于隐私的东西发布到上面，因为公共的，别人可以轻易clone下来。我们所要做的就是在这上面，将我们本地生成的静态网站挂载上去。&lt;/p&gt;
 
 &lt;h3 id=&quot;repo&quot;&gt;创建一个repo&lt;/h3&gt;
 
