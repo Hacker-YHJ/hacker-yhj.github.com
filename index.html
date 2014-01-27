@@ -145,8 +145,7 @@
 
 <p>Hope you will like it~</p>
 
-<div class="link-button"><a href="http://hacker-yhj.github.io/projects/vis_course_assignment_3/index.html" class="btn">Click to see the contents.</a></div>
-
+<div class='more-button'><a href='/the-isla-del-sueno-migrant-boats/' class='btn'>Read The Whole Post.</a></div>
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 
@@ -187,8 +186,7 @@
 
 <p>Hope you will like it~</p>
 
-<div class="link-button"><a href="http://hacker-yhj.github.io/projects/vis_course_assignment/index.html" class="btn">Click to see the contents.</a></div>
-
+<div class='more-button'><a href='/vis-course-assignment/' class='btn'>Read The Whole Post.</a></div>
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 
@@ -204,103 +202,7 @@
 
 <p>Althrough I fell in love with Ruby the first time I saw it, I didn’t realize that writting with Ruby is such a pleasure. A GUI program using multithread tech and carefully handling exceptions is written in only 200+ lines, which seems impossible to Objective-C(I should have used it if I didn’t see MacRuby). Before talking about the details, I remind you that the project is avaliable in my github <a href="https://github.com/Hacker-YHJ/miscellaneous/tree/master/BiliRSS">repo</a>. Feel free to give me some <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#106;&#115;&#099;&#110;&#109;&#049;&#057;&#057;&#051;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">feedbacks</a>.</p>
 
-<!--more-->
-
-<h2 id="macruby-is-a-awesome-hack">MacRuby is a awesome hack</h2>
-
-<p>As we all know the most common language used to develop on Mac is Objective-C, besieds C and C++ also have a seat. MacRuby is a interface allowing you to use Ruby instead, which is a boon to Ruby lovers like me. If you don’t know the difference, I’m gonna tell you now.</p>
-
-<p>In my project I must handle six checkboxs. And now, for example, I need to hide them. What should I do?</p>
-
-<p>In Objective-C, the code may look like this:</p>
-
-<div class="highlight"><pre><code class="objc"><span class="lineno">1</span> <span class="p">[</span><span class="n">checkboxs0</span> <span class="n">setHidden</span><span class="o">:</span><span class="nb">true</span><span class="p">];</span>
-<span class="lineno">2</span> <span class="p">[</span><span class="n">checkboxs1</span> <span class="n">setHidden</span><span class="o">:</span><span class="nb">true</span><span class="p">];</span>
-<span class="lineno">3</span> <span class="p">[</span><span class="n">checkboxs2</span> <span class="n">setHidden</span><span class="o">:</span><span class="nb">true</span><span class="p">];</span>
-<span class="lineno">4</span> <span class="p">[</span><span class="n">checkboxs3</span> <span class="n">setHidden</span><span class="o">:</span><span class="nb">true</span><span class="p">];</span>
-<span class="lineno">5</span> <span class="p">[</span><span class="n">checkboxs4</span> <span class="n">setHidden</span><span class="o">:</span><span class="nb">true</span><span class="p">];</span>
-<span class="lineno">6</span> <span class="p">[</span><span class="n">checkboxs5</span> <span class="n">setHidden</span><span class="o">:</span><span class="nb">true</span><span class="p">];</span>
-</code></pre></div>
-
-<p>Well, a little bit stupid. Why not using the loop statement. Actually I can’t if the six checkboxs named like this, I mean six variables with similar name. To do this, I must use array.</p>
-
-<div class="highlight"><pre><code class="objc"><span class="lineno">1</span> <span class="k">for</span><span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
-<span class="lineno">2</span>   <span class="p">[</span><span class="n">checkboxs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="n">setHidden</span><span class="o">:</span><span class="nb">true</span><span class="p">];</span>
-</code></pre></div>
-
-<p>Looks better now, but here comes anthoer problem. The variables and corresponding GUI components are bundled together, which can be done easily by some dragging tricks, but only when the variable is individually and explicitly defined. Variables within an array can not be recognized by the IDE in this specific case. If you really want to archieve this, you can, by editing the tedious XML files by hand and you won’t like that.</p>
-
-<p>Now Let’s see how Ruby solves this problem.</p>
-
-<div class="highlight"><pre><code class="ruby"><span class="lineno">1</span> <span class="nb">instance_variables</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">checkboxs</span><span class="o">|</span>
-<span class="lineno">2</span>   <span class="k">next</span> <span class="k">if</span> <span class="kp">nil</span> <span class="o">==</span> <span class="p">(</span><span class="sr">/checkbox/</span> <span class="o">=~</span> <span class="n">checkboxs</span><span class="p">)</span>
-<span class="lineno">3</span>   <span class="nb">instance_eval</span> <span class="sx">%{</span>
-<span class="lineno">4</span> <span class="sx">    </span><span class="si">#{</span><span class="n">checkboxs</span><span class="si">}</span><span class="sx">.setHidden true</span>
-<span class="lineno">5</span> <span class="sx">  }</span>
-<span class="lineno">6</span> <span class="k">end</span>
-</code></pre></div>
-
-<p>It needs six lines, the same as objective-c, but you can see that there is no repeated statement. I’m gonna give a detailed explaination of it. </p>
-
-<p><code>instance_variables</code> are actually a function which returns an array of instance variables of this class. you may think that it is just a method, but actually you are facing the most flexible part of Ruby – metaprogramming. The method returns the inner content of a class in runtime, which is impossible in static programming languages like C. Now with this method, I have an array of all the variables including the checkboxs</p>
-
-<p>Statements between <code>do</code> and <code>end</code>, called code block, are a little trick in Ruby acting like iteration. With <code>each</code> method we know that for each variables, it will be assigned to <code>checkboxs</code>, which is a local variable, and run the following code. Actually code block is a different kind of function, called repeatedly and with specific arugments, which can make code cleaner and more readable.</p>
-
-<p><code>next if nil == (/checkbox/ =~ checkboxs)</code> is nothing but a if statement with <code>if</code> behind. Content within <code>/</code> are regular expression, with the samplest form of it, matches any string containing “checkbox”. <code>next</code> just like <code>continue</code>, means start the next step of iteration. So this line choose all the variable with “checkbox” in its name. In our example, they are checkbox0 et al.</p>
-
-<p>So, you may think that we will call the <code>setHidden</code> method with each checkbox. Yes, but more complicated.</p>
-
-<div class="highlight"><pre><code class="ruby"><span class="lineno">1</span> <span class="nb">instance_eval</span> <span class="sx">%{</span>
-<span class="lineno">2</span> <span class="sx">  </span><span class="si">#{</span><span class="n">checkboxs</span><span class="si">}</span><span class="sx">.setHidden true</span>
-<span class="lineno">3</span> <span class="sx">}</span>
-</code></pre></div>
-
-<p><code>instance_eval</code> is such a method that tells ruby interpreter to run the argument string as ruby source code. It is a powerful but dangerous method. Running the code generated in the runtime cann’t guarantee security, but brings a lot of flexibility. Security is a huge issue, so I will not go any deeper here.</p>
-
-<p><code>%{}</code> is nothing but <code>" "</code> expression, but it is able to use “ freely in the block. <code>#{}</code> let the inner content “pop out”, means that in the string, the variable in the <code>#{}</code> block will be shown as its value in the string form (implicit call the to_s function which returns a descriptive string of an object). So the string will be like <code>checkbox0.setHidden true</code> et al.</p>
-
-<p>Now you can see the difference. If we have 100 checkboxs, we need 100 verbose lines in objective-c but still 6 lines in ruby, because the six lines will select all the variables and call the function with it.</p>
-
-<h2 id="more-about-metaprogramming">More about metaprogramming</h2>
-
-<p>I showed some ruby tricks of metaprogramming but it is just a drop in the ocean. Ruby allows you to do everything about the programme itself, like querying for the name of variables before, and more over, define a new method if you like.</p>
-
-<p>In the project, I still have to write about six functions, or methods, to be the handler of the checkboxs. The functions must be explicitly defined for the same reason as before. Since the content of the functions are so similar and I have zero tolerance in repeating, I’ve come up with a way using metaprogramming again.</p>
-
-<div class="highlight"><pre><code class="ruby"><span class="lineno"> 1</span> <span class="k">def</span> <span class="nf">checkbox0_handler</span><span class="p">(</span><span class="n">sender</span><span class="p">);</span> <span class="k">end</span>
-<span class="lineno"> 2</span> <span class="k">def</span> <span class="nf">checkbox1_handler</span><span class="p">(</span><span class="n">sender</span><span class="p">);</span> <span class="k">end</span>
-<span class="lineno"> 3</span> <span class="k">def</span> <span class="nf">checkbox2_handler</span><span class="p">(</span><span class="n">sender</span><span class="p">);</span> <span class="k">end</span>
-<span class="lineno"> 4</span> <span class="k">def</span> <span class="nf">checkbox3_handler</span><span class="p">(</span><span class="n">sender</span><span class="p">);</span> <span class="k">end</span>
-<span class="lineno"> 5</span> <span class="k">def</span> <span class="nf">checkbox4_handler</span><span class="p">(</span><span class="n">sender</span><span class="p">);</span> <span class="k">end</span>
-<span class="lineno"> 6</span> <span class="k">def</span> <span class="nf">checkbox5_handler</span><span class="p">(</span><span class="n">sender</span><span class="p">);</span> <span class="k">end</span>
-<span class="lineno"> 7</span> 
-<span class="lineno"> 8</span> <span class="no">GROUP_NUM</span><span class="o">.</span><span class="n">times</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
-<span class="lineno"> 9</span>     <span class="nb">class_eval</span> <span class="sx">%{</span>
-<span class="lineno">10</span> <span class="sx">      def checkbox</span><span class="si">#{</span><span class="n">i</span><span class="si">}</span><span class="sx">_handler(sender)</span>
-<span class="lineno">11</span> <span class="sx">        if sender.state == NSOnState</span>
-<span class="lineno">12</span> <span class="sx">          @category_list &lt;&lt; sender.title</span>
-<span class="lineno">13</span> <span class="sx">          refresh_textfield</span>
-<span class="lineno">14</span> <span class="sx">          @label.setStringValue &quot;Successfully added </span><span class="se">\#</span><span class="sx">{sender.title}&quot;</span>
-<span class="lineno">15</span> <span class="sx">        elsif sender.state == NSOffState</span>
-<span class="lineno">16</span> <span class="sx">          @category_list.delete sender.title</span>
-<span class="lineno">17</span> <span class="sx">          refresh_textfield</span>
-<span class="lineno">18</span> <span class="sx">          @label.setStringValue &quot;Successfully deleted </span><span class="se">\#</span><span class="sx">{sender.title}&quot;</span>
-<span class="lineno">19</span> <span class="sx">        end</span>
-<span class="lineno">20</span> <span class="sx">      end</span>
-<span class="lineno">21</span> <span class="sx">    }</span>
-<span class="lineno">22</span>   <span class="k">end</span>
-</code></pre></div>
-
-<p>What I’ve done is very clear. Define six empty functions to let the IDE know. Then do a loop statement to open each function and give them the corresponding content.</p>
-
-<p>Open the function? I’ve never heard of it when I’m using C, but it is such an easy thing in ruby. Just define the function again, the interpreter will notice there has been a synonym function, so it open the funcion instead of giving a definition. Everything you do within the definition statements will be add to the function. So easy~</p>
-
-<p>The code is similar to the former one so I skip the description. If you really like it, how about starting a ruby project now?</p>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>It is just a exercise project, but I did feel the power of ruby and I really love it. It brought me a lot of pleasures and surprises when coding and gave out the decent result as well. People who have never touched interpreted language should try to use it. And you will never regret.</p>
-
+<div class='more-button'><a href='/bilibili-rss-receiver-first-ruby-project/' class='btn'>Read The Whole Post.</a></div>
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 
@@ -316,144 +218,94 @@
 
 <p>In 2003, just two years after the online encyclopedia’s birth, Wikipedia was still not well known, and among those aware of it there was serious skepticism about its open authorship model. Researcher Martin Wattenberg and Fernanda Viégas felt some of this skepticism themselves, yet many of the articles were interesting and helpful. To find out how was such a haphazard process yielding a quality product and other related questions, they decided to investigate. They did a lot of works and most of them are masterpieces. I’ll focus mainly on the History Flow part which I think is beautiful and useful.</p>
 
-<!--more-->
+<div class='more-button'><a href='/history-flow/' class='btn'>Read The Whole Post.</a></div>
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
 
-<h2 id="about-the-data">About the Data</h2>
+<article class="hentry">
+  <header>
+    <div class="entry-meta"><span class="entry-date date published updated"><time datetime="2013-09-05T00:00:00+00:00"><a href="http://hacker-yhj.github.io/quadratic-curve/">September 05, 2013</a></time></span><span class="author vcard"><span class="fn"><a href="http://hacker-yhj.github.io/about/" title="About Maaooo~">Maaooo~</a></span></span></div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://hacker-yhj.github.io/quadratic-curve/" rel="bookmark" title="Quadratic Curve" itemprop="url">Quadratic Curve</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>Quadratic curve is also called conic section obtained as the intersection of a cone (more precisely, a right circular conical surface) with a plane. </p>
 
-<p>To get start, they need the raw data of Wikipedia. Fortunately, Wikipedia’s data wasn’t a table of numbers in a database, but a set of document versions and edit histories. Actually, Wikipedia keeps a full version history of every page available to the public, which is one of the initial brilliant decisions by Wikipedia’s founders and undoubtedly a boon for researchers .</p>
-
-<p>The data they appreciated are the edit history, from which we can have an overview of the articles in each version and trace the changes. Thus can perhaps find out the reason of the Wikipedia is of such a high quality and other questions.</p>
-
-<h2 id="visual-design">Visual Design</h2>
-
-<p>I have to say that Wattenberg and Viégas had done a great work. The whole visual design is simple and clear, but still contains everything inside–contents, versions and authors displayed in a especially proper way. The figure below is the main panel of the History Flow.</p>
-
-<figure>
-    <a href="http://hacker-yhj.github.io/images//history_flow/main_panel.gif"><img src="http://hacker-yhj.github.io/images//history_flow/main_panel.gif" alt="" /></a>
-    <figcaption>Main Panel</figcaption>
-</figure>
-
-<p>What you see in the middle part is the history flow diagram, the core part which we may discuss later in detail. The right part is a panel showing the content of a specific article in a specific version, with different colors representing different contributors. The author list is placed in the left shown as a column, with selected one highlighted. Upper panel is some options about color and spacing of the diagram. The figure may be a little bit vague, but you can still notice that the now selected article is titled “chocolate”, shown both in the upper left of the main panel and the beginning part of the content.</p>
-
-<p>Surely you can guess that the key part of the design is the diagram, and wondering what are these colored stripe means? Let’s find out.</p>
-
-<p>Imagine a scenario where three people will make contributions to a Wiki page at different points in time. Each person edits the page and then saves their changes to what becomes the latest version of that page.</p>
-
-<figure class="half">
-    <img src="http://hacker-yhj.github.io/images//history_flow/how_to_do_1.gif" alt="" />
-    <img src="http://hacker-yhj.github.io/images//history_flow/how_to_do_2.gif" alt="" />
-    <figcaption></figcaption>
-</figure>
-<figure class="half">
-    <img src="http://hacker-yhj.github.io/images//history_flow/how_to_do_3.gif" alt="" />
-    <img src="http://hacker-yhj.github.io/images//history_flow/how_to_do_4.gif" alt="" />
-    <figcaption>What's the meaning of the stripes</figcaption>
-</figure>
-
-<p>In figure 1, the vertical red line represents the first version of the document. Since Mary creates the page all of the contents in the page reflect her author color. The length of the line indicates the amount of text Mary has written.</p>
-
-<p>Suzanne adds some text to the end of Mary’s original entry; note that Suzanne’s blue line is appended to the end of Mary’s red line indicating that Suzanne’s text was added at the end of the page shown in figure 2. Suzanne saves her changes and this becomes the latest version of the page.</p>
-
-<p>Now in figure 3, Martin finds the original text too verbose; he deletes some of it and writes his own shorter version between the introductory text and Suzanne’s contribution.</p>
-
-<p>On version 4 Suzanne comes back and makes a small contribution in the middle of what remains of the introductory text.</p>
-
-<p>History Flow connects text that has been kept the same between consecutive versions; in other words, it connects corresponding segments on the lines representing versions. Pieces of text that do not have correspondence in the next (or previous) version are not connected and the user sees a resulting “gap” in the visualization; this happens for deletions and insertions.</p>
+<p>Conic sections are exactly those curves that, for a point F (in black), a line L (also in black) not containing F and a non-negative number e, are the locus of points whose distance to F equals e times their distance to L. F is called the focus, L the directrix, and e the eccentricity. </p>
 
 <figure>
-    <a href="http://hacker-yhj.github.io/images/history_flow/how_to_do_5.gif"><img src="http://hacker-yhj.github.io/images/history_flow/how_to_do_5.gif" alt="" /></a>
-    <figcaption>Final appearance</figcaption>
+    <a href="http://hacker-yhj.github.io/projects/quadratic_curve/index.html"><img src="http://hacker-yhj.github.io/images/quadratic/frontCover.png" alt="" /></a>
+    <figcaption>Quadratic curve</figcaption>
 </figure>
 
-<p>Now you can scroll up to see the main panel figure, isn’t it clear enough to you? You can easily click a version and the corresponding content will show in the right together with the version highlighted (see the main panel figure and you will find a brown highlighted line). And as you may guess, the color pattern of the content and the diagram stripe are the same of course, so that you can match them up.</p>
+<div class='more-button'><a href='/quadratic-curve/' class='btn'>Read The Whole Post.</a></div>
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
 
-<h2 id="visual-mode">Visual Mode</h2>
-
-<p>This works has more than one visual mode in order to satisfy different requires. To switch among them, just click the option panel in the upper part of the main panel (which mentioned before). Let’s have a quick look.</p>
+<article class="hentry">
+  <header>
+    <div class="entry-meta"><span class="entry-date date published updated"><time datetime="2013-09-05T00:00:00+00:00"><a href="http://hacker-yhj.github.io/picture-simulator/">September 05, 2013</a></time></span><span class="author vcard"><span class="fn"><a href="http://hacker-yhj.github.io/about/" title="About Maaooo~">Maaooo~</a></span></span></div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://hacker-yhj.github.io/picture-simulator/" rel="bookmark" title="Circle Play" itemprop="url">Circle Play</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>This is a just-for-fun page. Drag a picture in the box and a circle will pop out. Move your cursor above it and see the magic. </p>
 
 <figure>
-    <a href="http://hacker-yhj.github.io/images/history_flow/community_view.gif"><img src="http://hacker-yhj.github.io/images/history_flow/community_view.gif" alt="" /></a>
-    <figcaption>Community View</figcaption>
+    <a href="http://hacker-yhj.github.io/projects/PicShow/index.html"><img src="http://hacker-yhj.github.io/images/picshow/frontCover.png" alt="" /></a>
+    <figcaption>Just for fun!</figcaption>
 </figure>
 
-<p><em>Community view</em> is the default mode and it shows all contributions from different authors, hues to indicate the author of each sentence. In this view we use just one property of color – the hues. Of course we can easily add brightness to represent the ages of the text with brighter colors being more recent. </p>
+<div class='more-button'><a href='/picture-simulator/' class='btn'>Read The Whole Post.</a></div>
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta"><span class="entry-date date published updated"><time datetime="2013-09-05T00:00:00+00:00"><a href="http://hacker-yhj.github.io/bezier-curves/">September 05, 2013</a></time></span><span class="author vcard"><span class="fn"><a href="http://hacker-yhj.github.io/about/" title="About Maaooo~">Maaooo~</a></span></span></div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://hacker-yhj.github.io/bezier-curves/" rel="bookmark" title="What's happening when you use "Pen" tool in Photoshop" itemprop="url">What's happening when you use "Pen" tool in Photoshop</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>Actually the “Pen” tool in Photoshop draws a Bézier curve on the screen. Moreover, all the curve that “Pen” tool generated is second-ordered, that means it use two anchors and at most four control points.</p>
 
 <figure>
-    <a href="http://hacker-yhj.github.io/images/history_flow/individual_view.gif"><img src="http://hacker-yhj.github.io/images/history_flow/individual_view.gif" alt="" /></a>
-    <figcaption>Individual View</figcaption>
+    <a href="http://hacker-yhj.github.io/projects/Bézier_Curves/index.html"><img src="http://hacker-yhj.github.io/images/bézier/frontCover.png" alt="" /></a>
+    <figcaption>Bézier curve</figcaption>
 </figure>
 
-<p><em>Individual author view</em> highlights the contributions of a single author and it depicts the persistence of these contributions over time. </p>
+<div class='more-button'><a href='/bezier-curves/' class='btn'>Read The Whole Post.</a></div>
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
 
-<figure>
-    <a href="http://hacker-yhj.github.io/images/history_flow/recent_view.gif"><img src="http://hacker-yhj.github.io/images/history_flow/recent_view.gif" alt="" /></a>
-    <figcaption>Recent View</figcaption>
-</figure>
+<article class="hentry">
+  <header>
+    <div class="entry-meta"><span class="entry-date date published updated"><time datetime="2013-09-04T00:00:00+00:00"><a href="http://hacker-yhj.github.io/how-to-build-a-blog-with-octopress/">September 04, 2013</a></time></span><span class="author vcard"><span class="fn"><a href="http://hacker-yhj.github.io/about/" title="About Maaooo~">Maaooo~</a></span></span></div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://hacker-yhj.github.io/how-to-build-a-blog-with-octopress/" rel="bookmark" title="How to build a blog with Octopress" itemprop="url">How to build a blog with Octopress</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <h2 id="preface">Preface</h2>
 
-<p><em>Recent Changes View</em> highlights the new content in each version of the Wiki page independent of authorship. This view allow us to see what portions of the text have been edited the most over time.</p>
+<p>经过了好些时间的奋战，好说歹说是把这个迷你的博客搭起来了。虽然网上有无数教程，但是由于平台差异，还是遇到了非常多的麻烦，（坑爹呢这是！( ╯#-_-)╯┴—┴ ）。嘛，技术宅的道路任重道远，动心忍性啊。总之，侯门一入深似海，喝水不忘挖井人，第一篇blog顺理成章写一段小教程吧，希望能帮到各位想要个免费的小小的博客的朋友。</p>
 
-<figure>
-    <a href="http://hacker-yhj.github.io/images/history_flow/age_view.gif"><img src="http://hacker-yhj.github.io/images/history_flow/age_view.gif" alt="" /></a>
-    <figcaption>Age View</figcaption>
-</figure>
+<h2 id="octopress">Octopress</h2>
 
-<p><em>Age View</em> this view has no colors representing authorship; instead, the focus is on the persistence of different contributions. A gray scale gradient goes from white (brand new contribution) to dark gray (very old contribution). As I mentioned before, this view can combine perfectly with the community view which will show more information and also bring more clutters. I suggest that use the combination in a small data set.</p>
+<h3 id="octopress-1">Octopress简介</h3>
 
-<p>Something else should be given a word is that the space between the version is customized. You can either make it constant so that you can find out what happens between two version, or make the space length in direct proportion of the time duration between, which may depict more clearly how the content changes with the time elapsing. To switch between, the upper right check box will help. This is surprisingly helpful in one of the result which we will discuss in the next section.</p>
+<p><a href="http://octopress.org/">Octopress</a>是一个用<code>ruby</code>写成的基于<a href="github.com/mojombo/jekyll">Jekyll</a>架构的静态博客框架。具体介绍官网比我清楚，在此我只说说个人感受。</p>
 
-<h2 id="result">Result</h2>
+<p>首先要说的肯定是平台的事儿。（再掀一次！( ╯#-_-)╯┴—┴ ）因为会用到很多依赖，比如ruby，这就牵扯到版本控制，Linux下有rvm或者rbenv等等成熟的版本控制程序；比如之后的发布要用到git，语法高亮要用到python等等。总之，用Linux会方便很多很多。某Windows，唉……在此抹一把辛酸泪，我容易吗我T T。顺便在此感谢淘宝做的国内<a href="http://ruby.taobao.org/">RubyGem镜像</a>，我觉得这是对国内开发人员最直接的鼓励和某些行径最直接的打脸。</p>
 
-<p>This great visualization bring out many decent results. We focus on the reason why there seems no vandalism in Wikipedia.</p>
+<p>其次就是需要掌握的知识了。就像是官网介绍上写的一样：Octopress， A blogging framework for hackers.这是一个黑客用的框架，而一个黑客必须是博学的。我本人仅仅粗浅的接触了一下就已经涉及到很多知识了。如ruby和配套的rakefile，发布需要学习git，修改配置文件涉及到yml以及html等等相关语法，写博客需要使用markdown语法。当然，这些是不需要十分精通也可以使用的，因此也无需因为这些就打退堂鼓。</p>
 
-<p>Vandalism is some kind of behavior that delete or ruin all the work done before, which happens in many open authorship circumstances. Is there any vandalism in Wikipedia? The result says yes. Look at the figure below.</p>
+<p>然后，Octopress繁多的依赖决定了其准备步骤繁杂，如果换一台电脑，会花相当（嘛，其实也没多少，只是比其他框架多一些吧~）的时间在准备依赖项上面。而且，由于是静态博客，每次生成都会重写所有Page，加之ruby的速度限制，因此在博客数量繁多的时候生成会相当慢。</p>
 
-<figure>
-    <a href="http://hacker-yhj.github.io/images/history_flow/abortion1.gif"><img src="http://hacker-yhj.github.io/images/history_flow/abortion1.gif" alt="" /></a>
-    <figcaption>Abortion 1</figcaption>
-</figure>
-
-<p>This is the diagram of the article “Abortion”. Notice that there are few vertical gaps in the whole diagram. As you may guess, that is a whole deletion behavior. But why didn’t we ever open up an empty page? We notice that it is spaced by a constant length, how about changing a spacing mode to find more?</p>
-
-<figure>
-    <a href="http://hacker-yhj.github.io/images/history_flow/abortion2.gif"><img src="http://hacker-yhj.github.io/images/history_flow/abortion2.gif" alt="" /></a>
-    <figcaption>Abortion 2</figcaption>
-</figure>
-
-<p>Above is the figure with “time spacing mode”. Seems that the gaps disappear? From the diagram, they are just refined so rapidly that you can’t even see it in the time spacing mode. So we didn’t see evidence of destructive behavior wasn’t that this behavior didn’t exist, but that it tended to be erased quickly from public view. This is a correct result, but is not so easily demonstrated. To get this result, the author did a lot of additional works. But it is undeniable that the figure is so intuitive that gives out a primary hypothesis and eventually lead to this result.</p>
-
-<h2 id="my-favorite-part-pros-and-cons">My Favorite Part, Pros and Cons</h2>
-
-<p>My favorite part is the diagram part of course. The first time I saw it I was deeply attracted, while confusions stroke me at the same time. </p>
-
-<p>The primary confusion is why it is so redundant. I mean it is fully adequate to encode all the information without the stripes, only with the vertical lines. Then when data set grows larger, I realize that everything became spoiled without the stripes. Lines are so thin in the screen that you have to zoom in to watch the details, but to do so, you will miss the whole view of the flow. Moreover, without the stripe I can only focus on the constituent components of a single version, or changes between two adjacent version at most, let alone the contributions of a specific author through time. The stripe use additional area to show the information, strengthening the differences of changes, and most importantly, penetrating the whole version, making the hiding information, the cooperations and conflicts between authors for example, jump out of the screen. This is really a genius hack.</p>
-
-<p>Despite the above, the diagram has some very good features. Colors are smartly handled, with hues discrete encoding and brightness consecutive encoding, which is proper for human perception. Changeable spacing and diverse views added extra usability. Especially the individual author view, which should be the honor badge of contributors for their long-lasting devotions.</p>
-
-<p>By the way I was interested in the zigzag part of the “chocolate” article shown in the very beginning (the main panel figure). From the diagram, there are repeatedly insertion and deletion behaviors, which seems like two people quarreling and fighting each other. Actually the fact is so close to my imagination: two users fought over whether a kind of chocolate sculpture called “coulage” really existed and consequently, whether or not the paragraph about it should appear on the page. Interesting isn’t it! Such a small conflict draws such a apparent pattern in the diagram, which definitely give out inspirations for further research.</p>
-
-<h2 id="advice-for-improvement">Advice for Improvement</h2>
-
-<p>There are three main points I want to mention about. </p>
-
-<p>The first point is about zooming. Zooming should be the fundamental function in any visual design, while I didn’t find any description about it in this design. Maybe it is such a intrinsic part of visualization that the author just omitted the description. But if there aren’t, there should be.</p>
-
-<p>The rest is all about colors. Since each color matches an author, there may be some clutters in the case of large-scale cooperation. Notice that not all the author appear at the same time, I mean, some authors were active in the former versions and others in the latter, while only few of them really went through all the versions. Can we just use the same color for different authors in the situation where they won’t shadow each other. It may cause some information lost but maybe a good idea, especially when a lot of authors are working on an article together.</p>
-
-<p>If you look carefully at the figure of “abortion” above (in page 6), you can see the gaps in the right. Actually the middle right part is not a real gap, it is a stripe with it’s brightness nearly zero because it matches up a piece of long-lasting content from the article and brightness is used to encode the duration. Longer lasting Content become darker, but shouldn’t be so close to black. It is confusing of course, we can just give it a threshold to keep it a proper brightness, so that we won’t make mistakes.</p>
-
-<p>Improvement will not have an end though, I’ll just stop here. Beyond all the above, I really appreciate this work. It brought inspiration both in visual design and in pattern analysis to me, which definitely boraden my eyesight and deepen my interests in visualization research.</p>
-
-<h2 id="reference">reference</h2>
-<p>Fernanda B. Viégas, Martin Wattenberg, Kushal Dave. Studying Cooperation and Conflict between Authors with history flow Visualizations in proceedings of conference on human factors in computer system, 2004. </p>
-
-<p><a href="http://www.research.ibm.com/visual/projects/history_flow">http://www.research.ibm.com/visual/projects/history_flow</a> This is the project pages. Detailed information, news and more figures are available there.</p>
-
-<p><a href="http://www.bewitched.com/historyflow.html">http://www.bewitched.com/historyflow.html</a> This is the Martin Wattenberg’s pages about this project. His descriptions about this and other interesting works are available there.</p>
-
-<p><a href="http://www.fernandaviegas.com/wikipedia.html">http://www.fernandaviegas.com/wikipedia.html</a> This is the another author, Fernanda Viégas’s pages about this.</p>
-
-<p><strong>Beautiful Visualization, Looking at Data Through the Eyes of Experts</strong> This is the book where I met and select this visualization. In this book are lots of high quality visualizations with specific descriptions and discussions. I strongly recommend you to read about it.</p>
-
+<div class='more-button'><a href='/how-to-build-a-blog-with-octopress/' class='btn'>Read The Whole Post.</a></div>
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 
@@ -469,15 +321,9 @@
       
     </li>
     
-      <li>
-        
-          <a href="http://hacker-yhj.github.io/page2">2</a>
-        
-      </li>
-    
   </ul>
   
-    <a href="http://hacker-yhj.github.io/page2" class="btn">Next</a>
+    Next
   
 </div><!-- /.pagination -->
 </div><!-- /#main -->

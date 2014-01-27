@@ -19,9 +19,11 @@ figure {
   text-align: center;
 }
 
-div.link-button {
+div.link-button,
+div.more-button {
   text-align: center;
 }
+
 header>h1.entry-title a {
   position: relative;
 }
