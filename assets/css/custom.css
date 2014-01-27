@@ -57,3 +57,8 @@ ul>li.entry-title a:hover,
 ul>li.entry-title a:focus {
   padding-left: 20px;
 }
+
+.entry-content p>a:hover,
+.entry-content li>a:hover {
+  padding-bottom: 5px;
+}
