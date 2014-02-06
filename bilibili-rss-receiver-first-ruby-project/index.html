@@ -7,7 +7,7 @@
 <meta charset="utf-8">
 <title>Use MacRuby for the first time &#8211; Hacking to the Gate</title>
 <meta name="description" content="A tiny personal blog.">
-<meta name="keywords" content="Ruby, Mac, Bilibili, notes">
+<meta name="keywords" content="Ruby, Mac, notes">
 
 
 
@@ -61,7 +61,6 @@
 
 
 <style type="text/css">body {background-image:url(http://hacker-yhj.github.io/images/squairy_light_@2X.png);}</style>
-
 
 </head>
 
@@ -123,7 +122,7 @@
 
 
 <div class="entry-header">
-  <div class="entry-image"><img src="http://hacker-yhj.github.io/images/abstract-6.jpg" alt="Use MacRuby for the first time">
+  <div class="entry-image"><img src="http://hacker-yhj.github.io/images/abstract-6.jpg" alt="Use MacRuby for the first time" data-stellar-ratio='0.2'>
     <div class="image-credit">Image source: <a href="http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/">dargadgetz</a></div><!-- /.image-credit -->
   </div><!-- /.entry-image -->
 </div><!-- /.entry-header -->
@@ -242,7 +241,7 @@
 <p>It is just a exercise project, but I did feel the power of ruby and I really love it. It brought me a lot of pleasures and surprises when coding and gave out the decent result as well. People who have never touched interpreted language should try to use it. And you will never regret.</p>
 
       <footer class="entry-meta">
-        <span class="entry-tags"><a href="http://hacker-yhj.github.io/tags/#Ruby" title="Pages tagged Ruby" class="tag">Ruby</a><a href="http://hacker-yhj.github.io/tags/#Mac" title="Pages tagged Mac" class="tag">Mac</a><a href="http://hacker-yhj.github.io/tags/#Bilibili" title="Pages tagged Bilibili" class="tag">Bilibili</a><a href="http://hacker-yhj.github.io/tags/#notes" title="Pages tagged notes" class="tag">notes</a></span>
+        <span class="entry-tags"><a href="http://hacker-yhj.github.io/tags/#Ruby" title="Pages tagged Ruby" class="tag">Ruby</a><a href="http://hacker-yhj.github.io/tags/#Mac" title="Pages tagged Mac" class="tag">Mac</a><a href="http://hacker-yhj.github.io/tags/#notes" title="Pages tagged notes" class="tag">notes</a></span>
         <span><a href="http://hacker-yhj.github.io/bilibili-rss-receiver-first-ruby-project/" rel="bookmark" title="Use MacRuby for the first time">Use MacRuby for the first time</a> was published on <span class="entry-date date published updated"><time datetime="2013-10-16T00:00:00+00:00">October 16, 2013</time></span></span>
         
         <span class="author vcard"><span class="fn"><a href="http://hacker-yhj.github.io/about/" title="About Maaooo~">Maaooo~</a></span></span>
@@ -297,7 +296,20 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="http://hacker-yhj.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+<!-- stellar.js -->
+<script type='text/javascript' src="http://hacker-yhj.github.io/js/jquery.stellar.min.js"></script>
+
 <script src="http://hacker-yhj.github.io/assets/js/scripts.min.js"></script>
+<!-- run stellar.js -->
+<script>
+$('.entry-image img').ready( function() { $(this).stellar({
+  hideDistantElements: false,
+  positionProperty: 'transform'
+}); });
+</script>
+
+
 
 
 <script type="text/javascript">

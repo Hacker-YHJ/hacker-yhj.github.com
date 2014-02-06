@@ -62,3 +62,10 @@ ul>li.entry-title a:focus {
 .entry-content li>a:hover {
   padding-bottom: 5px;
 }
+
+.entry-image img {
+  -moz-transition: none;
+  -webkit-transition: none;
+  -o-transition: color 0 ease-in;
+  transition: none;
+}
