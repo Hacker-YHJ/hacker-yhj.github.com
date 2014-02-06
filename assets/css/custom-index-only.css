@@ -47,6 +47,7 @@ div.dot-navi {
   -moz-border-radius: 40px;
   -o-border-radius: 40px;
   border-radius: 40px;
+  display: none;
 }
 
 div.dot-navi .outter {
@@ -86,4 +87,10 @@ div.dot-navi .outter.current {
   border-color: #999;
   border-width: 7px;
   border-style: solid;
+}
+
+@media only screen and (min-width: 62.5em) {
+  div.dot-navi {
+    display: block;
+  }
 }
