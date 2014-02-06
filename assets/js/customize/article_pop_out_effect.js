@@ -16,12 +16,12 @@
   $dots.on('click', function() {
     var no = $(this).attr('no');
     if (no > current) {
-      $.scrollTo($articles[no], 1000, {
+      $.scrollTo($articles[no], (no-current)*250, {
         offset: -350
       });
     }
     else if (no < current) {
-      $.scrollTo($articles[no], 1000, {
+      $.scrollTo($articles[no], (current-no)*250, {
         offset: 200
       });
     }
@@ -49,7 +49,7 @@
     })
     $dots.each( function (i) {
       if (current > i) {
-        $(this).css('bottom', ($navi.height()-(i+1)*20));
+        $(this).css('bottom', ($navi.height()-(i+2)*20));
         $(this).removeClass('current');
       }
       else if (current === i) {
@@ -57,7 +57,7 @@
         $(this).addClass('current');
       }
       else if (current < i) {
-        $(this).css('bottom', ($articles.length-i)*20 + $navi.height()*0.10);
+        $(this).css('bottom', ($articles.length-i)*20);
         $(this).removeClass('current');
       }
     });
