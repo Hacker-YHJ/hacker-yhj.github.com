@@ -1,12 +1,14 @@
 ;(function () {
   var
     $articles = $('#main>article'),
-    $navi = $('div.dot-navi'),
+    $navi,
     $dots,
     windowTop,
     windowBottom,
     current;
 
+  $('body').prepend('<div class="dot-navi"></div>');
+  $navi = $('div.dot-navi');
   $articles.each( function (i) {
     $navi.append('<div class="outter" no='+i+'></div>');
   });
