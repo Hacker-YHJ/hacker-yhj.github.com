@@ -1,3 +1,16 @@
+/* link lists right shift effect */
+ul>li.entry-title a {
+  -webkit-transition: padding 0.3s ease;
+  -moz-transition: padding 0.3s ease;
+  -o-transition: padding 0.3s ease;
+  transition: padding 0.3s ease;
+}
+
+ul>li.entry-title a:hover,
+ul>li.entry-title a:focus {
+  padding-left: 20px;
+}
+
 /* article pop effect */
 #main>article {
      -moz-transition: -moz-transform, opacity 0.4s ease-in;

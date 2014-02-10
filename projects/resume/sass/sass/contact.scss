@@ -1,0 +1,11 @@
+div.contact-me {
+  position: fixed;
+  height: 3rem;
+  width: 23rem;
+  right: 3rem;
+  bottom: 3rem;
+  background: #333;
+  >div {
+    float: left;
+  }
+}
