@@ -3,7 +3,6 @@
     <url>
         <loc>http://hacker-yhj.github.io</loc>
     </url>
-
     
     <url>
         <loc>http://hacker-yhj.github.io/GTD-First-Impression/</loc>
@@ -45,46 +44,15 @@
         <loc>http://hacker-yhj.github.io/how-to-build-a-blog-with-octopress/</loc>
     </url>
     
-
-    
-      <url>
-        <loc>http://hacker-yhj.github.io/projects/A_birthday_present_for_YXC/index.html</loc>
-      </url>
-    
-      <url>
-        <loc>http://hacker-yhj.github.io/projects/Bézier_Curves/index.html</loc>
-      </url>
-    
-      <url>
-        <loc>http://hacker-yhj.github.io/projects/Class_Timetable/index.html</loc>
-      </url>
-    
-      <url>
-        <loc>http://hacker-yhj.github.io/projects/PicShow/index.html</loc>
-      </url>
-    
-      <url>
-        <loc>http://hacker-yhj.github.io/projects/quadratic_curve/index.html</loc>
-      </url>
-    
-      <url>
-        <loc>http://hacker-yhj.github.io/projects/vis_course_assignment/index.html</loc>
-      </url>
-    
-      <url>
-        <loc>http://hacker-yhj.github.io/projects/vis_course_assignment/report.html</loc>
-      </url>
-    
-      <url>
-        <loc>http://hacker-yhj.github.io/projects/vis_course_assignment_3/index.html</loc>
-      </url>
-    
-      <url>
-        <loc>http://hacker-yhj.github.io/projects/vis_course_assignment_3/report.html</loc>
-      </url>
-    
-      <url>
-        <loc>http://hacker-yhj.github.io/projects/word_wheel/index.html</loc>
-      </url>
-    
+    <url><loc>http://hacker-yhj.github.io/projects/A_birthday_present_for_YXC/404.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/A_birthday_present_for_YXC/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/Bézier_Curves/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/Class_Timetable/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/PicShow/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/quadratic_curve/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/resume/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/vis_course_assignment/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/vis_course_assignment_3/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/vis_course_assignment_3/report.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/word_wheel/index.html</loc></url>
 </urlset>

@@ -1,0 +1,54 @@
+div.dot-navi {
+  position: fixed;
+  height: 70%;
+  width: 20px;
+  bottom: 15%;
+  right: 2rem;
+  z-index: 10;
+  background-color: #fff;
+  @include single-box-shadow(rgba(34,34,34,.1), 0, 0, 20px);
+  @include border-radius(40px);
+  display: none;
+  @media only screen and (min-width: 62.5em) {
+    display: block;
+  }
+}
+
+div.dot-navi .outter {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+       -o-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-transform: scale(0.4);
+     -moz-transform: scale(0.4);
+       -o-transform: scale(0.4);
+          transform: scale(0.4);
+  height: 20px;
+  width: 20px;
+  margin-left: 2px;
+  position: absolute;
+  background-color: #333;
+  cursor: pointer;
+}
+
+div.dot-navi .outter:hover {
+  -webkit-transform: scale(1);
+     -moz-transform: scale(1);
+       -o-transform: scale(1);
+          transform: scale(1);
+}
+
+div.dot-navi .outter.current {
+  background-color: #333;
+  -webkit-transform: scale(1.5);
+     -moz-transform: scale(1.5);
+       -o-transform: scale(1.5);
+          transform: scale(1.5);
+  border-color: #999;
+  border-width: 7px;
+  border-style: solid;
+}

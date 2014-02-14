@@ -1,1 +1,7 @@
-@import 'contact.scss'
+/* reset defaults */
+@import "compass/reset";
+
+@import 'font.scss';
+@import 'contact.scss';
+@import 'dot-navi.scss';
+@import 'frames.scss';

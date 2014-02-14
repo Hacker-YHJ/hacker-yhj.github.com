@@ -1,11 +1,77 @@
+@import "compass/css3";
+
+$contact-height: 4rem;
+$contact-width: 15rem;
+$circle-padding: 0.3rem;
+$circle-border: 0.15rem;
+
 div.contact-me {
   position: fixed;
-  height: 3rem;
-  width: 23rem;
-  right: 3rem;
-  bottom: 3rem;
-  background: #333;
-  >div {
-    float: left;
+  height: $contact-height;
+  width: $contact-width;
+  right: 2rem;
+  bottom: 2rem;
+  background: #222;
+  @include border-radius($contact-height/2);
+  @include single-box-shadow(#333, 0, 0, 20px);
+  > div {
+    position: absolute;
+    height: $contact-height - $circle-padding*2;
+    width: $contact-height - $circle-padding*2;
+    top: $circle-padding;
+  }
+  > div.avatar {
+    left: $circle-padding;
+    @include border-radius($contact-height/2);
+    overflow: hidden;
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  > div.name {
+    left: $contact-height - $circle-padding;
+    width: $contact-width - $contact-height*2 + $circle-padding*2;
+    text-decoration: none;
+    color: #ddd;
+    font-family: 'proxima-nova','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    text-align: center;
+    & > p:nth-child(1) {
+      color: #fff;
+      font-size: 1rem;
+      padding-top: 0.3rem;
+    }
+    & > p:nth-child(3) {
+      font-size: 1rem;
+      padding-bottom: 0.3rem;
+      letter-spacing: 0.2rem;
+      font-weight: 100;
+    }
+  }
+  > div.email-to {
+    @include border-radius($contact-height/2);
+    height: $contact-height - 2*$circle-padding - 2*$circle-border;
+    width: $contact-height - 2*$circle-padding - 2*$circle-border;
+    overflow: hidden;
+    right: $circle-padding;
+    border: solid 0.15rem #fff;
+    > i {
+      @include transition(all 0.5s ease);
+      font-size: 2rem;
+      height: 100%;
+      width: 100%;
+      &::before {
+        position: relative;
+        left: 0.58rem;
+        top: 0.5rem;
+      }
+      &:hover {
+        background-color: #fff;
+        color: #222;
+        cursor: pointer;
+      }
+    }
   }
 }
