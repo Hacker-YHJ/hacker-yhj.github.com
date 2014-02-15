@@ -24,25 +24,6 @@ ul>li.entry-title a:focus {
         -o-transform: translateY(0px);
            transform: translateY(0px);
 }
-
-#main>article.pop-effect-top,
-#main>article.pop-effect-bottom {
-  opacity: 0;
-}
-
-#main>article.pop-effect-top {
-  -webkit-transform: translateY(-300px);
-     -moz-transform: translateY(-300px);
-       -o-transform: translateY(-300px);
-          transform: translateY(-300px);
-}
-
-#main>article.pop-effect-bottom {
-  -webkit-transform: translateY(300px);
-     -moz-transform: translateY(300px);
-       -o-transform: translateY(300px);
-          transform: translateY(300px);
-}
 /* dot navi */
 
 div.dot-navi {

@@ -5,7 +5,8 @@
     $dots,
     windowTop,
     windowBottom,
-    current;
+    previous = 9,
+    current = 0;
 
   $navi = $('div.dot-navi');
 
@@ -37,36 +38,33 @@
     $articles.each( function (i) {
       thisTop = $(this).offset().top;
       thisBottom = thisTop + $(this).height();
-      if (thisBottom - windowTop < 0) {
-        $(this).addClass('pop-effect-top');
-        $(this).removeClass('pop-effect-bottom');
+      if (thisBottom - windowTop < 200) {
+        return;
       }
       else if (windowBottom - thisTop < 0) {
-        $(this).removeClass('pop-effect-top');
-        $(this).addClass('pop-effect-bottom');
+        return;
       }
       else {
+        previous = current;
         current = i;
-        $(this).removeClass('pop-effect-top');
-        $(this).removeClass('pop-effect-bottom');
+        return false;
       }
     });
-    if (0 !== $navi.length) {
-      $dots.each( function (i) {
-        if (current > i) {
-          $(this).css('bottom', ($navi.height()-(i+2)*20));
-          $(this).removeClass('current');
-        }
-        else if (current === i) {
-          $(this).css('bottom', '45%');
-          $(this).addClass('current');
-        }
-        else if (current < i) {
-          $(this).css('bottom', ($articles.length-i)*20);
-          $(this).removeClass('current');
-        }
-      });
+    if (previous != current) {
+      $dots.eq(previous).removeClass('current');
     }
+    $dots.each( function (i) {
+      if (current > i) {
+        $(this).css('bottom', ($navi.height()-(i+2)*20));
+      }
+      else if (current === i) {
+        $(this).css('bottom', '45%');
+        if (previous !== current) $(this).addClass('current');
+      }
+      else if (current < i) {
+        $(this).css('bottom', ($articles.length-i)*20);
+      }
+    });
   });
 
   $(window).scroll();
