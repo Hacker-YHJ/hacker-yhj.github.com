@@ -57,7 +57,7 @@ div.contact-me {
     overflow: hidden;
     right: $circle-padding;
     border: solid 0.15rem #fff;
-    > i {
+    i {
       @include transition(all 0.5s ease);
       font-size: 2rem;
       height: 100%;
@@ -74,4 +74,10 @@ div.contact-me {
       }
     }
   }
+}
+
+// clear the thunder embeded
+
+embed {
+  display: none;
 }

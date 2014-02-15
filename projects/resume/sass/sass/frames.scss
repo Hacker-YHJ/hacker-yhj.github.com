@@ -1,11 +1,35 @@
 div.frame {
   width: 100%;
-  &.test-1 {
-    height: 500px;
-    background-color: #000;
+  &.front-page {
+    background-color: #efefef;
   }
+  // Test
   &.test-2 {
     height: 300px;
     background-color: #fff;
+  }
+  &.test-3 {
+    height: 300px;
+    background-color: #eee;
+  }
+  &.test-4 {
+    height: 300px;
+    background-color: #ddd;
+  }
+  &.test-5 {
+    height: 300px;
+    background-color: #ccc;
+  }
+  &.test-6 {
+    height: 300px;
+    background-color: #bbb;
+  }
+  &.test-7 {
+    height: 300px;
+    background-color: #aaa;
+  }
+  &.test-8 {
+    height: 600px;
+    background-color: #999;
   }
 }

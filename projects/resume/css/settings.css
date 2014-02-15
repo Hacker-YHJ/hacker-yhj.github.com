@@ -1,0 +1,13 @@
+/* line 3, ../sass/sass/settings.scss */
+*, :after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 7, ../sass/sass/settings.scss */
+::selection {
+  background-color: #c8c8c8;
+  color: #222;
+  text-shadow: none;
+}

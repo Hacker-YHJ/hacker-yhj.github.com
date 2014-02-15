@@ -64,6 +64,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* line 3, ../sass/sass/settings.scss */
+*, :after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 7, ../sass/sass/settings.scss */
+::selection {
+  background-color: #c8c8c8;
+  color: #222;
+  text-shadow: none;
+}
+
 /* line 8, ../sass/sass/contact.scss */
 div.contact-me {
   position: fixed;
@@ -141,7 +155,7 @@ div.contact-me > div.email-to {
   border: solid 0.15rem #fff;
 }
 /* line 60, ../sass/sass/contact.scss */
-div.contact-me > div.email-to > i {
+div.contact-me > div.email-to i {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -151,19 +165,24 @@ div.contact-me > div.email-to > i {
   width: 100%;
 }
 /* line 65, ../sass/sass/contact.scss */
-div.contact-me > div.email-to > i::before {
+div.contact-me > div.email-to i::before {
   position: relative;
   left: 0.58rem;
   top: 0.5rem;
 }
 /* line 70, ../sass/sass/contact.scss */
-div.contact-me > div.email-to > i:hover {
+div.contact-me > div.email-to i:hover {
   background-color: #fff;
   color: #222;
   cursor: pointer;
 }
 
-/* line 1, ../sass/sass/dot-navi.scss */
+/* line 81, ../sass/sass/contact.scss */
+embed {
+  display: none;
+}
+
+/* line 3, ../sass/sass/dot-navi.scss */
 div.dot-navi {
   position: fixed;
   height: 70%;
@@ -183,51 +202,61 @@ div.dot-navi {
   display: none;
 }
 @media only screen and (min-width: 62.5em) {
-  /* line 1, ../sass/sass/dot-navi.scss */
+  /* line 3, ../sass/sass/dot-navi.scss */
   div.dot-navi {
     display: block;
   }
 }
-
 /* line 17, ../sass/sass/dot-navi.scss */
-div.dot-navi .outter {
+div.dot-navi .dot {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
   -webkit-transform: scale(0.4);
   -moz-transform: scale(0.4);
+  -ms-transform: scale(0.4);
   -o-transform: scale(0.4);
   transform: scale(0.4);
   height: 20px;
   width: 20px;
-  margin-left: 2px;
   position: absolute;
-  background-color: #333;
+  background-color: #fff;
+  border-color: #222;
+  border-width: 10px;
+  border-style: solid;
   cursor: pointer;
 }
-
-/* line 38, ../sass/sass/dot-navi.scss */
-div.dot-navi .outter:hover {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
+/* line 29, ../sass/sass/dot-navi.scss */
+div.dot-navi .dot + .description {
+  display: none;
 }
-
-/* line 45, ../sass/sass/dot-navi.scss */
-div.dot-navi .outter.current {
-  background-color: #333;
+/* line 32, ../sass/sass/dot-navi.scss */
+div.dot-navi .dot:hover {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+/* line 34, ../sass/sass/dot-navi.scss */
+div.dot-navi .dot:hover + .description {
+  display: block;
+}
+/* line 38, ../sass/sass/dot-navi.scss */
+div.dot-navi .dot.current {
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
   -o-transform: scale(1.5);
   transform: scale(1.5);
-  border-color: #999;
-  border-width: 7px;
+  border-color: #222;
+  border-width: 2px;
   border-style: solid;
 }
 
@@ -236,12 +265,41 @@ div.frame {
   width: 100%;
 }
 /* line 3, ../sass/sass/frames.scss */
-div.frame.test-1 {
-  height: 500px;
-  background-color: #000;
+div.frame.front-page {
+  background-color: #efefef;
 }
 /* line 7, ../sass/sass/frames.scss */
 div.frame.test-2 {
   height: 300px;
   background-color: #fff;
+}
+/* line 11, ../sass/sass/frames.scss */
+div.frame.test-3 {
+  height: 300px;
+  background-color: #eee;
+}
+/* line 15, ../sass/sass/frames.scss */
+div.frame.test-4 {
+  height: 300px;
+  background-color: #ddd;
+}
+/* line 19, ../sass/sass/frames.scss */
+div.frame.test-5 {
+  height: 300px;
+  background-color: #ccc;
+}
+/* line 23, ../sass/sass/frames.scss */
+div.frame.test-6 {
+  height: 300px;
+  background-color: #bbb;
+}
+/* line 27, ../sass/sass/frames.scss */
+div.frame.test-7 {
+  height: 300px;
+  background-color: #aaa;
+}
+/* line 31, ../sass/sass/frames.scss */
+div.frame.test-8 {
+  height: 600px;
+  background-color: #999;
 }

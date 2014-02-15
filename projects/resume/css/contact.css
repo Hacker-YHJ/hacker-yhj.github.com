@@ -75,7 +75,7 @@ div.contact-me > div.email-to {
   border: solid 0.15rem #fff;
 }
 /* line 60, ../sass/sass/contact.scss */
-div.contact-me > div.email-to > i {
+div.contact-me > div.email-to i {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -85,14 +85,19 @@ div.contact-me > div.email-to > i {
   width: 100%;
 }
 /* line 65, ../sass/sass/contact.scss */
-div.contact-me > div.email-to > i::before {
+div.contact-me > div.email-to i::before {
   position: relative;
   left: 0.58rem;
   top: 0.5rem;
 }
 /* line 70, ../sass/sass/contact.scss */
-div.contact-me > div.email-to > i:hover {
+div.contact-me > div.email-to i:hover {
   background-color: #fff;
   color: #222;
   cursor: pointer;
+}
+
+/* line 81, ../sass/sass/contact.scss */
+embed {
+  display: none;
 }

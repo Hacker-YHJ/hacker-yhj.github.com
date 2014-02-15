@@ -3,12 +3,41 @@ div.frame {
   width: 100%;
 }
 /* line 3, ../sass/sass/frames.scss */
-div.frame.test-1 {
-  height: 500px;
-  background-color: #000;
+div.frame.front-page {
+  background-color: #efefef;
 }
 /* line 7, ../sass/sass/frames.scss */
 div.frame.test-2 {
   height: 300px;
   background-color: #fff;
+}
+/* line 11, ../sass/sass/frames.scss */
+div.frame.test-3 {
+  height: 300px;
+  background-color: #eee;
+}
+/* line 15, ../sass/sass/frames.scss */
+div.frame.test-4 {
+  height: 300px;
+  background-color: #ddd;
+}
+/* line 19, ../sass/sass/frames.scss */
+div.frame.test-5 {
+  height: 300px;
+  background-color: #ccc;
+}
+/* line 23, ../sass/sass/frames.scss */
+div.frame.test-6 {
+  height: 300px;
+  background-color: #bbb;
+}
+/* line 27, ../sass/sass/frames.scss */
+div.frame.test-7 {
+  height: 300px;
+  background-color: #aaa;
+}
+/* line 31, ../sass/sass/frames.scss */
+div.frame.test-8 {
+  height: 600px;
+  background-color: #999;
 }

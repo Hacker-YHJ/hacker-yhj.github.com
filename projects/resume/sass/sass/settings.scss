@@ -1,0 +1,11 @@
+@import 'compass/css3';
+
+*, :after, :before {
+  @include box-sizing( border-box );
+}
+
+::selection {
+  background-color: #c8c8c8;
+  color: #222;
+  text-shadow: none;
+}
