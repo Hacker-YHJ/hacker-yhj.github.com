@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://localhost:4000</loc>
+        <loc>http://hacker-yhj.github.io</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/GTD-First-Impression/</loc>
+        <loc>http://hacker-yhj.github.io/GTD-First-Impression/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/the-isla-del-sueno-migrant-boats/</loc>
+        <loc>http://hacker-yhj.github.io/the-isla-del-sueno-migrant-boats/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/news-visualization-sketch/</loc>
+        <loc>http://hacker-yhj.github.io/news-visualization-sketch/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/vis-course-assignment/</loc>
+        <loc>http://hacker-yhj.github.io/vis-course-assignment/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/bilibili-rss-receiver-first-ruby-project/</loc>
+        <loc>http://hacker-yhj.github.io/bilibili-rss-receiver-first-ruby-project/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/history-flow/</loc>
+        <loc>http://hacker-yhj.github.io/history-flow/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/quadratic-curve/</loc>
+        <loc>http://hacker-yhj.github.io/quadratic-curve/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/picture-simulator/</loc>
+        <loc>http://hacker-yhj.github.io/picture-simulator/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/bezier-curves/</loc>
+        <loc>http://hacker-yhj.github.io/bezier-curves/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/how-to-build-a-blog-with-octopress/</loc>
+        <loc>http://hacker-yhj.github.io/how-to-build-a-blog-with-octopress/</loc>
     </url>
     
-    <url><loc>http://localhost:4000/projects/A_birthday_present_for_YXC/404.html</loc></url>
-<url><loc>http://localhost:4000/projects/A_birthday_present_for_YXC/index.html</loc></url>
-<url><loc>http://localhost:4000/projects/Bézier_Curves/index.html</loc></url>
-<url><loc>http://localhost:4000/projects/Class_Timetable/index.html</loc></url>
-<url><loc>http://localhost:4000/projects/PicShow/index.html</loc></url>
-<url><loc>http://localhost:4000/projects/quadratic_curve/index.html</loc></url>
-<url><loc>http://localhost:4000/projects/resume/index.html</loc></url>
-<url><loc>http://localhost:4000/projects/vis_course_assignment/index.html</loc></url>
-<url><loc>http://localhost:4000/projects/vis_course_assignment_3/index.html</loc></url>
-<url><loc>http://localhost:4000/projects/vis_course_assignment_3/report.html</loc></url>
-<url><loc>http://localhost:4000/projects/word_wheel/index.html</loc></url>
+    <url><loc>http://hacker-yhj.github.io/projects/A_birthday_present_for_YXC/404.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/A_birthday_present_for_YXC/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/Bézier_Curves/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/Class_Timetable/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/PicShow/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/quadratic_curve/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/resume/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/vis_course_assignment/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/vis_course_assignment_3/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/vis_course_assignment_3/report.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/word_wheel/index.html</loc></url>
 </urlset>

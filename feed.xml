@@ -2,26 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Hacking to the Gate</title>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
-<link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2014-02-15T09:44:26+00:00</updated>
-<id>http://localhost:4000/</id>
+<link rel="self" type="application/atom+xml" href="http://hacker-yhj.github.io/feed.xml" />
+<link rel="alternate" type="text/html" href="http://hacker-yhj.github.io" />
+<updated>2014-02-15T09:46:19+00:00</updated>
+<id>http://hacker-yhj.github.io/</id>
 <author>
   <name>Tomas Yang</name>
-  <uri>http://localhost:4000/</uri>
+  <uri>http://hacker-yhj.github.io/</uri>
   <email>jscnm1993@gmail.com</email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[GTD - The First Impression]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/GTD-First-Impression/" />
-  <id>http://localhost:4000/GTD-First-Impression</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/GTD-First-Impression/" />
+  <id>http://hacker-yhj.github.io/GTD-First-Impression</id>
   <published>2014-01-27T00:00:00+00:00</published>
   <updated>2014-01-27T00:00:00+00:00</updated>
   <author>
     <name>Tomas Yang</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://hacker-yhj.github.io</uri>
     <email>jscnm1993@gmail.com</email>
   </author>
   <content type="html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
@@ -111,25 +111,25 @@
 
 &lt;p&gt;David Allen. &lt;em&gt;Getting Things Done, The Art of Stress-Free Productivity&lt;/em&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/GTD-First-Impression/&quot;&gt;GTD - The First Impression&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hacking to the Gate&lt;/a&gt; on January 27, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/GTD-First-Impression/&quot;&gt;GTD - The First Impression&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on January 27, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[The Isla Del Sueño Migrant Boats]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/the-isla-del-sueno-migrant-boats/" />
-  <id>http://localhost:4000/the-isla-del-sueno-migrant-boats</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/the-isla-del-sueno-migrant-boats/" />
+  <id>http://hacker-yhj.github.io/the-isla-del-sueno-migrant-boats</id>
   <published>2013-12-11T00:00:00+00:00</published>
   <updated>2013-12-11T00:00:00+00:00</updated>
   <author>
     <name>Tomas Yang</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://hacker-yhj.github.io</uri>
     <email>jscnm1993@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;The second assignment stroke, inside I provided a powerful tool to explore the dataset of a migrant event. &lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;a href=&quot;http://localhost:4000/projects/vis_course_assignment_3/index.html&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/assignment3/frontCover.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://hacker-yhj.github.io/projects/vis_course_assignment_3/index.html&quot;&gt;&lt;img src=&quot;http://hacker-yhj.github.io/images/assignment3/frontCover.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
     &lt;figcaption&gt;Migrant Visualization&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -137,51 +137,51 @@
 
 &lt;!--more--&gt;
 
-&lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://localhost:4000/projects/vis_course_assignment_3/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/vis_course_assignment_3/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/the-isla-del-sueno-migrant-boats/&quot;&gt;The Isla Del Sueño Migrant Boats&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hacking to the Gate&lt;/a&gt; on December 11, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/the-isla-del-sueno-migrant-boats/&quot;&gt;The Isla Del Sueño Migrant Boats&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on December 11, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[News Visualization Sketch]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/news-visualization-sketch/" />
-  <id>http://localhost:4000/news-visualization-sketch</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/news-visualization-sketch/" />
+  <id>http://hacker-yhj.github.io/news-visualization-sketch</id>
   <published>2013-12-11T00:00:00+00:00</published>
   <updated>2013-12-11T00:00:00+00:00</updated>
   <author>
     <name>Tomas Yang</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://hacker-yhj.github.io</uri>
     <email>jscnm1993@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Boss gave us one week to do a news visualization sketch, but he forgot it himself. It is a little upset to throw it into trash, so I put it here.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;http://localhost:4000/images/news_visualization/vis_design.png&quot; alt=&quot;&quot; /&gt;
+    &lt;img src=&quot;http://hacker-yhj.github.io/images/news_visualization/vis_design.png&quot; alt=&quot;&quot; /&gt;
     &lt;figcaption&gt;News Visualization&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Hope you enjoy it.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/news-visualization-sketch/&quot;&gt;News Visualization Sketch&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hacking to the Gate&lt;/a&gt; on December 11, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/news-visualization-sketch/&quot;&gt;News Visualization Sketch&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on December 11, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Airline Visualization]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/vis-course-assignment/" />
-  <id>http://localhost:4000/vis-course-assignment</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/vis-course-assignment/" />
+  <id>http://hacker-yhj.github.io/vis-course-assignment</id>
   <published>2013-11-03T00:00:00+00:00</published>
   <updated>2013-11-03T00:00:00+00:00</updated>
   <author>
     <name>Tomas Yang</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://hacker-yhj.github.io</uri>
     <email>jscnm1993@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;This is an assignment for visualization course, inside I gave out a quantitative relationship of airelines of the world. &lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;a href=&quot;http://localhost:4000/projects/vis_course_assignment/index.html&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/assignment2/frontCover.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://hacker-yhj.github.io/projects/vis_course_assignment/index.html&quot;&gt;&lt;img src=&quot;http://hacker-yhj.github.io/images/assignment2/frontCover.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
     &lt;figcaption&gt;Airline visualization&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -189,21 +189,21 @@
 
 &lt;!--more--&gt;
 
-&lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://localhost:4000/projects/vis_course_assignment/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/vis_course_assignment/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/vis-course-assignment/&quot;&gt;Airline Visualization&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hacking to the Gate&lt;/a&gt; on November 03, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/vis-course-assignment/&quot;&gt;Airline Visualization&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on November 03, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Use MacRuby for the first time]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/bilibili-rss-receiver-first-ruby-project/" />
-  <id>http://localhost:4000/bilibili-rss-receiver-first-ruby-project</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/bilibili-rss-receiver-first-ruby-project/" />
+  <id>http://hacker-yhj.github.io/bilibili-rss-receiver-first-ruby-project</id>
   <published>2013-10-16T00:00:00+00:00</published>
   <updated>2013-10-16T00:00:00+00:00</updated>
   <author>
     <name>Tomas Yang</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://hacker-yhj.github.io</uri>
     <email>jscnm1993@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Just now I finished the barely-running version of this little project, seriously using Ruby(actually MacRuby, I will mention it later) for the first time. &lt;/p&gt;
@@ -307,19 +307,19 @@
 
 &lt;p&gt;It is just a exercise project, but I did feel the power of ruby and I really love it. It brought me a lot of pleasures and surprises when coding and gave out the decent result as well. People who have never touched interpreted language should try to use it. And you will never regret.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/bilibili-rss-receiver-first-ruby-project/&quot;&gt;Use MacRuby for the first time&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hacking to the Gate&lt;/a&gt; on October 16, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/bilibili-rss-receiver-first-ruby-project/&quot;&gt;Use MacRuby for the first time&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on October 16, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[A visualisation example -- Histroy Flow]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/history-flow/" />
-  <id>http://localhost:4000/history-flow</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/history-flow/" />
+  <id>http://hacker-yhj.github.io/history-flow</id>
   <published>2013-10-04T00:00:00+00:00</published>
   <updated>2013-10-04T00:00:00+00:00</updated>
   <author>
     <name>Tomas Yang</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://hacker-yhj.github.io</uri>
     <email>jscnm1993@gmail.com</email>
   </author>
   <content type="html">&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
@@ -339,7 +339,7 @@
 &lt;p&gt;I have to say that Wattenberg and Viégas had done a great work. The whole visual design is simple and clear, but still contains everything inside–contents, versions and authors displayed in a especially proper way. The figure below is the main panel of the History Flow.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;a href=&quot;http://localhost:4000/images//history_flow/main_panel.gif&quot;&gt;&lt;img src=&quot;http://localhost:4000/images//history_flow/main_panel.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://hacker-yhj.github.io/images//history_flow/main_panel.gif&quot;&gt;&lt;img src=&quot;http://hacker-yhj.github.io/images//history_flow/main_panel.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
     &lt;figcaption&gt;Main Panel&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -350,13 +350,13 @@
 &lt;p&gt;Imagine a scenario where three people will make contributions to a Wiki page at different points in time. Each person edits the page and then saves their changes to what becomes the latest version of that page.&lt;/p&gt;
 
 &lt;figure class=&quot;half&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/images//history_flow/how_to_do_1.gif&quot; alt=&quot;&quot; /&gt;
-    &lt;img src=&quot;http://localhost:4000/images//history_flow/how_to_do_2.gif&quot; alt=&quot;&quot; /&gt;
+    &lt;img src=&quot;http://hacker-yhj.github.io/images//history_flow/how_to_do_1.gif&quot; alt=&quot;&quot; /&gt;
+    &lt;img src=&quot;http://hacker-yhj.github.io/images//history_flow/how_to_do_2.gif&quot; alt=&quot;&quot; /&gt;
     &lt;figcaption&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;figure class=&quot;half&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/images//history_flow/how_to_do_3.gif&quot; alt=&quot;&quot; /&gt;
-    &lt;img src=&quot;http://localhost:4000/images//history_flow/how_to_do_4.gif&quot; alt=&quot;&quot; /&gt;
+    &lt;img src=&quot;http://hacker-yhj.github.io/images//history_flow/how_to_do_3.gif&quot; alt=&quot;&quot; /&gt;
+    &lt;img src=&quot;http://hacker-yhj.github.io/images//history_flow/how_to_do_4.gif&quot; alt=&quot;&quot; /&gt;
     &lt;figcaption&gt;What&#39;s the meaning of the stripes&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -371,7 +371,7 @@
 &lt;p&gt;History Flow connects text that has been kept the same between consecutive versions; in other words, it connects corresponding segments on the lines representing versions. Pieces of text that do not have correspondence in the next (or previous) version are not connected and the user sees a resulting “gap” in the visualization; this happens for deletions and insertions.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;a href=&quot;http://localhost:4000/images/history_flow/how_to_do_5.gif&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/history_flow/how_to_do_5.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://hacker-yhj.github.io/images/history_flow/how_to_do_5.gif&quot;&gt;&lt;img src=&quot;http://hacker-yhj.github.io/images/history_flow/how_to_do_5.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
     &lt;figcaption&gt;Final appearance&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -382,28 +382,28 @@
 &lt;p&gt;This works has more than one visual mode in order to satisfy different requires. To switch among them, just click the option panel in the upper part of the main panel (which mentioned before). Let’s have a quick look.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;a href=&quot;http://localhost:4000/images/history_flow/community_view.gif&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/history_flow/community_view.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://hacker-yhj.github.io/images/history_flow/community_view.gif&quot;&gt;&lt;img src=&quot;http://hacker-yhj.github.io/images/history_flow/community_view.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
     &lt;figcaption&gt;Community View&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;&lt;em&gt;Community view&lt;/em&gt; is the default mode and it shows all contributions from different authors, hues to indicate the author of each sentence. In this view we use just one property of color – the hues. Of course we can easily add brightness to represent the ages of the text with brighter colors being more recent. &lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;a href=&quot;http://localhost:4000/images/history_flow/individual_view.gif&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/history_flow/individual_view.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://hacker-yhj.github.io/images/history_flow/individual_view.gif&quot;&gt;&lt;img src=&quot;http://hacker-yhj.github.io/images/history_flow/individual_view.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
     &lt;figcaption&gt;Individual View&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;&lt;em&gt;Individual author view&lt;/em&gt; highlights the contributions of a single author and it depicts the persistence of these contributions over time. &lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;a href=&quot;http://localhost:4000/images/history_flow/recent_view.gif&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/history_flow/recent_view.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://hacker-yhj.github.io/images/history_flow/recent_view.gif&quot;&gt;&lt;img src=&quot;http://hacker-yhj.github.io/images/history_flow/recent_view.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
     &lt;figcaption&gt;Recent View&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;&lt;em&gt;Recent Changes View&lt;/em&gt; highlights the new content in each version of the Wiki page independent of authorship. This view allow us to see what portions of the text have been edited the most over time.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;a href=&quot;http://localhost:4000/images/history_flow/age_view.gif&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/history_flow/age_view.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://hacker-yhj.github.io/images/history_flow/age_view.gif&quot;&gt;&lt;img src=&quot;http://hacker-yhj.github.io/images/history_flow/age_view.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
     &lt;figcaption&gt;Age View&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -418,14 +418,14 @@
 &lt;p&gt;Vandalism is some kind of behavior that delete or ruin all the work done before, which happens in many open authorship circumstances. Is there any vandalism in Wikipedia? The result says yes. Look at the figure below.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;a href=&quot;http://localhost:4000/images/history_flow/abortion1.gif&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/history_flow/abortion1.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://hacker-yhj.github.io/images/history_flow/abortion1.gif&quot;&gt;&lt;img src=&quot;http://hacker-yhj.github.io/images/history_flow/abortion1.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
     &lt;figcaption&gt;Abortion 1&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;This is the diagram of the article “Abortion”. Notice that there are few vertical gaps in the whole diagram. As you may guess, that is a whole deletion behavior. But why didn’t we ever open up an empty page? We notice that it is spaced by a constant length, how about changing a spacing mode to find more?&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;a href=&quot;http://localhost:4000/images/history_flow/abortion2.gif&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/history_flow/abortion2.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://hacker-yhj.github.io/images/history_flow/abortion2.gif&quot;&gt;&lt;img src=&quot;http://hacker-yhj.github.io/images/history_flow/abortion2.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
     &lt;figcaption&gt;Abortion 2&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -464,19 +464,19 @@
 
 &lt;p&gt;&lt;strong&gt;Beautiful Visualization, Looking at Data Through the Eyes of Experts&lt;/strong&gt; This is the book where I met and select this visualization. In this book are lots of high quality visualizations with specific descriptions and discussions. I strongly recommend you to read about it.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/history-flow/&quot;&gt;A visualisation example -- Histroy Flow&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hacking to the Gate&lt;/a&gt; on October 04, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/history-flow/&quot;&gt;A visualisation example -- Histroy Flow&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on October 04, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Quadratic Curve]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/quadratic-curve/" />
-  <id>http://localhost:4000/quadratic-curve</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/quadratic-curve/" />
+  <id>http://hacker-yhj.github.io/quadratic-curve</id>
   <published>2013-09-05T00:00:00+00:00</published>
   <updated>2013-09-05T00:00:00+00:00</updated>
   <author>
     <name>Tomas Yang</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://hacker-yhj.github.io</uri>
     <email>jscnm1993@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Quadratic curve is also called conic section obtained as the intersection of a cone (more precisely, a right circular conical surface) with a plane. &lt;/p&gt;
@@ -484,79 +484,79 @@
 &lt;p&gt;Conic sections are exactly those curves that, for a point F (in black), a line L (also in black) not containing F and a non-negative number e, are the locus of points whose distance to F equals e times their distance to L. F is called the focus, L the directrix, and e the eccentricity. &lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;a href=&quot;http://localhost:4000/projects/quadratic_curve/index.html&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/quadratic/frontCover.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://hacker-yhj.github.io/projects/quadratic_curve/index.html&quot;&gt;&lt;img src=&quot;http://hacker-yhj.github.io/images/quadratic/frontCover.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
     &lt;figcaption&gt;Quadratic curve&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;!--more--&gt;
 
-&lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://localhost:4000/projects/quadratic_curve/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/quadratic_curve/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/quadratic-curve/&quot;&gt;Quadratic Curve&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 05, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/quadratic-curve/&quot;&gt;Quadratic Curve&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 05, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Circle Play]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/picture-simulator/" />
-  <id>http://localhost:4000/picture-simulator</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/picture-simulator/" />
+  <id>http://hacker-yhj.github.io/picture-simulator</id>
   <published>2013-09-05T00:00:00+00:00</published>
   <updated>2013-09-05T00:00:00+00:00</updated>
   <author>
     <name>Tomas Yang</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://hacker-yhj.github.io</uri>
     <email>jscnm1993@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;This is a just-for-fun page. Drag a picture in the box and a circle will pop out. Move your cursor above it and see the magic. &lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;a href=&quot;http://localhost:4000/projects/PicShow/index.html&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/picshow/frontCover.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://hacker-yhj.github.io/projects/PicShow/index.html&quot;&gt;&lt;img src=&quot;http://hacker-yhj.github.io/images/picshow/frontCover.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
     &lt;figcaption&gt;Just for fun!&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;!--more--&gt;
 
-&lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://localhost:4000/projects/PicShow/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/PicShow/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/picture-simulator/&quot;&gt;Circle Play&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 05, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/picture-simulator/&quot;&gt;Circle Play&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 05, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[What's happening when you use "Pen" tool in Photoshop]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/bezier-curves/" />
-  <id>http://localhost:4000/bezier-curves</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/bezier-curves/" />
+  <id>http://hacker-yhj.github.io/bezier-curves</id>
   <published>2013-09-05T00:00:00+00:00</published>
   <updated>2013-09-05T00:00:00+00:00</updated>
   <author>
     <name>Tomas Yang</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://hacker-yhj.github.io</uri>
     <email>jscnm1993@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Actually the “Pen” tool in Photoshop draws a Bézier curve on the screen. Moreover, all the curve that “Pen” tool generated is second-ordered, that means it use two anchors and at most four control points.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;a href=&quot;http://localhost:4000/projects/Bézier_Curves/index.html&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/bézier/frontCover.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://hacker-yhj.github.io/projects/Bézier_Curves/index.html&quot;&gt;&lt;img src=&quot;http://hacker-yhj.github.io/images/bézier/frontCover.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
     &lt;figcaption&gt;Bézier curve&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;!--more--&gt;
 
-&lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://localhost:4000/projects/Bézier_Curves/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/Bézier_Curves/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/bezier-curves/&quot;&gt;What's happening when you use "Pen" tool in Photoshop&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 05, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/bezier-curves/&quot;&gt;What's happening when you use "Pen" tool in Photoshop&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 05, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[How to build a blog with Octopress]]></title>
- <link rel="alternate" type="text/html" href="http://localhost:4000/how-to-build-a-blog-with-octopress/" />
-  <id>http://localhost:4000/how-to-build-a-blog-with-octopress</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/how-to-build-a-blog-with-octopress/" />
+  <id>http://hacker-yhj.github.io/how-to-build-a-blog-with-octopress</id>
   <published>2013-09-04T00:00:00+00:00</published>
   <updated>2013-09-04T00:00:00+00:00</updated>
   <author>
     <name>Tomas Yang</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://hacker-yhj.github.io</uri>
     <email>jscnm1993@gmail.com</email>
   </author>
   <content type="html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
@@ -695,7 +695,7 @@ git的下载地址在&lt;a href=&quot;https://github.com&quot;&gt;github官网&l
 
 &lt;p&gt;另，Octopress十分强大，许多的特性LZ还没有搞明白，日后有时间研究清楚了一定会更新的。&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/how-to-build-a-blog-with-octopress/&quot;&gt;How to build a blog with Octopress&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 04, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/how-to-build-a-blog-with-octopress/&quot;&gt;How to build a blog with Octopress&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 04, 2013.&lt;/p&gt;</content>
 </entry>
 
 </feed>
