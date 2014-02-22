@@ -11,15 +11,15 @@
   $frames.each( function (i) {
     $navi.append('<div class="dot-container" no=' + i +
       '><div class="dot"></div><div class="description">' +
-      $(this).find('h1').text() +
+      $(this).find('h1').attr('short') +
       '</div></div>');
   });
 
   $dots = $('div.dot-navi div.dot');
 
-  $dots.on( 'click', function (e) {
-    console.log(e);
-    console.log(this);
+  $dots.on( 'click', function () {
+    var no = $(this).parent().attr('no');
+    $.scrollTo($frames[no], Math.abs(no-current)*250);
   });
 
   $(window).scroll( function () {

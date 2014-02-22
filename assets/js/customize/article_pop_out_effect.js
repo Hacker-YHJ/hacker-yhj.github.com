@@ -16,19 +16,11 @@
     });
 
     $dots = $navi.children();
-
     $dots.on('click', function() {
       var no = $(this).attr('no');
-      if (no > current) {
-        $.scrollTo($articles[no], (no-current)*250, {
-          offset: -350
-        });
-      }
-      else if (no < current) {
-        $.scrollTo($articles[no], (current-no)*250, {
-          offset: 200
-        });
-      }
+      $.scrollTo($articles[no], Math.abs(current-no)*250, {
+        offset: -100
+      });
     });
   }
 
@@ -38,7 +30,7 @@
     $articles.each( function (i) {
       thisTop = $(this).offset().top;
       thisBottom = thisTop + $(this).height();
-      if (thisBottom - windowTop < 200) {
+      if (thisBottom - windowTop < 100) {
         return;
       }
       else if (windowBottom - thisTop < 0) {
