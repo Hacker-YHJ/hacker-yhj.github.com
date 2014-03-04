@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://hacker-yhj.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io" />
-<updated>2014-03-02T17:39:16+00:00</updated>
+<updated>2014-03-04T02:08:13+00:00</updated>
 <id>http://hacker-yhj.github.io/</id>
 <author>
   <name>Tomas Yang</name>
@@ -14,7 +14,7 @@
 
 
 <entry>
-  <title type="html"><![CDATA[Nachos Notes]]></title>
+  <title type="html"><![CDATA[Nachos Notes -- Preparations]]></title>
  <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/operation-system-Lab-0/" />
   <id>http://hacker-yhj.github.io/operation-system-Lab-0</id>
   <published>2014-02-25T00:00:00+00:00</published>
@@ -35,7 +35,7 @@
 &lt;p&gt;Makefile的基本结构很简单，可以说是数个称作“规则”的句式组成的。&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;目标…: 依赖…
+  &lt;p&gt;目标… : 依赖…
   指令…&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -75,7 +75,13 @@
 
 &lt;p&gt;根目录下的Makefile中并没有什么难懂的内容，all目标递归的对子文件夹调用make，clean目标则顾名思义，print目标打印出所有的文件。&lt;/p&gt;
 
-&lt;p&gt;根目录下还有Makefile.common和Makefile.dep两个文件，被子文件夹中的Makefile引用。&lt;/p&gt;
+&lt;p&gt;根目录下还有Makefile.common和Makefile.dep两个文件，被子文件夹中的Makefile引用。各级目录的Makefile看似很长，事实上都是利用指令生成的，注意看根目录Makfile下调用make的方式，&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;MAKE&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt; depend
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;MAKE&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt; nachos
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;其中depend阶段就是在生成该目录下的Makefile。具体如何生成的，再Makefile.commom下的depend任务中写的很详细。&lt;/p&gt;
 
 &lt;p&gt;Makefile.common中有较多的gcc编译参数：&lt;/p&gt;
 
@@ -105,7 +111,7 @@
 
 &lt;p&gt;安装完这两个包之后，就可以正常编译了。&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/operation-system-Lab-0/&quot;&gt;Nachos Notes&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on February 25, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/operation-system-Lab-0/&quot;&gt;Nachos Notes -- Preparations&lt;/a&gt; was originally published by Tomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on February 25, 2014.&lt;/p&gt;</content>
 </entry>
 
 

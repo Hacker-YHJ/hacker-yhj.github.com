@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Nachos Notes &#8211; Hacking to the Gate</title>
+<title>Nachos Notes -- Preparations &#8211; Hacking to the Gate</title>
 <meta name="description" content="First assignment of operation system courses.">
 <meta name="keywords" content="Makefile, Nachos, notes">
 
@@ -14,7 +14,7 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Nachos Notes">
+<meta property="og:title" content="Nachos Notes -- Preparations">
 <meta property="og:description" content="First assignment of operation system courses.">
 <meta property="og:url" content="http://hacker-yhj.github.io/operation-system-Lab-0/">
 <meta property="og:site_name" content="Hacking to the Gate">
@@ -122,7 +122,7 @@
 
 
 <div class="entry-header">
-  <div class="entry-image"><img src="http://hacker-yhj.github.io/images/abstract-6.jpg" alt="Nachos Notes" data-stellar-ratio='0.2'>
+  <div class="entry-image"><img src="http://hacker-yhj.github.io/images/abstract-6.jpg" alt="Nachos Notes -- Preparations" data-stellar-ratio='0.2'>
     
   </div><!-- /.entry-image -->
 </div><!-- /.entry-header -->
@@ -133,7 +133,7 @@
     <header class="header-title">
       <div class="header-title-wrap">
         
-          <h1 class="entry-title"><a href="http://hacker-yhj.github.io/operation-system-Lab-0/" rel="bookmark" title="Nachos Notes">Nachos Notes</a></h1>
+          <h1 class="entry-title"><a href="http://hacker-yhj.github.io/operation-system-Lab-0/" rel="bookmark" title="Nachos Notes -- Preparations">Nachos Notes -- Preparations</a></h1>
         
         <h2>February 25, 2014</h2>
       </div><!-- /.header-title-wrap -->
@@ -150,7 +150,7 @@
 <p>Makefile的基本结构很简单，可以说是数个称作“规则”的句式组成的。</p>
 
 <blockquote>
-  <p>目标…: 依赖…
+  <p>目标… : 依赖…
   指令…</p>
 </blockquote>
 
@@ -190,7 +190,13 @@
 
 <p>根目录下的Makefile中并没有什么难懂的内容，all目标递归的对子文件夹调用make，clean目标则顾名思义，print目标打印出所有的文件。</p>
 
-<p>根目录下还有Makefile.common和Makefile.dep两个文件，被子文件夹中的Makefile引用。</p>
+<p>根目录下还有Makefile.common和Makefile.dep两个文件，被子文件夹中的Makefile引用。各级目录的Makefile看似很长，事实上都是利用指令生成的，注意看根目录Makfile下调用make的方式，</p>
+
+<div class="highlight"><pre><code class="bash"><span class="lineno">1</span> <span class="k">$(</span>MAKE<span class="k">)</span> depend
+<span class="lineno">2</span> <span class="k">$(</span>MAKE<span class="k">)</span> nachos
+</code></pre></div>
+
+<p>其中depend阶段就是在生成该目录下的Makefile。具体如何生成的，再Makefile.commom下的depend任务中写的很详细。</p>
 
 <p>Makefile.common中有较多的gcc编译参数：</p>
 
@@ -222,7 +228,7 @@
 
       <footer class="entry-meta">
         <span class="entry-tags"><a href="http://hacker-yhj.github.io/tags/#Makefile" title="Pages tagged Makefile" class="tag">Makefile</a><a href="http://hacker-yhj.github.io/tags/#Nachos" title="Pages tagged Nachos" class="tag">Nachos</a><a href="http://hacker-yhj.github.io/tags/#notes" title="Pages tagged notes" class="tag">notes</a></span>
-        <span><a href="http://hacker-yhj.github.io/operation-system-Lab-0/" rel="bookmark" title="Nachos Notes">Nachos Notes</a> was published on <span class="entry-date date published updated"><time datetime="2014-02-25T00:00:00+00:00">February 25, 2014</time></span></span>
+        <span><a href="http://hacker-yhj.github.io/operation-system-Lab-0/" rel="bookmark" title="Nachos Notes -- Preparations">Nachos Notes -- Preparations</a> was published on <span class="entry-date date published updated"><time datetime="2014-02-25T00:00:00+00:00">February 25, 2014</time></span></span>
         
         <span class="author vcard"><span class="fn"><a href="http://hacker-yhj.github.io/about/" title="About Tomas Yang">Tomas Yang</a></span></span>
         <div class="social-share">
@@ -237,7 +243,7 @@
     </div><!-- /.entry-content -->
     
     
-    <div class="ds-thread" data-title="Nachos Notes"></div>
+    <div class="ds-thread" data-title="Nachos Notes -- Preparations"></div>
     
     
     <div class="read-more">
