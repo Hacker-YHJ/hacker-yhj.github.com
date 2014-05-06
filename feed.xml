@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://hacker-yhj.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io" />
-<updated>2014-05-04T07:53:28+00:00</updated>
+<updated>2014-05-06T06:21:47+00:00</updated>
 <id>http://hacker-yhj.github.io/</id>
 <author>
   <name>Tomas Yang</name>
@@ -86,10 +86,10 @@
 
 &lt;p&gt;而修改时，如果我的假设正确，即在这一过程各种不同的思路和想法都会在大脑中，从而一团乱麻。那手随心动，以最快的速度处理刚刚出现的念头就更显得重要了。这个时候，我就想提到鼠标这个万恶之源。鼠标绝对是拖慢我们动作的首要设备，想想你需要多长的一段时间才能用鼠标做一个简单的Copy&amp;amp;Paste。而VIM的强大，在这个时候才开始崭露头角。&lt;/p&gt;
 
-&lt;p&gt;VIM的普通模式下功能之强大，可以用简单的键盘操作完成各种复杂的功能。举个例子，保存，可以使用之前提到的&lt;code&gt;:w&lt;/code&gt;来实现；交换上下两行位置，&lt;code&gt;ddp&lt;/code&gt;即可；如果你需要将本行之后的所有”public“替换为”private”，使用&lt;code&gt;:,$s/public/private/g&lt;/code&gt;即可。看起来稍显复杂，我稍微解释一下：&lt;/p&gt;
+&lt;p&gt;VIM的普通模式下功能之强大，可以用简单的键盘操作完成各种复杂的功能。举个例子，保存，可以使用之前提到的&lt;code&gt;:w&lt;/code&gt;来实现；交换上下两行位置，&lt;code&gt;ddp&lt;/code&gt;即可；如果你需要将本行之后的所有”public“替换为”private”，使用&lt;code&gt;:.,$s/public/private/g&lt;/code&gt;即可。看起来稍显复杂，我稍微解释一下：&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;,$ 当前行直到最后一行&lt;/li&gt;
+  &lt;li&gt;.,$ 当前行直到最后一行&lt;/li&gt;
   &lt;li&gt;s Substitute 替换&lt;/li&gt;
   &lt;li&gt;public 源字符串&lt;/li&gt;
   &lt;li&gt;private 目标字符串&lt;/li&gt;
