@@ -139,6 +139,85 @@
   
 <article class="hentry">
   <header>
+    <div class="entry-meta"><span class="entry-date date published updated"><time datetime="2014-05-12T00:00:00+00:00"><a href="http://hacker-yhj.github.io/Koans-Games/">May 12, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://hacker-yhj.github.io/about/" title="About Tomas Yang">Tomas Yang</a></span></span></div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://hacker-yhj.github.io/Koans-Games/" rel="bookmark" title="Koans Games" itemprop="url">Koans Games</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>For anyone who already had some programming experience and wants to play with Ruby but somehow impeded by, or just fail to find any logic but coarse information in the so called Ruby Handbook, Koans may be a amazing alternative for you to try.</p>
+
+<p>I’m always wandering that, as a dynamic and reflective programming language, Ruby is fully capable to explains itself clearly, without any chunky handbook. Ruby is designed for programmer productivity and fun, and with this purpose it’s syntaxs and method names are meticulously considered to be intuitive, showing the similar form of nature language, which thousands of elegant Ruby one liners assured. I’m gonna show you an example.</p>
+
+<div class="highlight"><pre><code class="ruby"><span class="lineno">1</span> <span class="c1"># to make every word in a paragraph capitalized</span>
+<span class="lineno">2</span> <span class="vi">@paragraph</span><span class="o">.</span><span class="n">split</span><span class="o">.</span><span class="n">map!</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:capitalize</span><span class="p">)</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="lineno">3</span> 
+<span class="lineno">4</span> <span class="c1"># a shorter and more skillful approach</span>
+<span class="lineno">5</span> <span class="vi">@paragraph</span><span class="o">.</span><span class="n">gsub!</span><span class="p">(</span><span class="sr">/\S+/</span><span class="p">,</span><span class="o">&amp;</span><span class="ss">:capitalize</span><span class="p">)</span>
+</code></pre></div>
+
+<p>From my perspective, instigating somebody to reading the alleged Ruby Handbook is ruining the language, as Jim Weirich and Joe O’Brien, the author of Koans, may agree with. However, they didn’t just hold this point of view, but ultimately build up this helper, which earned my respect spontaneously.</p>
+
+<p>So, if I’ve already attracted your attending, and you are ready for this journey. Then follow me, I’ll point out a path to enlightenment that leading you to cross the Gate of Ruby and witness it’s inner beauty.</p>
+
+<p>&lt;–more–&gt;</p>
+
+<h1 id="preparation">Preparation</h1>
+
+<p>To start our journey, we must assume that all the equipment assured. This time, we only need two, Ruby interpreter and Rake. If you do not already have Ruby setup, please visit (http://ruby-lang.org/en/downloads) for operating system specific instructions. For Rake, visit (https://rubygems.org/) to get gems, the Ruby’s premier packaging system, and type <code>gem install rake</code> in your console.</p>
+
+<p>And please make sure the version of your Ruby is greater than 1.8. To look up your Ruby version, please type <code>ruby --version</code>.</p>
+
+<p>When everything are ready, please visit (http://rubykoans.com/) and get the Koans. Usually you will have a compressed package downloaded, decompress it and enter the target folder. See the list of .rb files? Those are where we will visit later. But don’t be hurry, we need a experienced guide introduce us all the resorts. type <code>rake</code> in your console and see what will hapen.</p>
+
+<h1 id="first-try">First try</h1>
+
+<p>If everything goes right, you will get the following output:</p>
+
+<div class="highlight"><pre><code class="bash"><span class="lineno"> 1</span> /YourRubyPath/ruby path_to_enlightenment.rb
+<span class="lineno"> 2</span> AboutAsserts#test_assert_truth has damaged your karma.
+<span class="lineno"> 3</span> 
+<span class="lineno"> 4</span> The Master says:
+<span class="lineno"> 5</span>   You have not yet reached enlightenment.
+<span class="lineno"> 6</span> 
+<span class="lineno"> 7</span> The answers you seek...
+<span class="lineno"> 8</span>   Failed assertion.
+<span class="lineno"> 9</span> 
+<span class="lineno">10</span> Please meditate on the following code:
+<span class="lineno">11</span>   /Path/To/koans/about_asserts.rb:10:in <span class="sb">`</span>test_assert_truth<span class="err">&#39;</span>
+<span class="lineno">12</span> 
+<span class="lineno">13</span> mountains are merely mountains
+<span class="lineno">14</span> your path thus far <span class="o">[</span>X_________________________________________________<span class="o">]</span> 0/282
+</code></pre></div>
+
+<p>As you may noticed, the <code>0/282</code> is your progress, which indicating how many tests you have passed among all. And where to start? <code>/Path/To/koans/about_asserts.rb:10</code> is leading you the way. Open the file and you will see the code.</p>
+
+<div class="highlight"><pre><code class="ruby"><span class="lineno">1</span> <span class="c1"># We shall contemplate truth by testing reality, via asserts.</span>
+<span class="lineno">2</span>   <span class="k">def</span> <span class="nf">test_assert_truth</span>
+<span class="lineno">3</span>     <span class="n">assert</span> <span class="kp">false</span>                <span class="c1"># This should be true</span>
+<span class="lineno">4</span>   <span class="k">end</span>
+</code></pre></div>
+
+<p>Our journey is made up of several pieces of test, defined as a method whose name starts with ‘test’. The path to enlightenment is filled with such tests and we need to pass them one by one.</p>
+
+<p>For the first test, we encounter the <code>assert</code> method, which have the same meaning as it in any other languages. We have to pass a <code>true</code> to it to pass it. So change the <code>false</code> to <code>true</code>, save the file and type <code>rake</code> again. You will see your progress in the output. BTW, <code>assert</code> is not a Ruby intrinsic method, it is defined in <code>neo.rb</code> file.</p>
+
+<p>All the tests are carefully designed to cover major syntaxs and conventions in Ruby. Some simply need to have the correct answer substituted for an incorrect one. Some, however, require you to supply your own answer. If you see the method __ (a double underscore) listed, it is a hint to you to supply your own code in order to make it work correctly.</p>
+
+<h1 id="more-in-depth">More In-depth</h1>
+
+<p>Passed all the test with Ruby’s magic still lingering in your head? You may 
+wanna see more about Koans and it’s magic. Open the file <code>neo.rb</code>, and enjoy it.</p>
+
+<p>In this file, all the test mechanism are clearly defined. You can find everything you need to explain Koans, about how it call all the methods started with ‘test’, about how it avoided printing the same progress information twice, about the magic word ‘FILL ME IN’ as you may have been encounted. And what more, once you know it, you can have your own. </p>
+
+<p>If you encountered some problems, you may want to take a look at (http://rubykoans.com/) – the official site of Koans. Please feel free to contact me too. I’ll be glad to give out an answer for you.</p>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
     <div class="entry-meta"><span class="entry-date date published updated"><time datetime="2014-05-01T00:00:00+00:00"><a href="http://hacker-yhj.github.io/About-Vim/">May 01, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://hacker-yhj.github.io/about/" title="About Tomas Yang">Tomas Yang</a></span></span></div><!-- /.entry-meta -->
     
       <h1 class="entry-title"><a href="http://hacker-yhj.github.io/About-Vim/" rel="bookmark" title="About VIM and It’s Philosophy" itemprop="url">About VIM and It’s Philosophy</a></h1>
@@ -321,25 +400,6 @@
 </figure>
 
 <div class='more-button'><a href='/quadratic-curve/' class='btn'>Read The Whole Post.</a></div>
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta"><span class="entry-date date published updated"><time datetime="2013-09-05T00:00:00+00:00"><a href="http://hacker-yhj.github.io/picture-simulator/">September 05, 2013</a></time></span><span class="author vcard"><span class="fn"><a href="http://hacker-yhj.github.io/about/" title="About Tomas Yang">Tomas Yang</a></span></span></div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://hacker-yhj.github.io/picture-simulator/" rel="bookmark" title="Circle Play" itemprop="url">Circle Play</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>This is a just-for-fun page. Drag a picture in the box and a circle will pop out. Move your cursor above it and see the magic. </p>
-
-<figure>
-    <a href="http://hacker-yhj.github.io/projects/PicShow/index.html"><img src="http://hacker-yhj.github.io/images/picshow/frontCover.png" alt="" /></a>
-    <figcaption>Just for fun!</figcaption>
-</figure>
-
-<div class='more-button'><a href='/picture-simulator/' class='btn'>Read The Whole Post.</a></div>
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 
