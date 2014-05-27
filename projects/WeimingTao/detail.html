@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>未名Tao</title>
-    <link href="./css/bootstrap.css" rel="stylesheet">
-    <link href="./css/font-awesome.min.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <style type="text/css">.bootstrap-touchspin-prefix:empty,.bootstrap-touchspin-postfix:empty{display:none;}
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>未名Tao</title>
+  <link href="./css/bootstrap.css" rel="stylesheet">
+  <link href="./css/font-awesome.min.css" rel="stylesheet">
+  <link href="./css/smoothproducts.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <style type="text/css">.bootstrap-touchspin-prefix:empty,.bootstrap-touchspin-postfix:empty{display:none;}
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="row">
-                <!-- Logo -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <!-- Logo -->
         <div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
           <div class="well logo">
             <a href="./index.html">
@@ -69,10 +70,10 @@
           </div>
         </div>
         <!-- End Shopping Cart List -->
-            </div>
-        </div>
-    </header>
-    <!-- Navigation -->
+      </div>
+    </div>
+  </header>
+  <!-- Navigation -->
   <nav class="navbar navbar-inverse" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -89,7 +90,7 @@
         <ul class="nav navbar-nav">
           <li><a href="./index.html">首页</a></li>
           <li><a href="./catalogue.html">分类页面</a></li>
-          <li><a href="./cart.html" class="active">我的收藏</a></li>
+          <li><a href="./cart.html">我的收藏</a></li>
           <li class="nav-dropdown">
             <a href="./index.html#" class="dropdown-toggle" data-toggle="dropdown">
             未名Tao <span class="caret"></span>
@@ -104,13 +105,30 @@
     </div>
   </nav>
   <!-- End Navigation -->
-    <div class="container main-container">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <<!-- Best Seller -->
+  <div class="container main-container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <!-- Best Seller -->
         <div class="col-lg-12 col-md-12 col-sm-6">
           <div class="no-padding">
             <span class="title">热卖商品</span>
+          </div>
+          <div class="hero-feature">
+            <div class="thumbnail text-center">
+              <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
+              <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -13px; top: 0px;">
+              </a>
+              <div class="caption prod-caption">
+                <h4><a href="./detail.html">Doge</a></h4>
+                <p>Playing with Doge!</p>
+                <p>
+                </p><div class="btn-group">
+                  <a href="./index.html#" class="btn btn-default">￥ 528.96</a>
+                  <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
+                </div>
+                <p></p>
+              </div>
+            </div>
           </div>
           <div class="hero-feature hidden-sm">
             <div class="thumbnail text-center">
@@ -131,82 +149,94 @@
           </div>
         </div>
         <!-- End Best Seller -->
-            </div>
-            <div class="clearfix visible-sm"></div>
-            <!-- Cart -->
-            <div class="col-lg-9 col-md-9 col-sm-12">
-                <div class="col-lg-12 col-sm-12">
-                    <span class="title">我的收藏</span>
-                </div>
-                <div class="col-lg-12 col-sm-12 hero-feature">
-                    <table class="table table-bordered tbl-cart">
-                        <thead>
-                            <tr>
-                                <td class="hidden-xs">商品图</td>
-                                <td>商品名</td>
-                                <td class="td-qty">数量</td>
-                                <td>单价</td>
-                                <td>总价</td>
-                                <td>删除</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="hidden-xs">
-                                    <a href="./detail.html">
-                                    <img src="./images/doge.jpg" alt="Doge" title="" width="47" height="47">
-                                    </a>
-                                </td>
-                                <td><a href="/detail.html">Doge</a>
-                                </td>
-                                <td>
-                                    <div class="input-group bootstrap-touchspin" style=""><span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-down" type="button">-</button></span><span class="input-group-addon bootstrap-touchspin-prefix"></span><input type="text" name="" value="1" class="input-qty form-control text-center"><span class="input-group-addon bootstrap-touchspin-postfix"></span><span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-up" type="button">+</button></span></div>
-                                </td>
-                                <td class="price">￥ 122.21</td>
-                                <td>￥ 122.21</td>
-                                <td class="text-center">
-                                    <a href="/cart.html#" class="remove_cart" rel="2">
-                                    <i class="fa fa-trash-o"></i>
-                                    </a>
-                                </td>
-                            </tr>
-<tr>
-                                <td class="hidden-xs">
-                                    <a href="./detail.html">
-                                    <img src="./images/doge.jpg" alt="Doge" title="" width="47" height="47">
-                                    </a>
-                                </td>
-                                <td><a href="/detail.html">Doge</a>
-                                </td>
-                                <td>
-                                    <div class="input-group bootstrap-touchspin" style=""><span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-down" type="button">-</button></span><span class="input-group-addon bootstrap-touchspin-prefix"></span><input type="text" name="" value="1" class="input-qty form-control text-center"><span class="input-group-addon bootstrap-touchspin-postfix"></span><span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-up" type="button">+</button></span></div>
-                                </td>
-                                <td class="price">￥ 122.21</td>
-                                <td>￥ 122.21</td>
-                                <td class="text-center">
-                                    <a href="/cart.html#" class="remove_cart" rel="2">
-                                    <i class="fa fa-trash-o"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="4" align="right">总计</td>
-                                <td class="total" colspan="2"><b>￥ 244.42</b>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="btn-group btns-cart">
-                        <button type="button" class="btn btn-primary" onclick="window.location=&#39;catalogue.html&#39;"><i class="fa fa-arrow-circle-left"></i> 继续浏览</button>
-                        <button type="button" class="btn btn-primary">刷新列表</button>
-                        <button type="button" class="btn btn-primary" onclick="window.location=&#39;checkout.html&#39;">清空列表 <i class="fa fa-trash-o"></i></button>
-                    </div>
-                </div>
-            </div>
-            <!-- End Cart -->
+      </div>
+      <div class="clearfix visible-sm"></div>
+      <!-- Product Detail -->
+      <div class="col-lg-9 col-md-9 col-sm-12">
+        <div class="col-lg-12 col-sm-12">
+          <span class="title">商品名：Doge</span>
         </div>
+        <div class="col-lg-12 col-sm-12 hero-feature">
+          <div class="sp-wrap">
+            <a href="images/doge.jpg"><img src="images/doge.jpg" alt=""></a>
+            <a href="images/doge.jpg"><img src="images/doge.jpg" alt=""></a>
+            <a href="images/doge.jpg"><img src="images/doge.jpg" alt=""></a>
+            <a href="images/doge.jpg"><img src="images/doge.jpg" alt=""></a>
+            <a href="images/doge.jpg"><img src="images/doge.jpg" alt=""></a>
+          </div>
+          <a href="./person.html"><h4>出售者: 卖家姓名</h4></a>
+          卖家联系方式。电子邮件，手机。
+          <hr>
+          描述性文字: 道可道,非恒道。名可名,非恒名。无名天地之始；有名万物之母。 故常无，欲以观其妙；常有，欲以观其徼。两者同出，异名同谓。玄之又玄，众妙之门。天下皆知美之为美，斯恶已；皆知善之为善，斯不善已。故有无相生，难易相成，长短相形，高下相盈，音声相和，前后相随。恒也。 是以圣人处无为之事，行不言之教。万物作焉而不辞，生而不有，为而不恃，功成而弗居。夫唯弗居，是以不去。
+          <hr>
+          <h3>￥428.96</h3>
+          <div class="input-qty-detail">
+            <input type="text" class="form-control input-qty text-center" value="1">
+            <button class="btn btn-primary pull-left">加入我的收藏</button>
+          </div>
+          <br/>
+          <hr/>
+        </div>
+        <!-- Related -->
+        <div class="col-lg-12 col-sm-12">
+          <span class="title">相关产品</span>
+        </div>
+        <div class="col-lg-4 col-sm-4 hero-feature text-center">
+          <div class="thumbnail">
+            <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
+            <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
+            </a>
+            <div class="caption prod-caption">
+              <h4><a href="./detail.html">Doge</a></h4>
+              <p>Playing with Doge!</p>
+              <p>
+              </p><div class="btn-group">
+                <a href="./index.html#" class="btn btn-default">￥ 122.51</a>
+                <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
+              </div>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4 hero-feature text-center">
+          <div class="thumbnail">
+            <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
+            <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
+            </a>
+            <div class="caption prod-caption">
+              <h4><a href="./detail.html">Doge</a></h4>
+              <p>Playing with Doge!</p>
+              <p>
+              </p><div class="btn-group">
+                <a href="./index.html#" class="btn btn-default">￥ 122.51</a>
+                <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
+              </div>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4 hero-feature text-center">
+          <div class="thumbnail">
+            <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
+            <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
+            </a>
+            <div class="caption prod-caption">
+              <h4><a href="./detail.html">Doge</a></h4>
+              <p>Playing with Doge!</p>
+              <p>
+              </p><div class="btn-group">
+                <a href="./index.html#" class="btn btn-default">￥ 122.51</a>
+                <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
+              </div>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Product Detail -->
     </div>
-    <footer>
+  </div>
+  <footer>
     <div class="container">
       <div class="col-lg-3 col-md-3 col-sm-6">
         <div class="column">
@@ -258,8 +288,11 @@
   <a href="./index.html#top" class="back-top text-center" onclick="$(&#39;body,html&#39;).animate({scrollTop:0},500); return false">
   <i class="fa fa-angle-double-up"></i>
   </a>
-    <script src="./js/jquery.js"></script>
+  <script src="./js/jquery.js"></script>
   <script src="./js/bootstrap.js"></script>
   <script src="./js/jquery.blImageCenter.js"></script>
+  <script src="./js/bootstrap.touchspin.js"></script>
+  <script src="./js/smoothproducts.min.js"></script>
   <script src="./js/mimity.js"></script>
-</body></html>
+</body>
+</html>
