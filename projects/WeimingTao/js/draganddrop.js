@@ -1,10 +1,9 @@
 var getContext;
 var bgcanvas=document.createElement('canvas').getContext('2d');
 var img=new Image();
-var defaultpic='cofe.jpg'
 var getImage;
-var picH=512;
-var picW=512;
+var picH=350;
+var picW=350;
 var pixelPerCircle=1;
 
 function gonload() {
@@ -48,7 +47,7 @@ function handleFileSelect(evt) {
         bgcanvas.drawImage(img, 0, 0, picH/pixelPerCircle, picW/pixelPerCircle);
         getImage=bgcanvas.getImageData(0, 0, picH/pixelPerCircle, picW/pixelPerCircle).data;
         document.getElementById('preview').src=img.src;
-        makeCircles(getImage);
+        $('#little-img span').append('<img src="' + img.src + '" alt="">');
       });
       img.src=this.result;
     });
@@ -57,15 +56,5 @@ function handleFileSelect(evt) {
   else {
     alert('A picture please~~');
   }
-}
-
-function setDefaultPic() {
-  img.onload = (function() {
-    bgcanvas.drawImage(img, 0, 0, picH/pixelPerCircle, picW/pixelPerCircle);
-    getImage=bgcanvas.getImageData(0, 0, picH/pixelPerCircle, picW/pixelPerCircle).data;
-    document.getElementById('preview').src=img.src;
-    makeCircles(getImage);
-  });
-  img.src=defaultpic;
 }
 window.onload = gonload;

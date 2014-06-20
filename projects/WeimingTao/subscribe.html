@@ -37,9 +37,9 @@
         <!-- Search Form -->
         <div class="col-lg-4 col-md-3 col-sm-4 col-xs-6">
           <div class="well">
-            <form action="">
+            <form action="./search.html">
               <div class="input-group">
-                <input type="text" class="form-control input-search" placeholder="搜索你想要的商品">
+                <input type="text" class="form-control input-search" name='content' placeholder="搜索你想要的商品">
                 <span class="input-group-btn">
                 <button class="btn btn-default no-border-left" type="submit"><i class="fa fa-search"></i></button>
                 </span>
@@ -54,32 +54,25 @@
             <div class="btn-group btn-group-cart">
               <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
               <span class="pull-left"><i class="fa fa-shopping-cart icon-cart"></i></span>
-              <span class="pull-left">已收藏: 2 件商品</span>
+              <span class="pull-left">已收藏: <span id='cart-num'>0</span> 件商品</span>
               <span class="pull-right"><i class="fa fa-caret-down"></i></span>
               </button>
               <ul class="dropdown-menu cart-content" role="menu">
-                <li>
-                  <a href="./detail.html">
-                  <b>宾利</b>
-                  <span>￥5000K</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="./detail.html">
-                  <b>法拉利</b>
-                  <span>￥5000K</span>
-                  </a>
-                </li>
-                <li class="divider"></li>
-                <li><a href="./cart.html">总计: ￥10000K</a></li>
+                <li><a href="./cart.html">总计: ￥<span id='cart-sum'>0</span> </a></li>
               </ul>
             </div>
           </div>
         </div>
         <!-- End Shopping Cart List -->
-        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+        <div id="login-button" class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+          <div class='well'>
+            <button class="btn btn-primary" onClick="location.href='./register.html'">注册</button>
+            <button class="btn btn-primary" onClick="location.href='./login.html'">登陆</button>
+          </div>
+        </div>
+        <div id='wellcome' class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
           <div class="well">
-            <h4>欢迎回来！<a id='banner-username' href='./subscribe.html'></a></h4>
+            <h4>您好！<a id='banner-username' href='./subscribe.html'></a></h4>
           </div>
         </div>
       </div>
@@ -103,6 +96,7 @@
           <li><a href="./index.html">首页</a></li>
           <li><a href="./catalogue.html">分类页面</a></li>
           <li><a href="./cart.html">我的收藏</a></li>
+          <li><a href="./subscribe.html" class='active'>我的订阅</a></li>
           <li class="nav-dropdown">
             <a href="./index.html#" class="dropdown-toggle" data-toggle="dropdown">
             未名Tao <span class="caret"></span>
@@ -120,111 +114,9 @@
   <div class="container main-container">
     <div class="row">
       <!-- Product Detail -->
-      <div class="col-lg-9 col-md-9 col-sm-12">
+      <div id = 'goods-container' class="col-lg-9 col-md-9 col-sm-12">
         <div class="col-lg-12 col-sm-12">
           <span class="title">订阅的产品</span>
-        </div>
-        <div class="col-lg-4 col-sm-4 hero-feature text-center">
-          <div class="thumbnail">
-            <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
-            <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
-            </a>
-            <div class="caption prod-caption">
-              <h4><a href="./detail.html">Doge</a></h4>
-              <p>Playing with Doge!</p>
-              <p>
-              </p><div class="btn-group">
-                <a href="./index.html#" class="btn btn-default">￥ 122.51</a>
-                <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
-              </div>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-4 hero-feature text-center">
-          <div class="thumbnail">
-            <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
-            <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
-            </a>
-            <div class="caption prod-caption">
-              <h4><a href="./detail.html">Doge</a></h4>
-              <p>Playing with Doge!</p>
-              <p>
-              </p><div class="btn-group">
-                <a href="./index.html#" class="btn btn-default">￥ 122.51</a>
-                <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
-              </div>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-4 hero-feature text-center">
-          <div class="thumbnail">
-            <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
-            <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
-            </a>
-            <div class="caption prod-caption">
-              <h4><a href="./detail.html">Doge</a></h4>
-              <p>Playing with Doge!</p>
-              <p>
-              </p><div class="btn-group">
-                <a href="./index.html#" class="btn btn-default">￥ 122.51</a>
-                <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
-              </div>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-4 hero-feature text-center">
-          <div class="thumbnail">
-            <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
-            <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
-            </a>
-            <div class="caption prod-caption">
-              <h4><a href="./detail.html">Doge</a></h4>
-              <p>Playing with Doge!</p>
-              <p>
-              </p><div class="btn-group">
-                <a href="./index.html#" class="btn btn-default">￥ 122.51</a>
-                <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
-              </div>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-4 hero-feature text-center">
-          <div class="thumbnail">
-            <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
-            <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
-            </a>
-            <div class="caption prod-caption">
-              <h4><a href="./detail.html">Doge</a></h4>
-              <p>Playing with Doge!</p>
-              <p>
-              </p><div class="btn-group">
-                <a href="./index.html#" class="btn btn-default">￥ 122.51</a>
-                <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
-              </div>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-4 hero-feature text-center">
-          <div class="thumbnail">
-            <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
-            <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;">
-            </a>
-            <div class="caption prod-caption">
-              <h4><a href="./detail.html">Doge</a></h4>
-              <p>Playing with Doge!</p>
-              <p>
-              </p><div class="btn-group">
-                <a href="./index.html#" class="btn btn-default">￥ 122.51</a>
-                <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
-              </div>
-              <p></p>
-            </div>
-          </div>
         </div>
       </div>
       <div class="clearfix visible-sm"></div>
@@ -232,7 +124,7 @@
         <!-- Best Seller -->
         <div class="col-lg-12 col-md-12 col-sm-6">
           <div class="no-padding">
-            <span class="title">用户信息</span>
+            <span class="title" id='user-name'>用户信息</span>
           </div>
           <div class="hero-feature">
             <div class="thumbnail text-center">
@@ -244,33 +136,12 @@
           <h3>订阅关键词</h3>
           <div class="table-responsive text-center">
             <table class="table table-hover table-striped">
-              <tr>
-                <td>ICS</td>
-                <td><span class="badge">0</span></td>
-              </tr>
-              <tr class="success">
-                <td>VIS</td>
-                <td><span class="badge">5</span></td>
-              </tr>
-              <tr>
-                <td>NLP</td>
-                <td><span class="badge">0</span></td>
-              </tr>
-              <tr class="success">
-                <td>ML</td>
-                <td><span class="badge">3</span></td>
-              </tr>
-              <tr class="success">
-                <td>PL</td>
-                <td><span class="badge">1</span></td>
-              </tr>
-              <tr class="success">
-                <td>CG</td>
-                <td><span class="badge">2</span></td>
-              </tr>
             </table>
           </div>
           <div class="button-group">
+            <input id="input-key" class="form-control" placeholder="新增推送关键词" >
+            <br>
+            <button type="button" class="btn btn-success btn-block" onClick="newKey();"><i class="fa fa-plus"></i> 新增</button>
             <button type="button" class="btn btn-info btn-block"><i class="fa fa-refresh"></i> 刷新</button>
             <button type="button" class="btn btn-danger btn-block"><i class="fa fa-trash-o"></i> 清空</button>
           </div>
@@ -278,63 +149,86 @@
         </div>
       </div>
     </div>
-    <footer>
-      <div class="container">
-        <div class="col-lg-3 col-md-3 col-sm-6">
-          <div class="column">
-            <h4>网站信息</h4>
-            <ul>
-              <li><a href="./about.html">关于我们</a></li>
-              <li><a href="./typography.html">关于本站</a></li>
-              <li><a href="./typography.html">合作商谈</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6">
-          <div class="column">
-            <h4>商品分类</h4>
-            <ul>
-              <li><a href="./catalogue.html">书籍资料</a></li>
-              <li><a href="./catalogue.html">二手服装</a></li>
-              <li><a href="./catalogue.html">电子产品</a></li>
-              <li><a href="./catalogue.html">其他商品</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6">
-          <div class="column">
-            <h4>用户服务</h4>
-            <ul>
-              <li><a href="./contact.html">联系我们</a></li>
-              <li><a href="./index.html#">问题投诉</a></li>
-              <li><a href="./index.html#">Bug反馈</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6">
-          <div class="column">
-            <h4>关注我们</h4>
-            <ul class="social">
-              <li><a href="./index.html#">新浪微博</a></li>
-              <li><a href="./index.html#">腾讯微博</a></li>
-              <li><a href="./index.html#">人人</a></li>
-              <li><a href="./index.html#">RSS 订阅</a></li>
-            </ul>
-          </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="column">
+          <h4>网站信息</h4>
+          <ul>
+            <li><a href="./about.html">关于我们</a></li>
+            <li><a href="./typography.html">关于本站</a></li>
+            <li><a href="./typography.html">合作商谈</a></li>
+          </ul>
         </div>
       </div>
-      <div class="navbar-inverse text-center copyright">
-        Copyright © 2014 WeiMingTao All right reserved
+      <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="column">
+          <h4>商品分类</h4>
+          <ul>
+            <li><a href="./catalogue.html">书籍资料</a></li>
+            <li><a href="./catalogue.html">二手服装</a></li>
+            <li><a href="./catalogue.html">电子产品</a></li>
+            <li><a href="./catalogue.html">其他商品</a></li>
+          </ul>
+        </div>
       </div>
-    </footer>
-    <a href="./index.html#top" class="back-top text-center" onclick="$(&#39;body,html&#39;).animate({scrollTop:0},500); return false">
-    <i class="fa fa-angle-double-up"></i>
-    </a>
-    <script src="./js/jquery.js"></script>
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/jquery.blImageCenter.js"></script>
-    <script src="./js/bootstrap.touchspin.js"></script>
-    <script src="./js/smoothproducts.min.js"></script>
-    <script src="./js/mimity.js"></script>
-  </body>
+      <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="column">
+          <h4>用户服务</h4>
+          <ul>
+            <li><a href="./contact.html">联系我们</a></li>
+            <li><a href="./index.html#">问题投诉</a></li>
+            <li><a href="./index.html#">Bug反馈</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="column">
+          <h4>关注我们</h4>
+          <ul class="social">
+            <li><a href="./index.html#">新浪微博</a></li>
+            <li><a href="./index.html#">腾讯微博</a></li>
+            <li><a href="./index.html#">人人</a></li>
+            <li><a href="./index.html#">RSS 订阅</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-inverse text-center copyright">
+      Copyright © 2014 WeiMingTao All right reserved
+    </div>
+  </footer>
+  <a href="./index.html#top" class="back-top text-center" onclick="$(&#39;body,html&#39;).animate({scrollTop:0},500); return false">
+  <i class="fa fa-angle-double-up"></i>
+  </a>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/jquery.blImageCenter.js"></script>
+  <script src="./js/bootstrap.touchspin.js"></script>
+  <script src="./js/smoothproducts.min.js"></script>
+  <script src="./js/mimity.js"></script>
+  <script src="./js/picSub.js"></script>
+  <script src="./js/login_validation.js"></script>
+  <script src="./js/subscribe.js"></script>
+  <script>
+  function newKey() {
+    $.ajax({
+      type: 'post',
+      async: true,
+      url: 'http://weimingtaoo.duapp.com/user/addpush',
+      data: {'word': document.getElementById('input-key').value},
+      dataType: 'json',
+      success: function (data) {
+        console.log(data);
+        alert('添加成功');
+        location.reload();
+      },
+      error: function () {
+        console.error('ajax fail');
+      }
+    });
+  };
+  </script>
+</body>
 </html>

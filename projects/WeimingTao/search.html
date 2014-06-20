@@ -36,9 +36,9 @@
         <!-- Search Form -->
         <div class="col-lg-4 col-md-3 col-sm-4 col-xs-6">
           <div class="well">
-            <form action="">
+            <form action="./search.html">
               <div class="input-group">
-                <input type="text" class="form-control input-search" placeholder="搜索你想要的商品">
+                <input type="text" class="form-control input-search" name='content' placeholder="搜索你想要的商品">
                 <span class="input-group-btn">
                 <button class="btn btn-default no-border-left" type="submit"><i class="fa fa-search"></i></button>
                 </span>
@@ -53,24 +53,11 @@
             <div class="btn-group btn-group-cart">
               <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
               <span class="pull-left"><i class="fa fa-shopping-cart icon-cart"></i></span>
-              <span class="pull-left">已收藏: 2 件商品</span>
+              <span class="pull-left">已收藏: <span id='cart-num'>0</span> 件商品</span>
               <span class="pull-right"><i class="fa fa-caret-down"></i></span>
               </button>
               <ul class="dropdown-menu cart-content" role="menu">
-                <li>
-                  <a href="./detail.html">
-                  <b>宾利</b>
-                  <span>￥5000K</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="./detail.html">
-                  <b>法拉利</b>
-                  <span>￥5000K</span>
-                  </a>
-                </li>
-                <li class="divider"></li>
-                <li><a href="./cart.html">总计: ￥10000K</a></li>
+                <li><a href="./cart.html">总计: ￥<span id='cart-sum'>0</span> </a></li>
               </ul>
             </div>
           </div>
@@ -82,9 +69,9 @@
             <button class="btn btn-primary" onClick="location.href='./login.html'">登陆</button>
           </div>
         </div>
-        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+        <div id='wellcome' class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
           <div class="well">
-            <h4>欢迎回来！<a id='banner-username' href='./subscribe.html'></a></h4>
+            <h4>您好！<a id='banner-username' href='./subscribe.html'></a></h4>
           </div>
         </div>
       </div>
@@ -106,8 +93,9 @@
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
           <li><a href="./index.html">首页</a></li>
-          <li><a href="./catalogue.html">分类页面</a></li>
+          <li><a href="./catalogue.html?id=1&page=1">分类页面</a></li>
           <li><a href="./cart.html">我的收藏</a></li>
+          <li><a href="./subscribe.html">我的订阅</a></li>
           <li class="nav-dropdown">
             <a href="./index.html#" class="dropdown-toggle" data-toggle="dropdown">
             未名Tao <span class="caret"></span>
@@ -131,180 +119,15 @@
       </div>
       <div class="col-lg-12 col-sm-12">
         <button type="button" class="btn btn-primary disabled">书籍资料 <span class="badge">0</span></button>
-        <button type="button" class="btn btn-primary">二手服饰 <span class="badge">6</span></button>
+        <button type="button" class="btn btn-primary disabled">二手服饰 <span class="badge">0</span></button>
         <button type="button" class="btn btn-primary disabled">电子产品 <span class="badge">0</span></button>
-        <button type="button" class="btn btn-primary">箱包专卖 <span class="badge">1</span></button>
-        <button type="button" class="btn btn-primary">户外用品 <span class="badge">2</span></button>
+        <button type="button" class="btn btn-primary disabled">箱包专卖 <span class="badge">0</span></button>
+        <button type="button" class="btn btn-primary disabled">户外用品 <span class="badge">0</span></button>
       </div>
       <div class="col-lg-12 col-sm-12">
         <span class="title">搜索结果</span>
       </div>
-      <div class="col-lg-3 col-sm-3 hero-feature text-center">
-        <div class="thumbnail">
-          <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
-          <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px !important! height: auto; max-width: none; max-height: none; left: -4px !important! top: 0px !important!">
-          </a>
-          <div class="caption prod-caption">
-            <h4><a href="./detail.html">Doge</a></h4>
-            <p>Playing with Doge!</p>
-            <p>
-            </p><div class="btn-group">
-              <a href="./index.html#" class="btn btn-default">￥ 122.51</a>
-              <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
-            </div>
-            <p></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-3 hero-feature text-center">
-        <div class="thumbnail">
-          <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
-          <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px !important! height: auto; max-width: none; max-height: none; left: -4px !important! top: 0px !important!">
-          </a>
-          <div class="caption prod-caption">
-            <h4><a href="./detail.html">Doge</a></h4>
-            <p>Playing with Doge!</p>
-            <p>
-            </p><div class="btn-group">
-              <a href="./index.html#" class="btn btn-default">￥ 628.96</a>
-              <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
-            </div>
-            <p></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-3 hero-feature text-center">
-        <div class="thumbnail">
-          <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
-          <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px !important! height: auto; max-width: none; max-height: none; left: -4px !important! top: 0px !important!">
-          </a>
-          <div class="caption prod-caption">
-            <h4><a href="./detail.html">Doge</a></h4>
-            <p>Playing with Doge!</p>
-            <p>
-            </p><div class="btn-group">
-              <a href="./index.html#" class="btn btn-default">￥ 394.64</a>
-              <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
-            </div>
-            <p></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-3 hero-feature text-center">
-        <div class="thumbnail">
-          <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
-          <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px !important! height: auto; max-width: none; max-height: none; left: -4px !important! top: 0px !important!">
-          </a>
-          <div class="caption prod-caption">
-            <h4><a href="./detail.html">Doge</a></h4>
-            <p>Playing with Doge!</p>
-            <p>
-            </p><div class="btn-group">
-              <a href="./index.html#" class="btn btn-default">￥ 428.96</a>
-              <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
-            </div>
-            <p></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-3 hero-feature text-center">
-        <div class="thumbnail">
-          <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
-          <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px !important! height: auto; max-width: none; max-height: none; left: -4px !important! top: 0px !important!">
-          </a>
-          <div class="caption prod-caption">
-            <h4><a href="./detail.html">Doge</a></h4>
-            <p>Playing with Doge!</p>
-            <p>
-            </p><div class="btn-group">
-              <a href="./index.html#" class="btn btn-default">￥ 428.96</a>
-              <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
-            </div>
-            <p></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-3 hero-feature text-center">
-        <div class="thumbnail">
-          <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
-          <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px !important! height: auto; max-width: none; max-height: none; left: -4px !important! top: 0px !important!">
-          </a>
-          <div class="caption prod-caption">
-            <h4><a href="./detail.html">Doge</a></h4>
-            <p>Playing with Doge!</p>
-            <p>
-            </p><div class="btn-group">
-              <a href="./index.html#" class="btn btn-default">￥ 632.15</a>
-              <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
-            </div>
-            <p></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-3 hero-feature text-center">
-        <div class="thumbnail">
-          <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
-          <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px !important! height: auto; max-width: none; max-height: none; left: -4px !important! top: 0px !important!">
-          </a>
-          <div class="caption prod-caption">
-            <h4><a href="./detail.html">Doge</a></h4>
-            <p>Playing with Doge!</p>
-            <p>
-            </p><div class="btn-group">
-              <a href="./index.html#" class="btn btn-default">￥ 632.15</a>
-              <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
-            </div>
-            <p></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-3 hero-feature text-center">
-        <div class="thumbnail">
-          <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
-          <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px !important! height: auto; max-width: none; max-height: none; left: -4px !important! top: 0px !important!">
-          </a>
-          <div class="caption prod-caption">
-            <h4><a href="./detail.html">Doge</a></h4>
-            <p>Playing with Doge!</p>
-            <p>
-            </p><div class="btn-group">
-              <a href="./index.html#" class="btn btn-default">￥ 632.15</a>
-              <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
-            </div>
-            <p></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-3 hero-feature text-center">
-        <div class="thumbnail">
-          <a href="./detail.html" class="link-p" style="overflow: hidden; position: relative;">
-          <img src="./images/doge.jpg" alt="" style="position: absolute; width: 250px !important! height: auto; max-width: none; max-height: none; left: -4px !important! top: 0px !important!">
-          </a>
-          <div class="caption prod-caption">
-            <h4><a href="./detail.html">Doge</a></h4>
-            <p>Playing with Doge!</p>
-            <p>
-            </p><div class="btn-group">
-              <a href="./index.html#" class="btn btn-default">￥ 632.15</a>
-              <a href="./index.html#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> 购买</a>
-            </div>
-            <p></p>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  <div class="text-center">
-    <ul class="pagination catalogue-pagination">
-      <li class="disabled"><a>首页</a></li>
-      <li class="disabled"><a>上一页</a></li>
-      <li class="active"><a href="http://erwin.aicsi.com/demo/mimity/catalogue.html#">1</a></li>
-      <li><a href="http://erwin.aicsi.com/demo/mimity/catalogue.html#">2</a></li>
-      <li><a href="http://erwin.aicsi.com/demo/mimity/catalogue.html#">3</a></li>
-      <li><a href="http://erwin.aicsi.com/demo/mimity/catalogue.html#">4</a></li>
-      <li><a href="http://erwin.aicsi.com/demo/mimity/catalogue.html#">下一页</a></li>
-      <li><a href="http://erwin.aicsi.com/demo/mimity/catalogue.html#">末页</a></li>
-    </ul>
   </div>
 </div>
 <!-- End Catalogue -->
@@ -366,4 +189,7 @@ Copyright © 2014 WeiMingTao All right reserved
 <script src="./js/bootstrap.js"></script>
 <script src="./js/jquery.blImageCenter.js"></script>
 <script src="./js/mimity.js"></script>
+<script src="./js/picSub.js"></script>
+<script src="./js/login_validation.js"></script>
+<script src="./js/search.js"></script>
 </body></html>

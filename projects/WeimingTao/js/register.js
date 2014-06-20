@@ -28,9 +28,10 @@ var Wregister = function() {
         url: 'http://weimingtaoo.duapp.com/register?username=' + msg.name + '&password=' + data.passwd + '&discription=' + data.desc + '&email=' + data.email,
         dataType: 'json',
         success: function (data) {
-          console.log(data);
+          location.href='./index.html';
         },
         error: function () {
+          console.error('ajax fail');
         }
       });
     }

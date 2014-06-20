@@ -30,9 +30,9 @@
         <!-- Search Form -->
         <div class="col-lg-4 col-md-3 col-sm-4 col-xs-6">
           <div class="well">
-            <form action="">
+            <form action="./search.html">
               <div class="input-group">
-                <input type="text" class="form-control input-search" placeholder="搜索你想要的商品">
+                <input type="text" class="form-control input-search" name='content' placeholder="搜索你想要的商品">
                 <span class="input-group-btn">
                 <button class="btn btn-default no-border-left" type="submit"><i class="fa fa-search"></i></button>
                 </span>
@@ -47,24 +47,11 @@
             <div class="btn-group btn-group-cart">
               <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
               <span class="pull-left"><i class="fa fa-shopping-cart icon-cart"></i></span>
-              <span class="pull-left">已收藏: 2 件商品</span>
+              <span class="pull-left">已收藏: <span id='cart-num'>0</span> 件商品</span>
               <span class="pull-right"><i class="fa fa-caret-down"></i></span>
               </button>
               <ul class="dropdown-menu cart-content" role="menu">
-                <li>
-                  <a href="./detail.html">
-                  <b>宾利</b>
-                  <span>￥5000K</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="./detail.html">
-                  <b>法拉利</b>
-                  <span>￥5000K</span>
-                  </a>
-                </li>
-                <li class="divider"></li>
-                <li><a href="./cart.html">总计: ￥10000K</a></li>
+                <li><a href="./cart.html">总计: ￥<span id='cart-sum'>0</span></a></li>
               </ul>
             </div>
           </div>
@@ -76,9 +63,9 @@
             <button class="btn btn-primary" onClick="location.href='./login.html'">登陆</button>
           </div>
         </div>
-        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+        <div id='wellcome' class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
           <div class="well">
-            <h4>欢迎回来！<a id='banner-username' href='./subscribe.html'></a></h4>
+            <h4>您好！<a id='banner-username' href='./subscribe.html'></a></h4>
           </div>
         </div>
       </div>
@@ -102,6 +89,7 @@
           <li><a href="./index.html">首页</a></li>
           <li><a href="./catalogue.html">分类页面</a></li>
           <li><a href="./cart.html">我的收藏</a></li>
+          <li><a href="./subscribe.html">我的订阅</a></li>
           <li class="nav-dropdown">
             <a href="./index.html#" class="dropdown-toggle" data-toggle="dropdown">
             未名Tao <span class="caret"></span>
@@ -165,7 +153,7 @@
       <!-- Product Detail -->
       <div class="col-lg-9 col-md-9 col-sm-12">
         <div class="col-lg-12 col-sm-12">
-          <span class="title">商品名：Doge</span>
+          <span class="title"><span id='good-name'>Doge</span></span>
         </div>
         <div class="col-lg-12 col-sm-12 hero-feature">
           <div class="sp-wrap">
@@ -175,15 +163,20 @@
             <a href="images/doge.jpg"><img src="images/doge.jpg" alt=""></a>
             <a href="images/doge.jpg"><img src="images/doge.jpg" alt=""></a>
           </div>
-          <a href="./person.html"><h4>出售者: 卖家姓名</h4></a>
-          卖家联系方式。电子邮件，手机。
+          <a id='person-link'href="./person.html"><h4>出售者: 卖家姓名</h4></a>
+          <p id='person-contact'></p>
           <hr>
-          描述性文字: 道可道,非恒道。名可名,非恒名。无名天地之始；有名万物之母。 故常无，欲以观其妙；常有，欲以观其徼。两者同出，异名同谓。玄之又玄，众妙之门。天下皆知美之为美，斯恶已；皆知善之为善，斯不善已。故有无相生，难易相成，长短相形，高下相盈，音声相和，前后相随。恒也。 是以圣人处无为之事，行不言之教。万物作焉而不辞，生而不有，为而不恃，功成而弗居。夫唯弗居，是以不去。
+          <p id='description'>描述性文字: 道可道,非恒道。名可名,非恒名。无名天地之始；有名万物之母。 故常无，欲以观其妙；常有，欲以观其徼。两者同出，异名同谓。玄之又玄，众妙之门。天下皆知美之为美，斯恶已；皆知善之为善，斯不善已。故有无相生，难易相成，长短相形，高下相盈，音声相和，前后相随。恒也。 是以圣人处无为之事，行不言之教。万物作焉而不辞，生而不有，为而不恃，功成而弗居。夫唯弗居，是以不去。</p>
           <hr>
           <h3>￥428.96</h3>
           <div class="input-qty-detail">
             <input type="text" class="form-control input-qty text-center" value="1">
-            <button class="btn btn-primary pull-left">加入我的收藏</button>
+            <div class="button-group">
+            <button id='mark-button' class="btn btn-primary pull-left" onClick="action_mark();">加入收藏</button>
+            <button id='buy-button' class="btn btn-success pull-left" onClick="action_buy();">拍下</button>
+            <button id='send-button' class="btn btn-success pull-left" onClick="action_send();">发货</button>
+            <button id='delete-button' class="btn btn-danger pull-left" onClick="action_delete();">删除</button>
+            </div>
           </div>
           <br/>
           <hr/>
@@ -254,8 +247,8 @@
           <h4>网站信息</h4>
           <ul>
             <li><a href="./about.html">关于我们</a></li>
-            <li><a href="./typography.html">关于本站</a></li>
-            <li><a href="./typography.html">合作商谈</a></li>
+            <li><a href="./about.html">关于本站</a></li>
+            <li><a href="./contact.html">合作商谈</a></li>
           </ul>
         </div>
       </div>
@@ -263,10 +256,10 @@
         <div class="column">
           <h4>商品分类</h4>
           <ul>
-            <li><a href="./catalogue.html">书籍资料</a></li>
-            <li><a href="./catalogue.html">二手服装</a></li>
-            <li><a href="./catalogue.html">电子产品</a></li>
-            <li><a href="./catalogue.html">其他商品</a></li>
+            <li><a href="./catalogue.html?id=1&page=1">书籍资料</a></li>
+            <li><a href="./catalogue.html?id=2&page=1">二手服装</a></li>
+            <li><a href="./catalogue.html?id=3&page=1">电子产品</a></li>
+            <li><a href="./catalogue.html?id=4&page=1">其他商品</a></li>
           </ul>
         </div>
       </div>
@@ -275,8 +268,8 @@
           <h4>用户服务</h4>
           <ul>
             <li><a href="./contact.html">联系我们</a></li>
-            <li><a href="./index.html#">问题投诉</a></li>
-            <li><a href="./index.html#">Bug反馈</a></li>
+            <li><a href="./index.html">问题投诉</a></li>
+            <li><a href="./index.html">Bug反馈</a></li>
           </ul>
         </div>
       </div>
@@ -284,10 +277,10 @@
         <div class="column">
           <h4>关注我们</h4>
           <ul class="social">
-            <li><a href="./index.html#">新浪微博</a></li>
-            <li><a href="./index.html#">腾讯微博</a></li>
-            <li><a href="./index.html#">人人</a></li>
-            <li><a href="./index.html#">RSS 订阅</a></li>
+            <li><a href="./index.html">新浪微博</a></li>
+            <li><a href="./index.html">腾讯微博</a></li>
+            <li><a href="./index.html">人人</a></li>
+            <li><a href="./index.html">RSS 订阅</a></li>
           </ul>
         </div>
       </div>
@@ -305,5 +298,78 @@
   <script src="./js/bootstrap.touchspin.js"></script>
   <script src="./js/smoothproducts.min.js"></script>
   <script src="./js/mimity.js"></script>
+  <script src="./js/picSub.js"></script>
+  <script src="./js/login_validation.js"></script>
+  <script>
+    Wpicsub.detailSub(document.href_info.id);
+    function action_mark() {
+      $.ajax({
+        type: 'post',
+        async: true,
+        url: 'http://weimingtaoo.duapp.com/user/action',
+        dataType: 'json',
+        data: {'action': 'mark', 'goodid': document.href_info.id},
+        success: function (data) {
+          console.log(data);
+          alert('收藏成功');
+          location.reload();
+        },
+        error: function () {
+          console.error('ajax fail');
+        }
+      });
+    }
+    function action_delete() {
+      $.ajax({
+        type: 'post',
+        async: true,
+        url: 'http://weimingtaoo.duapp.com/user/action',
+        dataType: 'json',
+        data: {'action': 'delete', 'goodid': document.href_info.id},
+        success: function (data) {
+          console.log(data);
+          alert('删除成功');
+          location.reload();
+        },
+        error: function () {
+          console.error('ajax fail');
+        }
+      });
+    }
+    function action_buy() {
+      $.ajax({
+        type: 'post',
+        async: true,
+        url: 'http://weimingtaoo.duapp.com/user/action',
+        dataType: 'json',
+        data: {'action': 'buy', 'goodid': document.href_info.id},
+        success: function (data) {
+          console.log(data);
+          alert('购买成功');
+          location.reload();
+        },
+        error: function () {
+          console.error('ajax fail');
+        }
+      });
+    }
+    function action_send() {
+      $.ajax({
+        type: 'post',
+        async: true,
+        url: 'http://weimingtaoo.duapp.com/user/action',
+        dataType: 'json',
+        data: {'action': 'send', 'goodid': document.href_info.id},
+        success: function (data) {
+          console.log(data);
+          alert('发送成功');
+          location.reload();
+        },
+        error: function () {
+          console.error('ajax fail');
+        }
+      });
+    }
+  </script>
 </body>
 </html>

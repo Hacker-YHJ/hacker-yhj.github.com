@@ -29,9 +29,9 @@
         <!-- Search Form -->
         <div class="col-lg-4 col-md-3 col-sm-4 col-xs-6">
           <div class="well">
-            <form action="">
+            <form action="./search.html">
               <div class="input-group">
-                <input type="text" class="form-control input-search" placeholder="搜索你想要的商品">
+                <input type="text" class="form-control input-search" name='content' placeholder="搜索你想要的商品">
                 <span class="input-group-btn">
                 <button class="btn btn-default no-border-left" type="submit"><i class="fa fa-search"></i></button>
                 </span>
@@ -46,24 +46,11 @@
             <div class="btn-group btn-group-cart">
               <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
               <span class="pull-left"><i class="fa fa-shopping-cart icon-cart"></i></span>
-              <span class="pull-left">已收藏: 2 件商品</span>
+              <span class="pull-left">已收藏: <span id='cart-num'>0</span> 件商品</span>
               <span class="pull-right"><i class="fa fa-caret-down"></i></span>
               </button>
               <ul class="dropdown-menu cart-content" role="menu">
-                <li>
-                  <a href="./detail.html">
-                  <b>宾利</b>
-                  <span>￥5000K</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="./detail.html">
-                  <b>法拉利</b>
-                  <span>￥5000K</span>
-                  </a>
-                </li>
-                <li class="divider"></li>
-                <li><a href="./cart.html">总计: ￥10000K</a></li>
+                <li><a href="./cart.html">总计: ￥<span id='cart-sum'>0</span></a></li>
               </ul>
             </div>
           </div>
@@ -75,9 +62,9 @@
             <button class="btn btn-primary" onClick="location.href='./login.html'">登陆</button>
           </div>
         </div>
-        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+        <div id='wellcome' class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
           <div class="well">
-            <h4>欢迎回来！<a id='banner-username' href='./subscribe.html'></a></h4>
+            <h4>您好！<a id='banner-username' href='./subscribe.html'></a></h4>
           </div>
         </div>
       </div>
@@ -99,8 +86,9 @@
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
           <li><a href="./index.html">首页</a></li>
-          <li><a href="./catalogue.html">分类页面</a></li>
+          <li><a href="./catalogue.html?id=1&page=1">分类页面</a></li>
           <li><a href="./cart.html" class="active">我的收藏</a></li>
+          <li><a href="./subscribe.html">我的订阅</a></li>
           <li class="nav-dropdown">
             <a href="./index.html#" class="dropdown-toggle" data-toggle="dropdown">
             未名Tao <span class="caret"></span>
@@ -162,55 +150,17 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td class="hidden-xs">
-                                    <a href="./detail.html">
-                                    <img src="./images/doge.jpg" alt="Doge" title="" width="47" height="47">
-                                    </a>
-                                </td>
-                                <td><a href="/detail.html">Doge</a>
-                                </td>
-                                <td>
-                                    <div class="input-group bootstrap-touchspin" style=""><span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-down" type="button">-</button></span><span class="input-group-addon bootstrap-touchspin-prefix"></span><input type="text" name="" value="1" class="input-qty form-control text-center"><span class="input-group-addon bootstrap-touchspin-postfix"></span><span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-up" type="button">+</button></span></div>
-                                </td>
-                                <td class="price">￥ 122.21</td>
-                                <td>￥ 122.21</td>
-                                <td class="text-center">
-                                    <a href="/cart.html#" class="remove_cart" rel="2">
-                                    <i class="fa fa-trash-o"></i>
-                                    </a>
-                                </td>
-                            </tr>
-<tr>
-                                <td class="hidden-xs">
-                                    <a href="./detail.html">
-                                    <img src="./images/doge.jpg" alt="Doge" title="" width="47" height="47">
-                                    </a>
-                                </td>
-                                <td><a href="/detail.html">Doge</a>
-                                </td>
-                                <td>
-                                    <div class="input-group bootstrap-touchspin" style=""><span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-down" type="button">-</button></span><span class="input-group-addon bootstrap-touchspin-prefix"></span><input type="text" name="" value="1" class="input-qty form-control text-center"><span class="input-group-addon bootstrap-touchspin-postfix"></span><span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-up" type="button">+</button></span></div>
-                                </td>
-                                <td class="price">￥ 122.21</td>
-                                <td>￥ 122.21</td>
-                                <td class="text-center">
-                                    <a href="/cart.html#" class="remove_cart" rel="2">
-                                    <i class="fa fa-trash-o"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="4" align="right">总计</td>
-                                <td class="total" colspan="2"><b>￥ 244.42</b>
-                                </td>
-                            </tr>
-                        </tbody>
+                        <tr>
+                            <td colspan="4" align="right">总计</td>
+                            <td class="total" colspan="2"><b>￥ <span id='list-sum'>0</span></b>
+                            </td>
+                        </tr>
+                      </tbody>
                     </table>
                     <div class="btn-group btns-cart">
-                        <button type="button" class="btn btn-primary" onclick="window.location=&#39;catalogue.html&#39;"><i class="fa fa-arrow-circle-left"></i> 继续浏览</button>
+                        <button type="button" class="btn btn-primary" onclick="location.href='./index.html'"><i class="fa fa-arrow-circle-left"></i> 继续浏览</button>
                         <button type="button" class="btn btn-primary">刷新列表</button>
-                        <button type="button" class="btn btn-primary" onclick="window.location=&#39;checkout.html&#39;">清空列表 <i class="fa fa-trash-o"></i></button>
+                        <button type="button" class="btn btn-primary">清空列表 <i class="fa fa-trash-o"></i></button>
                     </div>
                 </div>
             </div>
@@ -224,8 +174,8 @@
           <h4>网站信息</h4>
           <ul>
             <li><a href="./about.html">关于我们</a></li>
-            <li><a href="./typography.html">关于本站</a></li>
-            <li><a href="./typography.html">合作商谈</a></li>
+            <li><a href="./about.html">关于本站</a></li>
+            <li><a href="./contact.html">合作商谈</a></li>
           </ul>
         </div>
       </div>
@@ -233,10 +183,10 @@
         <div class="column">
           <h4>商品分类</h4>
           <ul>
-            <li><a href="./catalogue.html">书籍资料</a></li>
-            <li><a href="./catalogue.html">二手服装</a></li>
-            <li><a href="./catalogue.html">电子产品</a></li>
-            <li><a href="./catalogue.html">其他商品</a></li>
+            <li><a href="./catalogue.html?id=1&page=1">书籍资料</a></li>
+            <li><a href="./catalogue.html?id=2&page=1">二手服装</a></li>
+            <li><a href="./catalogue.html?id=3&page=1">电子产品</a></li>
+            <li><a href="./catalogue.html?id=4&page=1">其他商品</a></li>
           </ul>
         </div>
       </div>
@@ -245,8 +195,8 @@
           <h4>用户服务</h4>
           <ul>
             <li><a href="./contact.html">联系我们</a></li>
-            <li><a href="./index.html#">问题投诉</a></li>
-            <li><a href="./index.html#">Bug反馈</a></li>
+            <li><a href="./index.html">问题投诉</a></li>
+            <li><a href="./index.html">Bug反馈</a></li>
           </ul>
         </div>
       </div>
@@ -254,10 +204,10 @@
         <div class="column">
           <h4>关注我们</h4>
           <ul class="social">
-            <li><a href="./index.html#">新浪微博</a></li>
-            <li><a href="./index.html#">腾讯微博</a></li>
-            <li><a href="./index.html#">人人</a></li>
-            <li><a href="./index.html#">RSS 订阅</a></li>
+            <li><a href="./index.html">新浪微博</a></li>
+            <li><a href="./index.html">腾讯微博</a></li>
+            <li><a href="./index.html">人人</a></li>
+            <li><a href="./index.html">RSS 订阅</a></li>
           </ul>
         </div>
       </div>
@@ -273,4 +223,6 @@
   <script src="./js/bootstrap.js"></script>
   <script src="./js/jquery.blImageCenter.js"></script>
   <script src="./js/mimity.js"></script>
+  <script src="./js/picSub.js"></script>
+  <script src="./js/login_validation.js"></script>
 </body></html>
