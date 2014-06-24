@@ -5,7 +5,7 @@ var defaultpic='cofe.jpg'
 var getImage;
 var picH=512;
 var picW=512;
-var pixelPerCircle=1;
+var pixelPerCircle=4;
 
 function gonload() {
   cnt = document.getElementById('preview');
