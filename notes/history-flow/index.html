@@ -1,0 +1,369 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>A visualisation example -- Histroy Flow &#8211; Hacking to the Gate</title>
+<meta name="description" content="This is a post introducing a practical visual tool called History Flow produced by Fernanda B. Viégas, et al.">
+<meta name="keywords" content="visualization, notes">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="A visualisation example -- Histroy Flow">
+<meta property="og:description" content="This is a post introducing a practical visual tool called History Flow produced by Fernanda B. Viégas, et al.">
+<meta property="og:url" content="http://localhost:4000/notes/history-flow/">
+<meta property="og:site_name" content="Hacking to the Gate">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/notes/history-flow/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Hacking to the Gate Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.min.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/custom.css">
+<!-- Webfonts -->
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<!--link rel="shortcut icon" href="http://localhost:4000/favicon.ico"-->
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+
+<style type="text/css">body {background-image:url(http://localhost:4000/images/squairy_light.png);}</style>
+
+</head>
+
+<body id="post" class="feature">
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="http://localhost:4000">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://localhost:4000/images/avatar.jpg" alt="Thomas Yang photo" class="author-photo">
+					<h4>Thomas Yang</h4>
+					<p>I'm Thomas Yang, a CS undergraduate of Peking University. I'm a inquisitive technophile have no resistance in anything that promotes my productivity. Always trying to do something cool.</p>
+				</li>
+				<li><a href="http://localhost:4000/about/">Learn More</a></li>
+				<li>
+					<a href="mailto:jscnm1993@gmail.com"><i class="icon-envelope"></i> Email me!</a>
+				</li>
+				<li>
+					<a href="http://weibo.com/HackerYangHJ"><i class="icon-weibo"></i> Weibo</a>
+				</li>
+				
+				
+				
+				
+				<li>
+					<a href="http://github.com/Hacker-YHJ"><i class="icon-github"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="http://localhost:4000/archive/">All Posts</a></li>
+				<li><a href="http://localhost:4000/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Share</a>
+			<ul class="dl-submenu">
+				<li><a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=2526586157',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','','','',''));" title="Share on Weibo"><span class="count"><i class="icon-weibo"></i> Weibo</a></li>
+				<li><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/notes/history-flow/" title="Share on Facebook"><span class="count"><i class="icon-facebook"></i> Facebook</span></a></li>
+				<li><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/notes/history-flow/" title="Share on Twitter"><span class="count"><i class="icon-twitter"></i> Twitter</span></a></li>
+				<li><a href="https://plus.google.com/share?url=http://localhost:4000/notes/history-flow/" title="Share on Google Plus"><span class="count"><i class="icon-google-plus"></i> Google+</span></a></li>
+			</ul>
+		</li>
+		
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+<div class="entry-header">
+  <div class="entry-image"><img src="http://localhost:4000/images/abstract-5.jpg" alt="A visualisation example -- Histroy Flow" data-stellar-ratio='0.2'>
+    <div class="image-credit">Image source: <a href="http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/">dargadgetz</a></div><!-- /.image-credit -->
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="http://localhost:4000/notes/history-flow/" rel="bookmark" title="A visualisation example -- Histroy Flow">A visualisation example -- Histroy Flow</a></h1>
+        
+        <h2>October 04, 2013</h2>
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <h2 id="background">Background</h2>
+
+<p>In 2003, just two years after the online encyclopedia’s birth, Wikipedia was still not well known, and among those aware of it there was serious skepticism about its open authorship model. Researcher Martin Wattenberg and Fernanda Viégas felt some of this skepticism themselves, yet many of the articles were interesting and helpful. To find out how was such a haphazard process yielding a quality product and other related questions, they decided to investigate. They did a lot of works and most of them are masterpieces. I’ll focus mainly on the History Flow part which I think is beautiful and useful.</p>
+
+<!--more-->
+
+<h2 id="about-the-data">About the Data</h2>
+
+<p>To get start, they need the raw data of Wikipedia. Fortunately, Wikipedia’s data wasn’t a table of numbers in a database, but a set of document versions and edit histories. Actually, Wikipedia keeps a full version history of every page available to the public, which is one of the initial brilliant decisions by Wikipedia’s founders and undoubtedly a boon for researchers .</p>
+
+<p>The data they appreciated are the edit history, from which we can have an overview of the articles in each version and trace the changes. Thus can perhaps find out the reason of the Wikipedia is of such a high quality and other questions.</p>
+
+<h2 id="visual-design">Visual Design</h2>
+
+<p>I have to say that Wattenberg and Viégas had done a great work. The whole visual design is simple and clear, but still contains everything inside–contents, versions and authors displayed in a especially proper way. The figure below is the main panel of the History Flow.</p>
+
+<figure>
+    <a href="http://localhost:4000/images//history_flow/main_panel.gif"><img src="http://localhost:4000/images//history_flow/main_panel.gif" alt="" /></a>
+    <figcaption>Main Panel</figcaption>
+</figure>
+
+<p>What you see in the middle part is the history flow diagram, the core part which we may discuss later in detail. The right part is a panel showing the content of a specific article in a specific version, with different colors representing different contributors. The author list is placed in the left shown as a column, with selected one highlighted. Upper panel is some options about color and spacing of the diagram. The figure may be a little bit vague, but you can still notice that the now selected article is titled “chocolate”, shown both in the upper left of the main panel and the beginning part of the content.</p>
+
+<p>Surely you can guess that the key part of the design is the diagram, and wondering what are these colored stripe means? Let’s find out.</p>
+
+<p>Imagine a scenario where three people will make contributions to a Wiki page at different points in time. Each person edits the page and then saves their changes to what becomes the latest version of that page.</p>
+
+<figure class="half">
+    <img src="http://localhost:4000/images//history_flow/how_to_do_1.gif" alt="" />
+    <img src="http://localhost:4000/images//history_flow/how_to_do_2.gif" alt="" />
+    <figcaption></figcaption>
+</figure>
+<figure class="half">
+    <img src="http://localhost:4000/images//history_flow/how_to_do_3.gif" alt="" />
+    <img src="http://localhost:4000/images//history_flow/how_to_do_4.gif" alt="" />
+    <figcaption>What's the meaning of the stripes</figcaption>
+</figure>
+
+<p>In figure 1, the vertical red line represents the first version of the document. Since Mary creates the page all of the contents in the page reflect her author color. The length of the line indicates the amount of text Mary has written.</p>
+
+<p>Suzanne adds some text to the end of Mary’s original entry; note that Suzanne’s blue line is appended to the end of Mary’s red line indicating that Suzanne’s text was added at the end of the page shown in figure 2. Suzanne saves her changes and this becomes the latest version of the page.</p>
+
+<p>Now in figure 3, Martin finds the original text too verbose; he deletes some of it and writes his own shorter version between the introductory text and Suzanne’s contribution.</p>
+
+<p>On version 4 Suzanne comes back and makes a small contribution in the middle of what remains of the introductory text.</p>
+
+<p>History Flow connects text that has been kept the same between consecutive versions; in other words, it connects corresponding segments on the lines representing versions. Pieces of text that do not have correspondence in the next (or previous) version are not connected and the user sees a resulting “gap” in the visualization; this happens for deletions and insertions.</p>
+
+<figure>
+    <a href="http://localhost:4000/images/history_flow/how_to_do_5.gif"><img src="http://localhost:4000/images/history_flow/how_to_do_5.gif" alt="" /></a>
+    <figcaption>Final appearance</figcaption>
+</figure>
+
+<p>Now you can scroll up to see the main panel figure, isn’t it clear enough to you? You can easily click a version and the corresponding content will show in the right together with the version highlighted (see the main panel figure and you will find a brown highlighted line). And as you may guess, the color pattern of the content and the diagram stripe are the same of course, so that you can match them up.</p>
+
+<h2 id="visual-mode">Visual Mode</h2>
+
+<p>This works has more than one visual mode in order to satisfy different requires. To switch among them, just click the option panel in the upper part of the main panel (which mentioned before). Let’s have a quick look.</p>
+
+<figure>
+    <a href="http://localhost:4000/images/history_flow/community_view.gif"><img src="http://localhost:4000/images/history_flow/community_view.gif" alt="" /></a>
+    <figcaption>Community View</figcaption>
+</figure>
+
+<p><em>Community view</em> is the default mode and it shows all contributions from different authors, hues to indicate the author of each sentence. In this view we use just one property of color – the hues. Of course we can easily add brightness to represent the ages of the text with brighter colors being more recent. </p>
+
+<figure>
+    <a href="http://localhost:4000/images/history_flow/individual_view.gif"><img src="http://localhost:4000/images/history_flow/individual_view.gif" alt="" /></a>
+    <figcaption>Individual View</figcaption>
+</figure>
+
+<p><em>Individual author view</em> highlights the contributions of a single author and it depicts the persistence of these contributions over time. </p>
+
+<figure>
+    <a href="http://localhost:4000/images/history_flow/recent_view.gif"><img src="http://localhost:4000/images/history_flow/recent_view.gif" alt="" /></a>
+    <figcaption>Recent View</figcaption>
+</figure>
+
+<p><em>Recent Changes View</em> highlights the new content in each version of the Wiki page independent of authorship. This view allow us to see what portions of the text have been edited the most over time.</p>
+
+<figure>
+    <a href="http://localhost:4000/images/history_flow/age_view.gif"><img src="http://localhost:4000/images/history_flow/age_view.gif" alt="" /></a>
+    <figcaption>Age View</figcaption>
+</figure>
+
+<p><em>Age View</em> this view has no colors representing authorship; instead, the focus is on the persistence of different contributions. A gray scale gradient goes from white (brand new contribution) to dark gray (very old contribution). As I mentioned before, this view can combine perfectly with the community view which will show more information and also bring more clutters. I suggest that use the combination in a small data set.</p>
+
+<p>Something else should be given a word is that the space between the version is customized. You can either make it constant so that you can find out what happens between two version, or make the space length in direct proportion of the time duration between, which may depict more clearly how the content changes with the time elapsing. To switch between, the upper right check box will help. This is surprisingly helpful in one of the result which we will discuss in the next section.</p>
+
+<h2 id="result">Result</h2>
+
+<p>This great visualization bring out many decent results. We focus on the reason why there seems no vandalism in Wikipedia.</p>
+
+<p>Vandalism is some kind of behavior that delete or ruin all the work done before, which happens in many open authorship circumstances. Is there any vandalism in Wikipedia? The result says yes. Look at the figure below.</p>
+
+<figure>
+    <a href="http://localhost:4000/images/history_flow/abortion1.gif"><img src="http://localhost:4000/images/history_flow/abortion1.gif" alt="" /></a>
+    <figcaption>Abortion 1</figcaption>
+</figure>
+
+<p>This is the diagram of the article “Abortion”. Notice that there are few vertical gaps in the whole diagram. As you may guess, that is a whole deletion behavior. But why didn’t we ever open up an empty page? We notice that it is spaced by a constant length, how about changing a spacing mode to find more?</p>
+
+<figure>
+    <a href="http://localhost:4000/images/history_flow/abortion2.gif"><img src="http://localhost:4000/images/history_flow/abortion2.gif" alt="" /></a>
+    <figcaption>Abortion 2</figcaption>
+</figure>
+
+<p>Above is the figure with “time spacing mode”. Seems that the gaps disappear? From the diagram, they are just refined so rapidly that you can’t even see it in the time spacing mode. So we didn’t see evidence of destructive behavior wasn’t that this behavior didn’t exist, but that it tended to be erased quickly from public view. This is a correct result, but is not so easily demonstrated. To get this result, the author did a lot of additional works. But it is undeniable that the figure is so intuitive that gives out a primary hypothesis and eventually lead to this result.</p>
+
+<h2 id="my-favorite-part-pros-and-cons">My Favorite Part, Pros and Cons</h2>
+
+<p>My favorite part is the diagram part of course. The first time I saw it I was deeply attracted, while confusions stroke me at the same time. </p>
+
+<p>The primary confusion is why it is so redundant. I mean it is fully adequate to encode all the information without the stripes, only with the vertical lines. Then when data set grows larger, I realize that everything became spoiled without the stripes. Lines are so thin in the screen that you have to zoom in to watch the details, but to do so, you will miss the whole view of the flow. Moreover, without the stripe I can only focus on the constituent components of a single version, or changes between two adjacent version at most, let alone the contributions of a specific author through time. The stripe use additional area to show the information, strengthening the differences of changes, and most importantly, penetrating the whole version, making the hiding information, the cooperations and conflicts between authors for example, jump out of the screen. This is really a genius hack.</p>
+
+<p>Despite the above, the diagram has some very good features. Colors are smartly handled, with hues discrete encoding and brightness consecutive encoding, which is proper for human perception. Changeable spacing and diverse views added extra usability. Especially the individual author view, which should be the honor badge of contributors for their long-lasting devotions.</p>
+
+<p>By the way I was interested in the zigzag part of the “chocolate” article shown in the very beginning (the main panel figure). From the diagram, there are repeatedly insertion and deletion behaviors, which seems like two people quarreling and fighting each other. Actually the fact is so close to my imagination: two users fought over whether a kind of chocolate sculpture called “coulage” really existed and consequently, whether or not the paragraph about it should appear on the page. Interesting isn’t it! Such a small conflict draws such a apparent pattern in the diagram, which definitely give out inspirations for further research.</p>
+
+<h2 id="advice-for-improvement">Advice for Improvement</h2>
+
+<p>There are three main points I want to mention about. </p>
+
+<p>The first point is about zooming. Zooming should be the fundamental function in any visual design, while I didn’t find any description about it in this design. Maybe it is such a intrinsic part of visualization that the author just omitted the description. But if there aren’t, there should be.</p>
+
+<p>The rest is all about colors. Since each color matches an author, there may be some clutters in the case of large-scale cooperation. Notice that not all the author appear at the same time, I mean, some authors were active in the former versions and others in the latter, while only few of them really went through all the versions. Can we just use the same color for different authors in the situation where they won’t shadow each other. It may cause some information lost but maybe a good idea, especially when a lot of authors are working on an article together.</p>
+
+<p>If you look carefully at the figure of “abortion” above (in page 6), you can see the gaps in the right. Actually the middle right part is not a real gap, it is a stripe with it’s brightness nearly zero because it matches up a piece of long-lasting content from the article and brightness is used to encode the duration. Longer lasting Content become darker, but shouldn’t be so close to black. It is confusing of course, we can just give it a threshold to keep it a proper brightness, so that we won’t make mistakes.</p>
+
+<p>Improvement will not have an end though, I’ll just stop here. Beyond all the above, I really appreciate this work. It brought inspiration both in visual design and in pattern analysis to me, which definitely boraden my eyesight and deepen my interests in visualization research.</p>
+
+<h2 id="reference">reference</h2>
+<p>Fernanda B. Viégas, Martin Wattenberg, Kushal Dave. Studying Cooperation and Conflict between Authors with history flow Visualizations in proceedings of conference on human factors in computer system, 2004. </p>
+
+<p><a href="http://www.research.ibm.com/visual/projects/history_flow">http://www.research.ibm.com/visual/projects/history_flow</a> This is the project pages. Detailed information, news and more figures are available there.</p>
+
+<p><a href="http://www.bewitched.com/historyflow.html">http://www.bewitched.com/historyflow.html</a> This is the Martin Wattenberg’s pages about this project. His descriptions about this and other interesting works are available there.</p>
+
+<p><a href="http://www.fernandaviegas.com/wikipedia.html">http://www.fernandaviegas.com/wikipedia.html</a> This is the another author, Fernanda Viégas’s pages about this.</p>
+
+<p><strong>Beautiful Visualization, Looking at Data Through the Eyes of Experts</strong> This is the book where I met and select this visualization. In this book are lots of high quality visualizations with specific descriptions and discussions. I strongly recommend you to read about it.</p>
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="http://localhost:4000/tags/#visualization" title="Pages tagged visualization" class="tag">visualization</a><a href="http://localhost:4000/tags/#notes" title="Pages tagged notes" class="tag">notes</a></span>
+        <span><a href="http://localhost:4000/notes/history-flow/" rel="bookmark" title="A visualisation example -- Histroy Flow">A visualisation example -- Histroy Flow</a> was published on <span class="entry-date date published updated"><time datetime="2013-10-04T00:00:00+00:00">October 04, 2013</time></span></span>
+        
+        <span class="author vcard"><span class="fn"><a href="http://localhost:4000/about/" title="About Thomas Yang">Thomas Yang</a></span></span>
+        <div class="social-share">
+          <ul class="socialcount socialcount-small inline-list">
+            <li class="weibo"><a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=2526586157',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','','','',''));" title="Share on Weibo"><span class="count"><i class="icon-weibo"></i> Share</span></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/notes/history-flow/" title="Share on Facebook"><span class="count"><i class="icon-facebook-sign"></i> Like</span></a></li>
+            <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://localhost:4000/notes/history-flow/" title="Share on Twitter"><span class="count"><i class="icon-twitter-sign"></i> Tweet</span></a></li>
+            <li class="googleplus"><a href="https://plus.google.com/share?url=http://localhost:4000/notes/history-flow/" title="Share on Google Plus"><span class="count"><i class="icon-google-plus-sign"></i> +1</span></a></li>
+          </ul>
+        </div><!-- /.social-share -->
+      </footer>
+    </div><!-- /.entry-content -->
+    
+    
+    <div class="ds-thread" data-title="A visualisation example -- Histroy Flow"></div>
+    
+    
+    <div class="read-more">
+      
+        <div class="read-more-header">
+          <a href="http://localhost:4000/math/quadratic-curve/" class="read-more-btn">Read More</a>
+        </div><!-- /.read-more-header -->
+        <div class="read-more-content">
+          <h3><a href="http://localhost:4000/algorithm/sorting/" title="Algorithm -- Sorting">Algorithm -- Sorting</a></h3>
+          <p></p>
+        </div><!-- /.read-more-content -->
+      
+      <div class="read-more-list">
+        
+          <div class="list-item">
+            <h4><a href="http://localhost:4000/notes/Koans-Games/" title="Koans Games">Koans Games</a></h4>
+            <span>Published on May 12, 2014</span>
+          </div><!-- /.list-item -->
+        
+          <div class="list-item">
+            <h4><a href="http://localhost:4000/notes/About-Vim/" title="About VIM and It’s Philosophy">About VIM and It’s Philosophy</a></h4>
+            <span>Published on May 01, 2014</span>
+          </div><!-- /.list-item -->
+        
+      </div><!-- /.read-more-list -->
+      
+    </div><!-- /.read-more -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2014 <a href="http://localhost:4000">Thomas Yang</a>. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="http://localhost:4000/assets/js/vendor/jquery-2.0.3.min.js"></script>
+
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+<!-- stellar.js -->
+<script type='text/javascript' src="http://localhost:4000/assets/js/customize/jquery.stellar.min.js"></script>
+
+<!-- run stellar.js -->
+<script>
+$('.entry-image img').ready( function() { $(this).stellar({
+  hideDistantElements: false,
+  positionProperty: 'transform'
+}); });
+</script>
+
+
+
+
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"hacker-yhj"};
+(function() {
+  var ds = document.createElement('script');
+  ds.type = 'text/javascript';ds.async = true;
+  ds.src = 'http://static.duoshuo.com/embed.js';
+  ds.charset = 'UTF-8';
+  (document.getElementsByTagName('head')[0]
+  || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+
+
+</body>
+</html>
