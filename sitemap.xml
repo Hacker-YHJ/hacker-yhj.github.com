@@ -1,87 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://localhost:4000</loc>
+        <loc>http://hacker-yhj.github.io</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/algorithm/sorting/</loc>
+        <loc>http://hacker-yhj.github.io/algorithm/sorting/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/notes/Koans-Games/</loc>
+        <loc>http://hacker-yhj.github.io/notes/Koans-Games/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/notes/About-Vim/</loc>
+        <loc>http://hacker-yhj.github.io/notes/About-Vim/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/notes/operation-system-Lab-0/</loc>
+        <loc>http://hacker-yhj.github.io/notes/operation-system-Lab-0/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/notes/GTD-First-Impression/</loc>
+        <loc>http://hacker-yhj.github.io/notes/GTD-First-Impression/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/assignments/the-isla-del-sueno-migrant-boats/</loc>
+        <loc>http://hacker-yhj.github.io/assignments/the-isla-del-sueno-migrant-boats/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/exercise/news-visualization-sketch/</loc>
+        <loc>http://hacker-yhj.github.io/exercise/news-visualization-sketch/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/assignments/vis-course-assignment/</loc>
+        <loc>http://hacker-yhj.github.io/assignments/vis-course-assignment/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/notes/bilibili-rss-receiver-first-ruby-project/</loc>
+        <loc>http://hacker-yhj.github.io/notes/bilibili-rss-receiver-first-ruby-project/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/notes/history-flow/</loc>
+        <loc>http://hacker-yhj.github.io/notes/history-flow/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/math/quadratic-curve/</loc>
+        <loc>http://hacker-yhj.github.io/math/quadratic-curve/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/exercise/picture-simulator/</loc>
+        <loc>http://hacker-yhj.github.io/exercise/picture-simulator/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/math/bezier-curves/</loc>
+        <loc>http://hacker-yhj.github.io/math/bezier-curves/</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/notes/how-to-build-a-blog-with-octopress/</loc>
+        <loc>http://hacker-yhj.github.io/notes/how-to-build-a-blog-with-octopress/</loc>
     </url>
     
-    <url><loc>http://localhost:4000/projects/A_birthday_present_for_YXC/404.html</loc></url>
-<url><loc>http://localhost:4000/projects/A_birthday_present_for_YXC/index.html</loc></url>
-<url><loc>http://localhost:4000/projects/Bézier_Curves/index.html</loc></url>
-<url><loc>http://localhost:4000/projects/Class_Timetable/index.html</loc></url>
-<url><loc>http://localhost:4000/projects/PicShow/index.html</loc></url>
-<url><loc>http://localhost:4000/projects/quadratic_curve/index.html</loc></url>
-<url><loc>http://localhost:4000/projects/resume/index.html</loc></url>
-<url><loc>http://localhost:4000/projects/vis_course_assignment/index.html</loc></url>
-<url><loc>http://localhost:4000/projects/vis_course_assignment_3/index.html</loc></url>
-<url><loc>http://localhost:4000/projects/vis_course_assignment_3/report.html</loc></url>
-<url><loc>http://localhost:4000/projects/WeimingTao/404/index.html</loc></url>
-<url><loc>http://localhost:4000/projects/WeimingTao/about.html</loc></url>
-<url><loc>http://localhost:4000/projects/WeimingTao/add.html</loc></url>
-<url><loc>http://localhost:4000/projects/WeimingTao/cart.html</loc></url>
-<url><loc>http://localhost:4000/projects/WeimingTao/catalogue.html</loc></url>
-<url><loc>http://localhost:4000/projects/WeimingTao/contact.html</loc></url>
-<url><loc>http://localhost:4000/projects/WeimingTao/detail.html</loc></url>
-<url><loc>http://localhost:4000/projects/WeimingTao/index.html</loc></url>
-<url><loc>http://localhost:4000/projects/WeimingTao/login.html</loc></url>
-<url><loc>http://localhost:4000/projects/WeimingTao/person.html</loc></url>
-<url><loc>http://localhost:4000/projects/WeimingTao/register.html</loc></url>
-<url><loc>http://localhost:4000/projects/WeimingTao/search.html</loc></url>
-<url><loc>http://localhost:4000/projects/WeimingTao/subscribe.html</loc></url>
-<url><loc>http://localhost:4000/projects/word_wheel/index.html</loc></url>
+    <url><loc>http://hacker-yhj.github.io/projects/A_birthday_present_for_YXC/404.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/A_birthday_present_for_YXC/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/Bézier_Curves/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/Class_Timetable/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/PicShow/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/quadratic_curve/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/resume/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/vis_course_assignment/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/vis_course_assignment_3/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/vis_course_assignment_3/report.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/WeimingTao/404/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/WeimingTao/about.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/WeimingTao/add.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/WeimingTao/cart.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/WeimingTao/catalogue.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/WeimingTao/contact.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/WeimingTao/detail.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/WeimingTao/index.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/WeimingTao/login.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/WeimingTao/person.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/WeimingTao/register.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/WeimingTao/search.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/WeimingTao/subscribe.html</loc></url>
+<url><loc>http://hacker-yhj.github.io/projects/word_wheel/index.html</loc></url>
 </urlset>
