@@ -1,0 +1,317 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>About VIM and It’s Philosophy &#8211; Hacking to the Gate</title>
+<meta name="description" content="This is a post gabbing my personal thoughts about VIM.">
+<meta name="keywords" content="Vim, notes">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="About VIM and It’s Philosophy">
+<meta property="og:description" content="This is a post gabbing my personal thoughts about VIM.">
+<meta property="og:url" content="http://hacker-yhj.github.io/About-Vim/">
+<meta property="og:site_name" content="Hacking to the Gate">
+
+
+
+
+
+<link rel="canonical" href="http://hacker-yhj.github.io/About-Vim/">
+<link href="http://hacker-yhj.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Hacking to the Gate Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://hacker-yhj.github.io/assets/css/main.min.css">
+<link rel="stylesheet" href="http://hacker-yhj.github.io/assets/css/custom.css">
+<!-- Webfonts -->
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://hacker-yhj.github.io/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<!--link rel="shortcut icon" href="http://hacker-yhj.github.io/favicon.ico"-->
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://hacker-yhj.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://hacker-yhj.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://hacker-yhj.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://hacker-yhj.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://hacker-yhj.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+
+<style type="text/css">body {background-image:url(http://hacker-yhj.github.io/images/squairy_light.png);}</style>
+
+</head>
+
+<body id="post" class="feature">
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="http://hacker-yhj.github.io">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://hacker-yhj.github.io/images/avatar.jpg" alt="Thomas Yang photo" class="author-photo">
+					<h4>Thomas Yang</h4>
+					<p>I'm Thomas Yang, a CS undergraduate of Peking University. I'm a inquisitive technophile have no resistance in anything that promotes my productivity. Always trying to do something cool.</p>
+				</li>
+				<li><a href="http://hacker-yhj.github.io/about/">Learn More</a></li>
+				<li>
+					<a href="mailto:jscnm1993@gmail.com"><i class="icon-envelope"></i> Email me!</a>
+				</li>
+				<li>
+					<a href="http://weibo.com/HackerYangHJ"><i class="icon-weibo"></i> Weibo</a>
+				</li>
+				
+				
+				
+				
+				<li>
+					<a href="http://github.com/Hacker-YHJ"><i class="icon-github"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="http://hacker-yhj.github.io/archive/">All Posts</a></li>
+				<li><a href="http://hacker-yhj.github.io/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Share</a>
+			<ul class="dl-submenu">
+				<li><a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=2526586157',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','','','',''));" title="Share on Weibo"><span class="count"><i class="icon-weibo"></i> Weibo</a></li>
+				<li><a href="https://www.facebook.com/sharer/sharer.php?u=http://hacker-yhj.github.io/About-Vim/" title="Share on Facebook"><span class="count"><i class="icon-facebook"></i> Facebook</span></a></li>
+				<li><a href="https://twitter.com/intent/tweet?text=http://hacker-yhj.github.io/About-Vim/" title="Share on Twitter"><span class="count"><i class="icon-twitter"></i> Twitter</span></a></li>
+				<li><a href="https://plus.google.com/share?url=http://hacker-yhj.github.io/About-Vim/" title="Share on Google Plus"><span class="count"><i class="icon-google-plus"></i> Google+</span></a></li>
+			</ul>
+		</li>
+		
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+<div class="entry-header">
+  <div class="entry-image"><img src="http://hacker-yhj.github.io/images/abstract-2.jpg" alt="About VIM and It’s Philosophy" data-stellar-ratio='0.2'>
+    
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="http://hacker-yhj.github.io/About-Vim/" rel="bookmark" title="About VIM and It’s Philosophy">About VIM and It’s Philosophy</a></h1>
+        
+        <h2>May 01, 2014</h2>
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <h1 id="section">前言</h1>
+
+<p>搭好博客之后，才觉得腾出时间来写点博客有多不容易。说好的对GTD的第二次总结迟迟没有结果，VisualMath的计划还根本就看不到影子，而自己的精力感觉已经油尽灯枯了。请容我惯例掀一下桌子。</p>
+
+<p>( ╯#-_-)╯┻━┻</p>
+
+<p>好了，言归正传。</p>
+
+<p>很早就想写一点关于VIM的文章，也算是整理一下自己的使用心得。由于沉迷VIM邪教已久，现在早已不能自拔，丧心病狂的把各种IDE，甚至Chrome上都装上了VIM插件，偶尔用Pages写个报告都会习惯性打几个 <code>:w</code> 。有时候想想，因为接触到了VIM，在磕磕碰碰的使用的过程中，莫名其妙的了解到了最初的计算机文化，了解到了一群神人所创造的，隐藏在黑底白字中的典藏，岂不美哉。</p>
+
+<p>接触VIM还是学习ICS的时候，为了避免一遍又一遍的上传代码到远端服务器，狠下心来直接在上面打开了VIM。然后对照着网上的各种教程，以大概每十秒钟一个误操作的速度，写好了第一个ICS的Lab。而现在，前前后后用VIM也大概有一年半了，现在渐渐对非VIM的编辑方式感到了不习惯。感觉隐隐约约触碰到了VIM哲学的本质，斗胆一试，希望能够通过文字表达出来。</p>
+
+<!--more-->
+
+<h1 id="section-1">关于本文</h1>
+
+<p>我先说好，本文不是教程，不是21天学会VIM，不是从零单排，这就是一篇用过VIM的人写下的一点感想而已。想要教程的话，出门左转Google一搜一大片。</p>
+
+<p>我只用过VIM这一种高级文本编辑器，emacs等等我都没有用过。因此我不会妄加比较，不会，也尽量不显得带任何攻击色彩。</p>
+
+<p>我大概是一个工具主义者而非完美主义者，任何能够提高效率的东西我都有兴趣推荐给大家，VIM也不例外。而VIM作为一款纯文本编辑器，对开发者来说未免略显无力。以目前的开发规模，离开称手的IDE开发，实际上得不偿失。事实上，我所指的VIM，是指的VIM的文本编辑方法，并不局限于VIM这一个行编辑器。我个人就在各种IDE上使用VIM插件来获得基本上相同的体验，我也并不推荐使用纯VIM来作为主要的工作环境。当然，你可以用它来练习。</p>
+
+<p>最后我想说，我不是一个职业开发者，我还只是个大学生，而一年半的使用经验也不是很拿得出手。我只是希望通过写下Post，增强一下我对此的体会，欢迎任何形式的留言和建议。</p>
+
+<h1 id="vim">VIM简介</h1>
+
+<p>VIM是一款非常适合开发者使用的命令行文本编辑器，在程序员中被广泛使用，和Emacs并列成为类Unix系统用户最喜欢的编辑器。其热门程度之高，直接集成进了所有类Unix系统中，用户能够直接在命令行打开。其对现代编辑器的影响也不容小觑，基本上每一个IDE都能够找到VIM的Plugin，现在很多人青睐的Sublime Text，也自带了VIM模式，可见一斑。windows用户想一试的话，也可以去google一下gVIM，这是一个带GUI的VIM。</p>
+
+<p>需要澄清的是，网络上大部分教程都把VIM描述成了一个学习曲线陡峭的怪物，无端的创造了一个令人望而生畏的印象，而我认为这样的行为是十分愚蠢的。除去过分炫耀带来的自我满足，事实上，这样的夸大其词无意间扼杀了很多潜在用户。我相信大多数人是充满好奇心并且好学的，而且我也相信，VIM给你带来的趣味远比其学习曲线带来的阻碍要大得多。</p>
+
+<p>因此，你现在就可以体会一下，打开Terminal，输入vim，盯着屏幕上的欢迎信息，并且告诉自己这就是让无数人欲罢不能的编辑器 — VIM。</p>
+
+<h1 id="vim-1">VIM的特点</h1>
+
+<p>说到VIM的特点，就不得不先扯一下最近对代码编辑的新想法了。最近发现自己编写代码的速度大打折扣，最主要的原因，我想应该是要实现的逻辑越来越复杂。这里的逻辑，并非是单纯考虑算法的逻辑，而是考虑到了很多其他因素，网页App的屏幕适应性，多浏览器支持；android下线程的通信，以及不同厂商实现之间细微但坑爹的差异；各种设计时考虑的不周全引起的代码重构。于是比起当年怒刷POJ时的码字速度，自然慢了许多。</p>
+
+<p>但是，某一天我脑洞大开，后知后觉的发现有无论怎么码字，始终是两个过程 —— <strong>编写</strong> 和 <strong>修改</strong> 组成的。</p>
+
+<p>听起来着实像是废话！不过听我接着讲。我所说的 <strong>编写</strong> 的过程，更像是对照着文档，UML，或是其他已经组织好的内容，用代码语言将其描述出来的过程。典型的例子是做POJ题目时，某一题正好可以用你熟知的某一个算法解出。你在编码时可以感受到行云流水的畅快和飞一般的速度。这个过程，我大胆猜测，在大脑中是线性处理的。大脑不断把缓冲区中的信息翻译成代码，指挥你的手完成输入。由于不需要考虑上下文，只需要根据之前定好的逻辑走，可以将速度提得非常快。</p>
+
+<p>而 <strong>修改</strong> 的过程，我认为，较之编写，是一种更加凌乱，毫无顺序，并且需要更多灵光一现的过程。典型的例子是调试，需要不断的审视全文，梳理思路，并且将集中力聚焦到不同的点上。这一个过程，我再大胆猜测，在大脑中是并行的。因为在这个过程中，尚没有找到一个清晰的解决方法，大脑会尝试所有念头和思路，但是你执行的速度远比不上大脑的速度，因此可能会漏掉很多。</p>
+
+<p>最后我再大胆猜测，在这两种过程中切换，应该会有一定的代价（就像进程切换一样）。我回想起最开始写代码的时候，经常在能运行的版本还没写好的时候，因为想到了某些细枝末节，跳回到前面修改某些代码，再继续的时候就会花好些时间整理思路。有没有什么行之有效的方法，尽量减少这种切换呢？当然，写代码前做好详细的设计是根本，直接开始编码是最愚蠢的行为。</p>
+
+<blockquote>
+  <p>The sooner you start to code, the longer your program will take.</p>
+</blockquote>
+
+<p>事实上，我们已经在使用某种类似方法来提高我们的效率了，简单的来说，就是心理暗示。我们希望集中精力完成某一件事情，就将其与某一个外部状态绑定起来，并且暗示自己，该状态存在的时候，我希望自己能够全力以赴的完成该事情。举个例子，很多人上自习喜欢去教室，实际上由于长期在教室学习，对自己说“教室是学习的地方”，久而久之适应了这样一种暗示，因此会觉得在教室学习效率会高。同理，每个人都会或多或少有一些癖好，或多或少都是潜意识希望提高集中力而形成的。</p>
+
+<p>以上均为我的胡思乱想。</p>
+
+<p>然后，终于要说到点子了。我们来看VIM是怎么帮助我们提高效率的。</p>
+
+<p>VIM虽然功能繁多，但基本上都是建立在各种不同的模式上的。其中，插入模式对应的是普通的编辑器。这个模式下，会将键盘输入的字符插入到光标之后，给用户以键入字符的反馈。这无需多讲。而VIM的精髓是普通模式，也是其默认模式。其行为跟我们常用的编辑器大相径庭。打个比方，在普通模式下按键的效果，就像一般编辑器按住control或者alt之后再按键的效果一样，其作用并不是输入相应字符，而是执行某些功能。模式之间切换异常方便，这也是使用VIM的基本要素。</p>
+
+<p>我使用VIM的方式是，我在 <strong>编写</strong> 的时候，尽量保持在插入模式，保证输入的质量，一气呵成。而在 <strong>修改</strong> 的时候，尽量保持在普通模式，即使需要修改某些内容，进入插入模式修改完毕后，也立刻退出到普通模式。</p>
+
+<p>编写时需要的是清晰的思路和快速且正确的键入，这就要求良好的打字基本功。我觉得，这对程序员来说，应该是必须锻炼的技能。曾经看到过得一篇Blog写的相当有理，里面提到程序员需要良好的打字基础，是因为你的手需要尽可能跟上你思维的速度。说到这儿，不得不提到一个良心网站<a href="http://typing.io/">Typing</a>，里面有各种语言的经典源码供typing练习。</p>
+
+<p>而修改时，如果我的假设正确，即在这一过程各种不同的思路和想法都会在大脑中，从而一团乱麻。那手随心动，以最快的速度处理刚刚出现的念头就更显得重要了。这个时候，我就想提到鼠标这个万恶之源。鼠标绝对是拖慢我们动作的首要设备，想想你需要多长的一段时间才能用鼠标做一个简单的Copy&amp;Paste。而VIM的强大，在这个时候才开始崭露头角。</p>
+
+<p>VIM的普通模式下功能之强大，可以用简单的键盘操作完成各种复杂的功能。举个例子，保存，可以使用之前提到的<code>:w</code>来实现；交换上下两行位置，<code>ddp</code>即可；如果你需要将本行之后的所有”public“替换为”private”，使用<code>:.,$s/public/private/g</code>即可。看起来稍显复杂，我稍微解释一下：</p>
+
+<ul>
+  <li>.,$ 当前行直到最后一行</li>
+  <li>s Substitute 替换</li>
+  <li>public 源字符串</li>
+  <li>private 目标字符串</li>
+  <li>g Global，全局替换</li>
+</ul>
+
+<p>会不会有一种这本身就是一个句子的感觉？VIM制定了一套奇怪的语言，但是当你稍加了解之后，就可以用这种语言发号施令，调遣三军，直取敌营。相比传统的无语义的快捷键，VIM学习起来还颇有趣味。我感觉这也是VIM设计之初考虑到的，其目的就是要尽可能帮助你手随心动，再配合数量的操作，达到一种思维和文本同步的境界。如果说把这一年半所有的手法和键位都忘掉，我想这一段感悟应该是我剩下的最有价值的东西了。</p>
+
+<h1 id="vim-2">VIM带给我的</h1>
+
+<p>好像乱七八糟扯了一大通，做一个小小的总结吧。</p>
+
+<p>作为一个开发者，如果不想淘汰掉，我想，学习这件事情应该是伴随终生的。而对于大学之后的学习，应该融入更多的思考和反省。我觉得，使用VIM的过程中，它迫使我做出了相当的思考。不仅是在学习其使用方法方面，还在于其设计时的理念和哲学。虽然感觉扯淡成分也不少，但是得出了一个自己还满意的答案。</p>
+
+<p>近段时间接触到了好多古老而成熟的技术，感觉越是接近，越能感觉到当年那一群人的热血和激情与自己的无知和自大。还是自己的姿势水平不够啊（要时刻谨记长者教诲）。每次接触到新的技术，都能获得焕然一新的感受和更开阔的眼光，这也是支持我不停充电的最重要的原因。</p>
+
+<p>再引一句话作为结尾吧：</p>
+
+<blockquote>
+  <p>Man’s mind, once stretched by a new idea, never regains its original dimensions.</p>
+</blockquote>
+
+<p>:wq</p>
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="http://hacker-yhj.github.io/tags/#Vim" title="Pages tagged Vim" class="tag">Vim</a><a href="http://hacker-yhj.github.io/tags/#notes" title="Pages tagged notes" class="tag">notes</a></span>
+        <span><a href="http://hacker-yhj.github.io/About-Vim/" rel="bookmark" title="About VIM and It’s Philosophy">About VIM and It’s Philosophy</a> was published on <span class="entry-date date published updated"><time datetime="2014-05-01T00:00:00+00:00">May 01, 2014</time></span></span>
+        
+        <span class="author vcard"><span class="fn"><a href="http://hacker-yhj.github.io/about/" title="About Thomas Yang">Thomas Yang</a></span></span>
+        <div class="social-share">
+          <ul class="socialcount socialcount-small inline-list">
+            <li class="weibo"><a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=2526586157',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','','','',''));" title="Share on Weibo"><span class="count"><i class="icon-weibo"></i> Share</span></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://hacker-yhj.github.io/About-Vim/" title="Share on Facebook"><span class="count"><i class="icon-facebook-sign"></i> Like</span></a></li>
+            <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://hacker-yhj.github.io/About-Vim/" title="Share on Twitter"><span class="count"><i class="icon-twitter-sign"></i> Tweet</span></a></li>
+            <li class="googleplus"><a href="https://plus.google.com/share?url=http://hacker-yhj.github.io/About-Vim/" title="Share on Google Plus"><span class="count"><i class="icon-google-plus-sign"></i> +1</span></a></li>
+          </ul>
+        </div><!-- /.social-share -->
+      </footer>
+    </div><!-- /.entry-content -->
+    
+    
+    <div class="ds-thread" data-title="About VIM and It’s Philosophy"></div>
+    
+    
+    <div class="read-more">
+      
+        <div class="read-more-header">
+          <a href="http://hacker-yhj.github.io/operation-system-Lab-0/" class="read-more-btn">Read More</a>
+        </div><!-- /.read-more-header -->
+        <div class="read-more-content">
+          <h3><a href="http://hacker-yhj.github.io/Koans-Games/" title="Koans Games">Koans Games</a></h3>
+          <p>Introduction to Koans -- a simple but helpful toolkit for learning Ruby.</p>
+        </div><!-- /.read-more-content -->
+      
+      <div class="read-more-list">
+        
+          <div class="list-item">
+            <h4><a href="http://hacker-yhj.github.io/operation-system-Lab-0/" title="Nachos Notes -- Preparations">Nachos Notes -- Preparations</a></h4>
+            <span>Published on February 25, 2014</span>
+          </div><!-- /.list-item -->
+        
+          <div class="list-item">
+            <h4><a href="http://hacker-yhj.github.io/GTD-First-Impression/" title="GTD - The First Impression">GTD - The First Impression</a></h4>
+            <span>Published on January 27, 2014</span>
+          </div><!-- /.list-item -->
+        
+      </div><!-- /.read-more-list -->
+      
+    </div><!-- /.read-more -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2015 <a href="http://hacker-yhj.github.io">Thomas Yang</a>. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="http://hacker-yhj.github.io/assets/js/vendor/jquery-2.0.3.min.js"></script>
+
+<script src="http://hacker-yhj.github.io/assets/js/scripts.min.js"></script>
+<!-- stellar.js -->
+<script type='text/javascript' src="http://hacker-yhj.github.io/assets/js/customize/jquery.stellar.min.js"></script>
+
+<!-- run stellar.js -->
+<script>
+$('.entry-image img').ready( function() { $(this).stellar({
+  hideDistantElements: false,
+  positionProperty: 'transform'
+}); });
+</script>
+
+
+
+
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"hacker-yhj"};
+(function() {
+  var ds = document.createElement('script');
+  ds.type = 'text/javascript';ds.async = true;
+  ds.src = 'http://static.duoshuo.com/embed.js';
+  ds.charset = 'UTF-8';
+  (document.getElementsByTagName('head')[0]
+  || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+
+
+</body>
+</html>

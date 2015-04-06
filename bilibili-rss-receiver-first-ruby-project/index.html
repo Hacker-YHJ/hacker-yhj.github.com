@@ -1,0 +1,323 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Use MacRuby for the first time &#8211; Hacking to the Gate</title>
+<meta name="description" content="My first impression of using ruby in a project for the first time.">
+<meta name="keywords" content="Ruby, Mac, notes">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use MacRuby for the first time">
+<meta property="og:description" content="My first impression of using ruby in a project for the first time.">
+<meta property="og:url" content="http://hacker-yhj.github.io/bilibili-rss-receiver-first-ruby-project/">
+<meta property="og:site_name" content="Hacking to the Gate">
+
+
+
+
+
+<link rel="canonical" href="http://hacker-yhj.github.io/bilibili-rss-receiver-first-ruby-project/">
+<link href="http://hacker-yhj.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Hacking to the Gate Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://hacker-yhj.github.io/assets/css/main.min.css">
+<link rel="stylesheet" href="http://hacker-yhj.github.io/assets/css/custom.css">
+<!-- Webfonts -->
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://hacker-yhj.github.io/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<!--link rel="shortcut icon" href="http://hacker-yhj.github.io/favicon.ico"-->
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://hacker-yhj.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://hacker-yhj.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://hacker-yhj.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://hacker-yhj.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://hacker-yhj.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+
+<style type="text/css">body {background-image:url(http://hacker-yhj.github.io/images/squairy_light.png);}</style>
+
+</head>
+
+<body id="post" class="feature">
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="http://hacker-yhj.github.io">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://hacker-yhj.github.io/images/avatar.jpg" alt="Thomas Yang photo" class="author-photo">
+					<h4>Thomas Yang</h4>
+					<p>I'm Thomas Yang, a CS undergraduate of Peking University. I'm a inquisitive technophile have no resistance in anything that promotes my productivity. Always trying to do something cool.</p>
+				</li>
+				<li><a href="http://hacker-yhj.github.io/about/">Learn More</a></li>
+				<li>
+					<a href="mailto:jscnm1993@gmail.com"><i class="icon-envelope"></i> Email me!</a>
+				</li>
+				<li>
+					<a href="http://weibo.com/HackerYangHJ"><i class="icon-weibo"></i> Weibo</a>
+				</li>
+				
+				
+				
+				
+				<li>
+					<a href="http://github.com/Hacker-YHJ"><i class="icon-github"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="http://hacker-yhj.github.io/archive/">All Posts</a></li>
+				<li><a href="http://hacker-yhj.github.io/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Share</a>
+			<ul class="dl-submenu">
+				<li><a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=2526586157',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','','','',''));" title="Share on Weibo"><span class="count"><i class="icon-weibo"></i> Weibo</a></li>
+				<li><a href="https://www.facebook.com/sharer/sharer.php?u=http://hacker-yhj.github.io/bilibili-rss-receiver-first-ruby-project/" title="Share on Facebook"><span class="count"><i class="icon-facebook"></i> Facebook</span></a></li>
+				<li><a href="https://twitter.com/intent/tweet?text=http://hacker-yhj.github.io/bilibili-rss-receiver-first-ruby-project/" title="Share on Twitter"><span class="count"><i class="icon-twitter"></i> Twitter</span></a></li>
+				<li><a href="https://plus.google.com/share?url=http://hacker-yhj.github.io/bilibili-rss-receiver-first-ruby-project/" title="Share on Google Plus"><span class="count"><i class="icon-google-plus"></i> Google+</span></a></li>
+			</ul>
+		</li>
+		
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+<div class="entry-header">
+  <div class="entry-image"><img src="http://hacker-yhj.github.io/images/abstract-6.jpg" alt="Use MacRuby for the first time" data-stellar-ratio='0.2'>
+    <div class="image-credit">Image source: <a href="http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/">dargadgetz</a></div><!-- /.image-credit -->
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="http://hacker-yhj.github.io/bilibili-rss-receiver-first-ruby-project/" rel="bookmark" title="Use MacRuby for the first time">Use MacRuby for the first time</a></h1>
+        
+        <h2>October 16, 2013</h2>
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <p>Just now I finished the barely-running version of this little project, seriously using Ruby(actually MacRuby, I will mention it later) for the first time. </p>
+
+<p>Althrough I fell in love with Ruby the first time I saw it, I didn’t realize that writting with Ruby is such a pleasure. A GUI program using multithread tech and carefully handling exceptions is written in only 200+ lines, which seems impossible to Objective-C(I should have used it if I didn’t see MacRuby). Before talking about the details, I remind you that the project is avaliable in my github <a href="https://github.com/Hacker-YHJ/miscellaneous/tree/master/BiliRSS">repo</a>. Feel free to give me some <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#106;&#115;&#099;&#110;&#109;&#049;&#057;&#057;&#051;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">feedbacks</a>.</p>
+
+<!--more-->
+
+<h2 id="macruby-is-a-awesome-hack">MacRuby is a awesome hack</h2>
+
+<p>As we all know the most common language used to develop on Mac is Objective-C, besieds C and C++ also have a seat. MacRuby is a interface allowing you to use Ruby instead, which is a boon to Ruby lovers like me. If you don’t know the difference, I’m gonna tell you now.</p>
+
+<p>In my project I must handle six checkboxs. And now, for example, I need to hide them. What should I do?</p>
+
+<p>In Objective-C, the code may look like this:</p>
+
+<div class="highlight"><pre><code class="language-objc" data-lang="objc"><span class="lineno">1</span> <span class="p">[</span><span class="n">checkboxs0</span> <span class="nl">setHidden</span><span class="p">:</span><span class="nb">true</span><span class="p">];</span>
+<span class="lineno">2</span> <span class="p">[</span><span class="n">checkboxs1</span> <span class="nl">setHidden</span><span class="p">:</span><span class="nb">true</span><span class="p">];</span>
+<span class="lineno">3</span> <span class="p">[</span><span class="n">checkboxs2</span> <span class="nl">setHidden</span><span class="p">:</span><span class="nb">true</span><span class="p">];</span>
+<span class="lineno">4</span> <span class="p">[</span><span class="n">checkboxs3</span> <span class="nl">setHidden</span><span class="p">:</span><span class="nb">true</span><span class="p">];</span>
+<span class="lineno">5</span> <span class="p">[</span><span class="n">checkboxs4</span> <span class="nl">setHidden</span><span class="p">:</span><span class="nb">true</span><span class="p">];</span>
+<span class="lineno">6</span> <span class="p">[</span><span class="n">checkboxs5</span> <span class="nl">setHidden</span><span class="p">:</span><span class="nb">true</span><span class="p">];</span></code></pre></div>
+
+<p>Well, a little bit stupid. Why not using the loop statement. Actually I can’t if the six checkboxs named like this, I mean six variables with similar name. To do this, I must use array.</p>
+
+<div class="highlight"><pre><code class="language-objc" data-lang="objc"><span class="lineno">1</span> <span class="k">for</span><span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+<span class="lineno">2</span>   <span class="p">[</span><span class="n">checkboxs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="nl">setHidden</span><span class="p">:</span><span class="nb">true</span><span class="p">];</span></code></pre></div>
+
+<p>Looks better now, but here comes anthoer problem. The variables and corresponding GUI components are bundled together, which can be done easily by some dragging tricks, but only when the variable is individually and explicitly defined. Variables within an array can not be recognized by the IDE in this specific case. If you really want to archieve this, you can, by editing the tedious XML files by hand and you won’t like that.</p>
+
+<p>Now Let’s see how Ruby solves this problem.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno">1</span> <span class="nb">instance_variables</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">checkboxs</span><span class="o">|</span>
+<span class="lineno">2</span>   <span class="k">next</span> <span class="k">if</span> <span class="kp">nil</span> <span class="o">==</span> <span class="p">(</span><span class="sr">/checkbox/</span> <span class="o">=~</span> <span class="n">checkboxs</span><span class="p">)</span>
+<span class="lineno">3</span>   <span class="nb">instance_eval</span> <span class="sx">%{</span>
+<span class="lineno">4</span> <span class="sx">    </span><span class="si">#{</span><span class="n">checkboxs</span><span class="si">}</span><span class="sx">.setHidden true</span>
+<span class="lineno">5</span> <span class="sx">  }</span>
+<span class="lineno">6</span> <span class="k">end</span></code></pre></div>
+
+<p>It needs six lines, the same as objective-c, but you can see that there is no repeated statement. I’m gonna give a detailed explaination of it. </p>
+
+<p><code>instance_variables</code> are actually a function which returns an array of instance variables of this class. you may think that it is just a method, but actually you are facing the most flexible part of Ruby – metaprogramming. The method returns the inner content of a class in runtime, which is impossible in static programming languages like C. Now with this method, I have an array of all the variables including the checkboxs</p>
+
+<p>Statements between <code>do</code> and <code>end</code>, called code block, are a little trick in Ruby acting like iteration. With <code>each</code> method we know that for each variables, it will be assigned to <code>checkboxs</code>, which is a local variable, and run the following code. Actually code block is a different kind of function, called repeatedly and with specific arugments, which can make code cleaner and more readable.</p>
+
+<p><code>next if nil == (/checkbox/ =~ checkboxs)</code> is nothing but a if statement with <code>if</code> behind. Content within <code>/</code> are regular expression, with the samplest form of it, matches any string containing “checkbox”. <code>next</code> just like <code>continue</code>, means start the next step of iteration. So this line choose all the variable with “checkbox” in its name. In our example, they are checkbox0 et al.</p>
+
+<p>So, you may think that we will call the <code>setHidden</code> method with each checkbox. Yes, but more complicated.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno">1</span> <span class="nb">instance_eval</span> <span class="sx">%{</span>
+<span class="lineno">2</span> <span class="sx">  </span><span class="si">#{</span><span class="n">checkboxs</span><span class="si">}</span><span class="sx">.setHidden true</span>
+<span class="lineno">3</span> <span class="sx">}</span></code></pre></div>
+
+<p><code>instance_eval</code> is such a method that tells ruby interpreter to run the argument string as ruby source code. It is a powerful but dangerous method. Running the code generated in the runtime cann’t guarantee security, but brings a lot of flexibility. Security is a huge issue, so I will not go any deeper here.</p>
+
+<p><code>%{}</code> is nothing but <code>" "</code> expression, but it is able to use “ freely in the block. <code>#{}</code> let the inner content “pop out”, means that in the string, the variable in the <code>#{}</code> block will be shown as its value in the string form (implicit call the to_s function which returns a descriptive string of an object). So the string will be like <code>checkbox0.setHidden true</code> et al.</p>
+
+<p>Now you can see the difference. If we have 100 checkboxs, we need 100 verbose lines in objective-c but still 6 lines in ruby, because the six lines will select all the variables and call the function with it.</p>
+
+<h2 id="more-about-metaprogramming">More about metaprogramming</h2>
+
+<p>I showed some ruby tricks of metaprogramming but it is just a drop in the ocean. Ruby allows you to do everything about the programme itself, like querying for the name of variables before, and more over, define a new method if you like.</p>
+
+<p>In the project, I still have to write about six functions, or methods, to be the handler of the checkboxs. The functions must be explicitly defined for the same reason as before. Since the content of the functions are so similar and I have zero tolerance in repeating, I’ve come up with a way using metaprogramming again.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno"> 1</span> <span class="k">def</span> <span class="nf">checkbox0_handler</span><span class="p">(</span><span class="n">sender</span><span class="p">);</span> <span class="k">end</span>
+<span class="lineno"> 2</span> <span class="k">def</span> <span class="nf">checkbox1_handler</span><span class="p">(</span><span class="n">sender</span><span class="p">);</span> <span class="k">end</span>
+<span class="lineno"> 3</span> <span class="k">def</span> <span class="nf">checkbox2_handler</span><span class="p">(</span><span class="n">sender</span><span class="p">);</span> <span class="k">end</span>
+<span class="lineno"> 4</span> <span class="k">def</span> <span class="nf">checkbox3_handler</span><span class="p">(</span><span class="n">sender</span><span class="p">);</span> <span class="k">end</span>
+<span class="lineno"> 5</span> <span class="k">def</span> <span class="nf">checkbox4_handler</span><span class="p">(</span><span class="n">sender</span><span class="p">);</span> <span class="k">end</span>
+<span class="lineno"> 6</span> <span class="k">def</span> <span class="nf">checkbox5_handler</span><span class="p">(</span><span class="n">sender</span><span class="p">);</span> <span class="k">end</span>
+<span class="lineno"> 7</span> 
+<span class="lineno"> 8</span> <span class="no">GROUP_NUM</span><span class="o">.</span><span class="n">times</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+<span class="lineno"> 9</span>     <span class="nb">class_eval</span> <span class="sx">%{</span>
+<span class="lineno">10</span> <span class="sx">      def checkbox</span><span class="si">#{</span><span class="n">i</span><span class="si">}</span><span class="sx">_handler(sender)</span>
+<span class="lineno">11</span> <span class="sx">        if sender.state == NSOnState</span>
+<span class="lineno">12</span> <span class="sx">          @category_list &lt;&lt; sender.title</span>
+<span class="lineno">13</span> <span class="sx">          refresh_textfield</span>
+<span class="lineno">14</span> <span class="sx">          @label.setStringValue &quot;Successfully added </span><span class="se">\#</span><span class="sx">{sender.title}&quot;</span>
+<span class="lineno">15</span> <span class="sx">        elsif sender.state == NSOffState</span>
+<span class="lineno">16</span> <span class="sx">          @category_list.delete sender.title</span>
+<span class="lineno">17</span> <span class="sx">          refresh_textfield</span>
+<span class="lineno">18</span> <span class="sx">          @label.setStringValue &quot;Successfully deleted </span><span class="se">\#</span><span class="sx">{sender.title}&quot;</span>
+<span class="lineno">19</span> <span class="sx">        end</span>
+<span class="lineno">20</span> <span class="sx">      end</span>
+<span class="lineno">21</span> <span class="sx">    }</span>
+<span class="lineno">22</span>   <span class="k">end</span></code></pre></div>
+
+<p>What I’ve done is very clear. Define six empty functions to let the IDE know. Then do a loop statement to open each function and give them the corresponding content.</p>
+
+<p>Open the function? I’ve never heard of it when I’m using C, but it is such an easy thing in ruby. Just define the function again, the interpreter will notice there has been a synonym function, so it open the funcion instead of giving a definition. Everything you do within the definition statements will be add to the function. So easy~</p>
+
+<p>The code is similar to the former one so I skip the description. If you really like it, how about starting a ruby project now?</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>It is just a exercise project, but I did feel the power of ruby and I really love it. It brought me a lot of pleasures and surprises when coding and gave out the decent result as well. People who have never touched interpreted language should try to use it. And you will never regret.</p>
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="http://hacker-yhj.github.io/tags/#Ruby" title="Pages tagged Ruby" class="tag">Ruby</a><a href="http://hacker-yhj.github.io/tags/#Mac" title="Pages tagged Mac" class="tag">Mac</a><a href="http://hacker-yhj.github.io/tags/#notes" title="Pages tagged notes" class="tag">notes</a></span>
+        <span><a href="http://hacker-yhj.github.io/bilibili-rss-receiver-first-ruby-project/" rel="bookmark" title="Use MacRuby for the first time">Use MacRuby for the first time</a> was published on <span class="entry-date date published updated"><time datetime="2013-10-16T00:00:00+00:00">October 16, 2013</time></span></span>
+        
+        <span class="author vcard"><span class="fn"><a href="http://hacker-yhj.github.io/about/" title="About Thomas Yang">Thomas Yang</a></span></span>
+        <div class="social-share">
+          <ul class="socialcount socialcount-small inline-list">
+            <li class="weibo"><a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=2526586157',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','','','',''));" title="Share on Weibo"><span class="count"><i class="icon-weibo"></i> Share</span></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://hacker-yhj.github.io/bilibili-rss-receiver-first-ruby-project/" title="Share on Facebook"><span class="count"><i class="icon-facebook-sign"></i> Like</span></a></li>
+            <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://hacker-yhj.github.io/bilibili-rss-receiver-first-ruby-project/" title="Share on Twitter"><span class="count"><i class="icon-twitter-sign"></i> Tweet</span></a></li>
+            <li class="googleplus"><a href="https://plus.google.com/share?url=http://hacker-yhj.github.io/bilibili-rss-receiver-first-ruby-project/" title="Share on Google Plus"><span class="count"><i class="icon-google-plus-sign"></i> +1</span></a></li>
+          </ul>
+        </div><!-- /.social-share -->
+      </footer>
+    </div><!-- /.entry-content -->
+    
+    
+    <div class="ds-thread" data-title="Use MacRuby for the first time"></div>
+    
+    
+    <div class="read-more">
+      
+        <div class="read-more-header">
+          <a href="http://hacker-yhj.github.io/history-flow/" class="read-more-btn">Read More</a>
+        </div><!-- /.read-more-header -->
+        <div class="read-more-content">
+          <h3><a href="http://hacker-yhj.github.io/Koans-Games/" title="Koans Games">Koans Games</a></h3>
+          <p>Introduction to Koans -- a simple but helpful toolkit for learning Ruby.</p>
+        </div><!-- /.read-more-content -->
+      
+      <div class="read-more-list">
+        
+          <div class="list-item">
+            <h4><a href="http://hacker-yhj.github.io/About-Vim/" title="About VIM and It’s Philosophy">About VIM and It’s Philosophy</a></h4>
+            <span>Published on May 01, 2014</span>
+          </div><!-- /.list-item -->
+        
+          <div class="list-item">
+            <h4><a href="http://hacker-yhj.github.io/operation-system-Lab-0/" title="Nachos Notes -- Preparations">Nachos Notes -- Preparations</a></h4>
+            <span>Published on February 25, 2014</span>
+          </div><!-- /.list-item -->
+        
+      </div><!-- /.read-more-list -->
+      
+    </div><!-- /.read-more -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2015 <a href="http://hacker-yhj.github.io">Thomas Yang</a>. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="http://hacker-yhj.github.io/assets/js/vendor/jquery-2.0.3.min.js"></script>
+
+<script src="http://hacker-yhj.github.io/assets/js/scripts.min.js"></script>
+<!-- stellar.js -->
+<script type='text/javascript' src="http://hacker-yhj.github.io/assets/js/customize/jquery.stellar.min.js"></script>
+
+<!-- run stellar.js -->
+<script>
+$('.entry-image img').ready( function() { $(this).stellar({
+  hideDistantElements: false,
+  positionProperty: 'transform'
+}); });
+</script>
+
+
+
+
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"hacker-yhj"};
+(function() {
+  var ds = document.createElement('script');
+  ds.type = 'text/javascript';ds.async = true;
+  ds.src = 'http://static.duoshuo.com/embed.js';
+  ds.charset = 'UTF-8';
+  (document.getElementsByTagName('head')[0]
+  || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+
+
+</body>
+</html>

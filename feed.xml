@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://hacker-yhj.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io" />
-<updated>2014-08-10T12:12:36+00:00</updated>
+<updated>2015-03-12T03:43:45+00:00</updated>
 <id>http://hacker-yhj.github.io/</id>
 <author>
   <name>Thomas Yang</name>
@@ -15,8 +15,8 @@
 
 <entry>
   <title type="html"><![CDATA[Koans Games]]></title>
- <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/notes/Koans-Games/" />
-  <id>http://hacker-yhj.github.io/notes/Koans-Games</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/Koans-Games/" />
+  <id>http://hacker-yhj.github.io/Koans-Games</id>
   <published>2014-05-12T00:00:00+00:00</published>
   <updated>2014-05-12T00:00:00+00:00</updated>
   <author>
@@ -89,14 +89,14 @@ wanna see more about Koans and it’s magic. Open the file &lt;code&gt;neo.rb&lt
 
 &lt;p&gt;If you encountered some problems, you may want to take a look at &lt;a href=&quot;http://rubykoans.com/&quot;&gt;http://rubykoans.com/&lt;/a&gt; – the official site of Koans. Please feel free to contact me too. I’ll be glad to give out an answer for you.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/notes/Koans-Games/&quot;&gt;Koans Games&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on May 12, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/Koans-Games/&quot;&gt;Koans Games&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on May 12, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[About VIM and It’s Philosophy]]></title>
- <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/notes/About-Vim/" />
-  <id>http://hacker-yhj.github.io/notes/About-Vim</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/About-Vim/" />
+  <id>http://hacker-yhj.github.io/About-Vim</id>
   <published>2014-05-01T00:00:00+00:00</published>
   <updated>2014-05-01T00:00:00+00:00</updated>
   <author>
@@ -194,14 +194,14 @@ wanna see more about Koans and it’s magic. Open the file &lt;code&gt;neo.rb&lt
 
 &lt;p&gt;:wq&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/notes/About-Vim/&quot;&gt;About VIM and It’s Philosophy&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on May 01, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/About-Vim/&quot;&gt;About VIM and It’s Philosophy&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on May 01, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Nachos Notes -- Preparations]]></title>
- <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/notes/operation-system-Lab-0/" />
-  <id>http://hacker-yhj.github.io/notes/operation-system-Lab-0</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/operation-system-Lab-0/" />
+  <id>http://hacker-yhj.github.io/operation-system-Lab-0</id>
   <published>2014-02-25T00:00:00+00:00</published>
   <updated>2014-02-25T00:00:00+00:00</updated>
   <author>
@@ -294,14 +294,14 @@ wanna see more about Koans and it’s magic. Open the file &lt;code&gt;neo.rb&lt
 
 &lt;p&gt;安装完这两个包之后，就可以正常编译了。&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/notes/operation-system-Lab-0/&quot;&gt;Nachos Notes -- Preparations&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on February 25, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/operation-system-Lab-0/&quot;&gt;Nachos Notes -- Preparations&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on February 25, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[GTD - The First Impression]]></title>
- <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/notes/GTD-First-Impression/" />
-  <id>http://hacker-yhj.github.io/notes/GTD-First-Impression</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/GTD-First-Impression/" />
+  <id>http://hacker-yhj.github.io/GTD-First-Impression</id>
   <published>2014-01-27T00:00:00+00:00</published>
   <updated>2014-01-27T00:00:00+00:00</updated>
   <author>
@@ -396,14 +396,14 @@ wanna see more about Koans and it’s magic. Open the file &lt;code&gt;neo.rb&lt
 
 &lt;p&gt;David Allen. &lt;em&gt;Getting Things Done, The Art of Stress-Free Productivity&lt;/em&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/notes/GTD-First-Impression/&quot;&gt;GTD - The First Impression&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on January 27, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/GTD-First-Impression/&quot;&gt;GTD - The First Impression&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on January 27, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[The Isla Del Sueño Migrant Boats]]></title>
- <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/assignments/the-isla-del-sueno-migrant-boats/" />
-  <id>http://hacker-yhj.github.io/assignments/the-isla-del-sueno-migrant-boats</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/the-isla-del-sueno-migrant-boats/" />
+  <id>http://hacker-yhj.github.io/the-isla-del-sueno-migrant-boats</id>
   <published>2013-12-11T00:00:00+00:00</published>
   <updated>2013-12-11T00:00:00+00:00</updated>
   <author>
@@ -424,14 +424,14 @@ wanna see more about Koans and it’s magic. Open the file &lt;code&gt;neo.rb&lt
 
 &lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/vis_course_assignment_3/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/assignments/the-isla-del-sueno-migrant-boats/&quot;&gt;The Isla Del Sueño Migrant Boats&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on December 11, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/the-isla-del-sueno-migrant-boats/&quot;&gt;The Isla Del Sueño Migrant Boats&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on December 11, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[News Visualization Sketch]]></title>
- <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/exercise/news-visualization-sketch/" />
-  <id>http://hacker-yhj.github.io/exercise/news-visualization-sketch</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/news-visualization-sketch/" />
+  <id>http://hacker-yhj.github.io/news-visualization-sketch</id>
   <published>2013-12-11T00:00:00+00:00</published>
   <updated>2013-12-11T00:00:00+00:00</updated>
   <author>
@@ -448,14 +448,14 @@ wanna see more about Koans and it’s magic. Open the file &lt;code&gt;neo.rb&lt
 
 &lt;p&gt;Hope you enjoy it.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/exercise/news-visualization-sketch/&quot;&gt;News Visualization Sketch&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on December 11, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/news-visualization-sketch/&quot;&gt;News Visualization Sketch&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on December 11, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Airline Visualization]]></title>
- <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/assignments/vis-course-assignment/" />
-  <id>http://hacker-yhj.github.io/assignments/vis-course-assignment</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/vis-course-assignment/" />
+  <id>http://hacker-yhj.github.io/vis-course-assignment</id>
   <published>2013-11-03T00:00:00+00:00</published>
   <updated>2013-11-03T00:00:00+00:00</updated>
   <author>
@@ -476,14 +476,14 @@ wanna see more about Koans and it’s magic. Open the file &lt;code&gt;neo.rb&lt
 
 &lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/vis_course_assignment/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/assignments/vis-course-assignment/&quot;&gt;Airline Visualization&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on November 03, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/vis-course-assignment/&quot;&gt;Airline Visualization&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on November 03, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Use MacRuby for the first time]]></title>
- <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/notes/bilibili-rss-receiver-first-ruby-project/" />
-  <id>http://hacker-yhj.github.io/notes/bilibili-rss-receiver-first-ruby-project</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/bilibili-rss-receiver-first-ruby-project/" />
+  <id>http://hacker-yhj.github.io/bilibili-rss-receiver-first-ruby-project</id>
   <published>2013-10-16T00:00:00+00:00</published>
   <updated>2013-10-16T00:00:00+00:00</updated>
   <author>
@@ -587,14 +587,14 @@ wanna see more about Koans and it’s magic. Open the file &lt;code&gt;neo.rb&lt
 
 &lt;p&gt;It is just a exercise project, but I did feel the power of ruby and I really love it. It brought me a lot of pleasures and surprises when coding and gave out the decent result as well. People who have never touched interpreted language should try to use it. And you will never regret.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/notes/bilibili-rss-receiver-first-ruby-project/&quot;&gt;Use MacRuby for the first time&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on October 16, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/bilibili-rss-receiver-first-ruby-project/&quot;&gt;Use MacRuby for the first time&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on October 16, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[A visualisation example -- Histroy Flow]]></title>
- <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/notes/history-flow/" />
-  <id>http://hacker-yhj.github.io/notes/history-flow</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/history-flow/" />
+  <id>http://hacker-yhj.github.io/history-flow</id>
   <published>2013-10-04T00:00:00+00:00</published>
   <updated>2013-10-04T00:00:00+00:00</updated>
   <author>
@@ -744,14 +744,14 @@ wanna see more about Koans and it’s magic. Open the file &lt;code&gt;neo.rb&lt
 
 &lt;p&gt;&lt;strong&gt;Beautiful Visualization, Looking at Data Through the Eyes of Experts&lt;/strong&gt; This is the book where I met and select this visualization. In this book are lots of high quality visualizations with specific descriptions and discussions. I strongly recommend you to read about it.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/notes/history-flow/&quot;&gt;A visualisation example -- Histroy Flow&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on October 04, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/history-flow/&quot;&gt;A visualisation example -- Histroy Flow&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on October 04, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Quadratic Curve]]></title>
- <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/math/quadratic-curve/" />
-  <id>http://hacker-yhj.github.io/math/quadratic-curve</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/quadratic-curve/" />
+  <id>http://hacker-yhj.github.io/quadratic-curve</id>
   <published>2013-09-05T00:00:00+00:00</published>
   <updated>2013-09-05T00:00:00+00:00</updated>
   <author>
@@ -772,14 +772,14 @@ wanna see more about Koans and it’s magic. Open the file &lt;code&gt;neo.rb&lt
 
 &lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/quadratic_curve/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/math/quadratic-curve/&quot;&gt;Quadratic Curve&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 05, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/quadratic-curve/&quot;&gt;Quadratic Curve&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 05, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Circle Play]]></title>
- <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/exercise/picture-simulator/" />
-  <id>http://hacker-yhj.github.io/exercise/picture-simulator</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/picture-simulator/" />
+  <id>http://hacker-yhj.github.io/picture-simulator</id>
   <published>2013-09-05T00:00:00+00:00</published>
   <updated>2013-09-05T00:00:00+00:00</updated>
   <author>
@@ -798,14 +798,14 @@ wanna see more about Koans and it’s magic. Open the file &lt;code&gt;neo.rb&lt
 
 &lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/PicShow/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/exercise/picture-simulator/&quot;&gt;Circle Play&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 05, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/picture-simulator/&quot;&gt;Circle Play&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 05, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[What's happening when you use "Pen" tool in Photoshop]]></title>
- <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/math/bezier-curves/" />
-  <id>http://hacker-yhj.github.io/math/bezier-curves</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/bezier-curves/" />
+  <id>http://hacker-yhj.github.io/bezier-curves</id>
   <published>2013-09-05T00:00:00+00:00</published>
   <updated>2013-09-05T00:00:00+00:00</updated>
   <author>
@@ -824,14 +824,14 @@ wanna see more about Koans and it’s magic. Open the file &lt;code&gt;neo.rb&lt
 
 &lt;div class=&quot;link-button&quot;&gt;&lt;a href=&quot;http://hacker-yhj.github.io/projects/Bézier_Curves/index.html&quot; class=&quot;btn&quot;&gt;Click to see the contents.&lt;/a&gt;&lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/math/bezier-curves/&quot;&gt;What's happening when you use "Pen" tool in Photoshop&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 05, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/bezier-curves/&quot;&gt;What's happening when you use "Pen" tool in Photoshop&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 05, 2013.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[How to build a blog with Octopress]]></title>
- <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/notes/how-to-build-a-blog-with-octopress/" />
-  <id>http://hacker-yhj.github.io/notes/how-to-build-a-blog-with-octopress</id>
+ <link rel="alternate" type="text/html" href="http://hacker-yhj.github.io/how-to-build-a-blog-with-octopress/" />
+  <id>http://hacker-yhj.github.io/how-to-build-a-blog-with-octopress</id>
   <published>2013-09-04T00:00:00+00:00</published>
   <updated>2013-09-04T00:00:00+00:00</updated>
   <author>
@@ -965,7 +965,7 @@ git的下载地址在&lt;a href=&quot;https://github.com&quot;&gt;github官网&l
 
 &lt;p&gt;另，Octopress十分强大，许多的特性LZ还没有搞明白，日后有时间研究清楚了一定会更新的。&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/notes/how-to-build-a-blog-with-octopress/&quot;&gt;How to build a blog with Octopress&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 04, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://hacker-yhj.github.io/how-to-build-a-blog-with-octopress/&quot;&gt;How to build a blog with Octopress&lt;/a&gt; was originally published by Thomas Yang at &lt;a href=&quot;http://hacker-yhj.github.io&quot;&gt;Hacking to the Gate&lt;/a&gt; on September 04, 2013.&lt;/p&gt;</content>
 </entry>
 
 </feed>

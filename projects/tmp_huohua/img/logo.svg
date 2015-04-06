@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="57px" height="53px" viewBox="0 0 57 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Polygon 3 + Rectangle 144 + Polygon 3 + Triangle 3 + Triangle 4 + Rectangle 144 + Polygon 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="D.BetaLanding" sketch:type="MSArtboardGroup" transform="translate(-555.000000, -63.000000)">
+            <g id="Polygon-3-+-Rectangle-144-+-Polygon-3-+-Triangle-3-+-Triangle-4-+-Rectangle-144-+-Polygon-3-+-火花" sketch:type="MSLayerGroup" transform="translate(555.000000, 63.000000)">
+                <g id="Polygon-3-+-Rectangle-144-+-Polygon-3-+-Triangle-3-+-Triangle-4-+-Rectangle-144-+-Polygon-3" sketch:type="MSShapeGroup">
+                    <path d="M42.8412267,52.5 C44.7099453,52.5 46.6999759,51.102999 47.2748844,49.379711 L56.1528806,22.7679198 C56.7264163,21.0487466 55.9678877,18.7801269 54.4555933,17.7100067 L31.2386421,1.28137408 C29.7241337,0.209687209 27.274434,0.211253848 25.7621396,1.28137408 L2.54518836,17.7100067 C1.03067998,18.7816936 0.272992535,21.0446318 0.847901025,22.7679198 L9.72589727,49.379711 C10.299433,51.0988842 12.2858219,52.5 14.159555,52.5 L20.911671,52.5 C22.8442673,52.5 23.8438548,51.0438051 23.1419148,49.2413417 L18.6607143,37.734375 L38.3392857,37.734375 L33.8580852,49.2413417 C33.1572185,51.041049 34.1461382,52.5 36.0885958,52.5 L42.8412267,52.5 Z" id="Polygon-5" fill="#FFBE28"></path>
+                    <path d="M40.2906123,22.1073133 C41.8316291,23.1849367 42.6070939,25.4619688 42.0249911,27.1863064 L38.5231292,37.5597166 C37.9399834,39.2871437 35.9105696,40.6875 33.9861465,40.6875 L22.7822994,40.6875 C20.8597388,40.6875 18.8274195,39.2840542 18.2453167,37.5597166 L14.7434548,27.1863064 C14.160309,25.4588793 14.9406038,23.1822885 16.4778336,22.1073133 L25.5939653,15.7324597 C27.134982,14.6548363 29.6372508,14.6574845 31.1744806,15.7324597 L40.2906123,22.1073133 L40.2906123,22.1073133 Z" id="Polygon-2" fill="#F35C5C"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

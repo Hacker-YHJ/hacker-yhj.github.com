@@ -1,0 +1,292 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Koans Games &#8211; Hacking to the Gate</title>
+<meta name="description" content="Introduction to Koans -- a simple but helpful toolkit for learning Ruby.">
+<meta name="keywords" content="Ruby, notes, Koans">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Koans Games">
+<meta property="og:description" content="Introduction to Koans -- a simple but helpful toolkit for learning Ruby.">
+<meta property="og:url" content="http://hacker-yhj.github.io/Koans-Games/">
+<meta property="og:site_name" content="Hacking to the Gate">
+
+
+
+
+
+<link rel="canonical" href="http://hacker-yhj.github.io/Koans-Games/">
+<link href="http://hacker-yhj.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Hacking to the Gate Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://hacker-yhj.github.io/assets/css/main.min.css">
+<link rel="stylesheet" href="http://hacker-yhj.github.io/assets/css/custom.css">
+<!-- Webfonts -->
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://hacker-yhj.github.io/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<!--link rel="shortcut icon" href="http://hacker-yhj.github.io/favicon.ico"-->
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://hacker-yhj.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://hacker-yhj.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://hacker-yhj.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://hacker-yhj.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://hacker-yhj.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+
+<style type="text/css">body {background-image:url(http://hacker-yhj.github.io/images/squairy_light.png);}</style>
+
+</head>
+
+<body id="post" class="feature">
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="http://hacker-yhj.github.io">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://hacker-yhj.github.io/images/avatar.jpg" alt="Thomas Yang photo" class="author-photo">
+					<h4>Thomas Yang</h4>
+					<p>I'm Thomas Yang, a CS undergraduate of Peking University. I'm a inquisitive technophile have no resistance in anything that promotes my productivity. Always trying to do something cool.</p>
+				</li>
+				<li><a href="http://hacker-yhj.github.io/about/">Learn More</a></li>
+				<li>
+					<a href="mailto:jscnm1993@gmail.com"><i class="icon-envelope"></i> Email me!</a>
+				</li>
+				<li>
+					<a href="http://weibo.com/HackerYangHJ"><i class="icon-weibo"></i> Weibo</a>
+				</li>
+				
+				
+				
+				
+				<li>
+					<a href="http://github.com/Hacker-YHJ"><i class="icon-github"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="http://hacker-yhj.github.io/archive/">All Posts</a></li>
+				<li><a href="http://hacker-yhj.github.io/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Share</a>
+			<ul class="dl-submenu">
+				<li><a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=2526586157',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','','','',''));" title="Share on Weibo"><span class="count"><i class="icon-weibo"></i> Weibo</a></li>
+				<li><a href="https://www.facebook.com/sharer/sharer.php?u=http://hacker-yhj.github.io/Koans-Games/" title="Share on Facebook"><span class="count"><i class="icon-facebook"></i> Facebook</span></a></li>
+				<li><a href="https://twitter.com/intent/tweet?text=http://hacker-yhj.github.io/Koans-Games/" title="Share on Twitter"><span class="count"><i class="icon-twitter"></i> Twitter</span></a></li>
+				<li><a href="https://plus.google.com/share?url=http://hacker-yhj.github.io/Koans-Games/" title="Share on Google Plus"><span class="count"><i class="icon-google-plus"></i> Google+</span></a></li>
+			</ul>
+		</li>
+		
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+<div class="entry-header">
+  <div class="entry-image"><img src="http://hacker-yhj.github.io/images/abstract-3.jpg" alt="Koans Games" data-stellar-ratio='0.2'>
+    
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="http://hacker-yhj.github.io/Koans-Games/" rel="bookmark" title="Koans Games">Koans Games</a></h1>
+        
+        <h2>May 12, 2014</h2>
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <p>For anyone who already had some programming experience and wants to play with Ruby but somehow impeded by, or just fail to find any logics but coarse information in the so called Ruby Handbook, Koans may be a amazing alternative for you to try.</p>
+
+<p>I’m always wandering that, as a dynamic and reflective programming language, Ruby is fully capable to explains itself clearly, without any chunky handbook. Ruby is designed for programmer productivity and fun, and with this purpose it’s syntaxs and method names are meticulously considered to be intuitive, showing the similar form of nature language, which thousands of elegant Ruby one liners assured. I’m gonna show you an example.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno">1</span> <span class="c1"># to make every word in a paragraph capitalized</span>
+<span class="lineno">2</span> <span class="vi">@paragraph</span><span class="o">.</span><span class="n">split</span><span class="o">.</span><span class="n">map!</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:capitalize</span><span class="p">)</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="lineno">3</span> 
+<span class="lineno">4</span> <span class="c1"># a shorter and more skillful approach</span>
+<span class="lineno">5</span> <span class="vi">@paragraph</span><span class="o">.</span><span class="n">gsub!</span><span class="p">(</span><span class="sr">/\S+/</span><span class="p">,</span><span class="o">&amp;</span><span class="ss">:capitalize</span><span class="p">)</span></code></pre></div>
+
+<p>From my perspective, instigating somebody to reading the alleged Ruby Handbook is ruining the language, as Jim Weirich and Joe O’Brien, the author of Koans, may agree with. However, they didn’t just hold this point of view, but ultimately build up this helper, which earned my respect spontaneously.</p>
+
+<p>So, if I’ve already attracted your attending, and you are ready for this journey. Then follow me, I’ll point out a path to enlightenment that leading you to cross the Gate of Ruby and witness it’s inner beauty.</p>
+
+<!--more-->
+
+<h1 id="preparation">Preparation</h1>
+
+<p>To start our journey, we must assume that all the equipment assured. This time, we only need two, Ruby interpreter and Rake. If you do not already have Ruby setup, please visit <a href="http://ruby-lang.org/en/downloads">http://ruby-lang.org/en/downloads</a> for operating system specific instructions. For Rake, visit <a href="https://rubygems.org/">https://rubygems.org/</a> to get gems, the Ruby’s premier packaging system, and type <code>gem install rake</code> in your console.</p>
+
+<p>And please make sure the version of your Ruby is greater than 1.8. To look up your Ruby version, please type <code>ruby --version</code>.</p>
+
+<p>When everything are ready, please visit <a href="http://rubykoans.com/">http://rubykoans.com/</a> and get the Koans. Usually you will have a compressed package downloaded, decompress it and enter the target folder. See the list of .rb files? Those are where we will visit later. But don’t be hurry, we need a experienced guide introduce us all the resorts. type <code>rake</code> in your console and see what will hapen.</p>
+
+<h1 id="first-try">First try</h1>
+
+<p>If everything goes right, you will get the following output:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="lineno"> 1</span> /YourRubyPath/ruby path_to_enlightenment.rb
+<span class="lineno"> 2</span> AboutAsserts#test_assert_truth has damaged your karma.
+<span class="lineno"> 3</span> 
+<span class="lineno"> 4</span> The Master says:
+<span class="lineno"> 5</span>   You have not yet reached enlightenment.
+<span class="lineno"> 6</span> 
+<span class="lineno"> 7</span> The answers you seek...
+<span class="lineno"> 8</span>   Failed assertion.
+<span class="lineno"> 9</span> 
+<span class="lineno">10</span> Please meditate on the following code:
+<span class="lineno">11</span>   /Path/To/koans/about_asserts.rb:10:in <span class="sb">`</span>test_assert_truth<span class="err">&#39;</span>
+<span class="lineno">12</span> 
+<span class="lineno">13</span> mountains are merely mountains
+<span class="lineno">14</span> your path thus far <span class="o">[</span>X_________________________________________________<span class="o">]</span> 0/282</code></pre></div>
+
+<p>As you may noticed, the <code>0/282</code> is your progress, which indicating how many tests you have passed among all. And where to start? <code>/Path/To/koans/about_asserts.rb:10</code> is leading you the way. Open the file and you will see the code.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno">1</span> <span class="c1"># We shall contemplate truth by testing reality, via asserts.</span>
+<span class="lineno">2</span>   <span class="k">def</span> <span class="nf">test_assert_truth</span>
+<span class="lineno">3</span>     <span class="n">assert</span> <span class="kp">false</span>                <span class="c1"># This should be true</span>
+<span class="lineno">4</span>   <span class="k">end</span></code></pre></div>
+
+<p>Our journey is made up of several pieces of test, defined as a method whose name starts with ‘test’. The path to enlightenment is filled with such tests and we need to pass them one by one.</p>
+
+<p>For the first test, we encounter the <code>assert</code> method, which have the same meaning as it in any other languages. We have to pass a <code>true</code> to it to pass it. So change the <code>false</code> to <code>true</code>, save the file and type <code>rake</code> again. You will see your progress in the output. BTW, <code>assert</code> is not a Ruby intrinsic method, it is defined in <code>neo.rb</code> file.</p>
+
+<p>All the tests are carefully designed to cover major syntaxs and conventions in Ruby. Some simply need to have the correct answer substituted for an incorrect one. Some, however, require you to supply your own answer. If you see the method __ (a double underscore) listed, it is a hint to you to supply your own code in order to make it work correctly.</p>
+
+<h1 id="more-in-depth">More In-depth</h1>
+
+<p>Passed all the test with Ruby’s magic still lingering in your head? You may 
+wanna see more about Koans and it’s magic. Open the file <code>neo.rb</code>, and enjoy it.</p>
+
+<p>In this file, all the test mechanism are clearly defined. You can find everything you need to explain Koans, about how it call all the methods started with ‘test’, about how it avoided printing the same progress information twice, about the magic word ‘FILL ME IN’ as you may have been encounted. And what more, once you know it, you can have your own. </p>
+
+<p>If you encountered some problems, you may want to take a look at <a href="http://rubykoans.com/">http://rubykoans.com/</a> – the official site of Koans. Please feel free to contact me too. I’ll be glad to give out an answer for you.</p>
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="http://hacker-yhj.github.io/tags/#Ruby" title="Pages tagged Ruby" class="tag">Ruby</a><a href="http://hacker-yhj.github.io/tags/#notes" title="Pages tagged notes" class="tag">notes</a><a href="http://hacker-yhj.github.io/tags/#Koans" title="Pages tagged Koans" class="tag">Koans</a></span>
+        <span><a href="http://hacker-yhj.github.io/Koans-Games/" rel="bookmark" title="Koans Games">Koans Games</a> was published on <span class="entry-date date published updated"><time datetime="2014-05-12T00:00:00+00:00">May 12, 2014</time></span></span>
+        
+        <span class="author vcard"><span class="fn"><a href="http://hacker-yhj.github.io/about/" title="About Thomas Yang">Thomas Yang</a></span></span>
+        <div class="social-share">
+          <ul class="socialcount socialcount-small inline-list">
+            <li class="weibo"><a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=2526586157',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','','','',''));" title="Share on Weibo"><span class="count"><i class="icon-weibo"></i> Share</span></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://hacker-yhj.github.io/Koans-Games/" title="Share on Facebook"><span class="count"><i class="icon-facebook-sign"></i> Like</span></a></li>
+            <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://hacker-yhj.github.io/Koans-Games/" title="Share on Twitter"><span class="count"><i class="icon-twitter-sign"></i> Tweet</span></a></li>
+            <li class="googleplus"><a href="https://plus.google.com/share?url=http://hacker-yhj.github.io/Koans-Games/" title="Share on Google Plus"><span class="count"><i class="icon-google-plus-sign"></i> +1</span></a></li>
+          </ul>
+        </div><!-- /.social-share -->
+      </footer>
+    </div><!-- /.entry-content -->
+    
+    
+    <div class="ds-thread" data-title="Koans Games"></div>
+    
+    
+    <div class="read-more">
+      
+        <div class="read-more-header">
+          <a href="http://hacker-yhj.github.io/About-Vim/" class="read-more-btn">Read More</a>
+        </div><!-- /.read-more-header -->
+        <div class="read-more-content">
+          <h3><a href="http://hacker-yhj.github.io/About-Vim/" title="About VIM and It’s Philosophy">About VIM and It’s Philosophy</a></h3>
+          <p>This is a post gabbing my personal thoughts about VIM.</p>
+        </div><!-- /.read-more-content -->
+      
+      <div class="read-more-list">
+        
+          <div class="list-item">
+            <h4><a href="http://hacker-yhj.github.io/operation-system-Lab-0/" title="Nachos Notes -- Preparations">Nachos Notes -- Preparations</a></h4>
+            <span>Published on February 25, 2014</span>
+          </div><!-- /.list-item -->
+        
+          <div class="list-item">
+            <h4><a href="http://hacker-yhj.github.io/GTD-First-Impression/" title="GTD - The First Impression">GTD - The First Impression</a></h4>
+            <span>Published on January 27, 2014</span>
+          </div><!-- /.list-item -->
+        
+      </div><!-- /.read-more-list -->
+      
+    </div><!-- /.read-more -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2015 <a href="http://hacker-yhj.github.io">Thomas Yang</a>. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="http://hacker-yhj.github.io/assets/js/vendor/jquery-2.0.3.min.js"></script>
+
+<script src="http://hacker-yhj.github.io/assets/js/scripts.min.js"></script>
+<!-- stellar.js -->
+<script type='text/javascript' src="http://hacker-yhj.github.io/assets/js/customize/jquery.stellar.min.js"></script>
+
+<!-- run stellar.js -->
+<script>
+$('.entry-image img').ready( function() { $(this).stellar({
+  hideDistantElements: false,
+  positionProperty: 'transform'
+}); });
+</script>
+
+
+
+
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"hacker-yhj"};
+(function() {
+  var ds = document.createElement('script');
+  ds.type = 'text/javascript';ds.async = true;
+  ds.src = 'http://static.duoshuo.com/embed.js';
+  ds.charset = 'UTF-8';
+  (document.getElementsByTagName('head')[0]
+  || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+
+
+</body>
+</html>
