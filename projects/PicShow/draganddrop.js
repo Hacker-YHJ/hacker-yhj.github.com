@@ -63,6 +63,7 @@ function handleFileSelect(evt) {
 
 function setDefaultPic() {
   img.onload = (function() {
+    document.querySelector("#loadingImg").remove()
     bgcanvas.drawImage(img, 0, 0, picH/pixelPerCircle, picW/pixelPerCircle);
     getImage=bgcanvas.getImageData(0, 0, picH/pixelPerCircle, picW/pixelPerCircle).data;
     document.getElementById('preview').src=img.src;
