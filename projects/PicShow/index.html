@@ -2,11 +2,20 @@
 <html>
   <head>
     <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PicShow</title>
     <script type='text/javascript' src='../javascripts/d3.v3.min.js'></script>
     <script type='text/javascript' src='draganddrop.js'></script>
     <script type='text/javascript' src='PCircle.js'></script>
     <link rel='stylesheet' type='text/css' href='style.css'/>
+    <script>
+      var parser = document.createElement('a');
+      parser.href = window.location;
+      var n = parser.href.slice(0, parser.href.length - parser.search.length);
+      if (n.length != parser.href.length) {
+        window.location = n;
+      }
+    </script>
     <script>
     var _hmt = _hmt || [];
     (function() {

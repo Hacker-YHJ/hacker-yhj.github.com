@@ -129,7 +129,13 @@ function makeCircles(colorData) {
     vis = d3.select("div#dots")
       .append("svg")
         .attr("width", maxSize)
-        .attr("height", maxSize);
+        .attr("height", maxSize)
+        .attr("viewBox", function () {
+          var l = Math.min(screen.width, screen.height);
+          var a = 512*512/l;
+          if (l > 1024) return "0 0 512 512";
+          else return 0 + ' ' + (screen.height-a)/2 + ' ' + a + ' ' + a;
+        });
   } else {
     vis.selectAll('circle')
       .remove();

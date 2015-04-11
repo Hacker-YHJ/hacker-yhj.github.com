@@ -15,6 +15,8 @@ function gonload() {
     } else {
       document.getElementById('dragbox').innerHTML = "Your browser doesn't support drag and drop.";
   }
+
+  setDefaultPic();
 }
 
 function isImage(type) {

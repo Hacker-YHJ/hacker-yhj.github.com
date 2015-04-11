@@ -16,13 +16,22 @@ body {
   width: 100%;
   overflow: hidden;
 }
+
 #leftslidebar {
-  float: left;
-  max-height: 400px;
-  max-width: 350px;
-  position: relative;
-  top: 50%;
+  display: none;
 }
+
+@media (min-width: 1024px) {
+  #leftslidebar {
+    float: left;
+    display: block;
+    max-height: 400px;
+    max-width: 350px;
+    position: relative;
+    top: 50%;
+  }
+}
+
 #dragbox {
   margin-left: 50px;
   margin-top: -220px;
@@ -69,26 +78,36 @@ body {
   width: 512px;
 }
 
-#dot { height: 512px; width: 512px; }
+#dots {
+  height: 512px;
+  width: 512px;
+}
 
 #rightslidebar {
-  text-align: left;
-  max-height: 400px;
-  max-width: 400px;
-  position: absolute;
-  top: 25%;
-  left: 72%;
-  color: #AAA;
-  font: Helvetica;
-  font-size: 20;
+  display: none;
 }
-#rightslidebar a:hover {
-  color: steelBlue;
-  text-decoration: underline;
-}
-#rightslidebar a {
-  color: steelBlue;
-  text-decoration: none;
+
+@media (min-width: 1024px) {
+  #rightslidebar {
+    display: block;
+    text-align: left;
+    max-height: 400px;
+    max-width: 400px;
+    position: absolute;
+    top: 25%;
+    left: 72%;
+    color: #AAA;
+    font: Helvetica;
+    font-size: 20;
+  }
+  #rightslidebar a:hover {
+    color: steelBlue;
+    text-decoration: underline;
+  }
+  #rightslidebar a {
+    color: steelBlue;
+    text-decoration: none;
+  }
 }
 div.indent {
   background-color: #e2e2e2;
