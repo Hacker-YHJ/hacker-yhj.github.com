@@ -1,5 +1,51 @@
 var chMap,
-    keyValue;
+    keyValue,
+    NumberAndPunctuation = {
+      '`': 192,
+      '~': 192,
+      '1': 49,
+      '!': 49,
+      '2': 50,
+      '@': 50,
+      '3': 51,
+      '#': 51,
+      '4': 52,
+      '$': 52,
+      '5': 53,
+      '%': 53,
+      '6': 54,
+      '^': 54,
+      '7': 55,
+      '&': 55,
+      '8': 56,
+      '*': 56,
+      '9': 57,
+      '(': 57,
+      '0': 48,
+      ')': 48,
+      '-': 189,
+      '_': 189,
+      '=': 187,
+      '+': 187,
+      '[': 219,
+      '{': 219,
+      ']': 221,
+      '}': 221,
+      '|': 220,
+      '\\': 220,
+      ';': 186,
+      ':': 186,
+      '"': 222,
+      '\'': 222,
+      '\n': 13,
+      '<': 188,
+      ',': 188,
+      '>': 190,
+      '.': 190,
+      '/': 191,
+      '?': 191
+    },
+    npValues = [192, 49, 50, 51, 52, 53, 54, 55, 56, 57, 48, 189, 187, 219, 221, 220, 186, 222, 13, 188, 190, 191];
 
 function fileUploadHandler(evt) {
   evt.stopPropagation();
@@ -17,7 +63,13 @@ function mapToKeyboard(content) {
   var l = content.length;
   for (var i = 0; i < l; ++i) {
     var code = content[i].charCodeAt();
-    if (code < 127) {
+    if (NumberAndPunctuation[content[i]]) {
+      if (!keyValue[NumberAndPunctuation[content[i]]]) {
+        keyValue[NumberAndPunctuation[content[i]]] = 0;
+      }
+      ++keyValue[NumberAndPunctuation[content[i]]];
+    }
+    else if (code < 127) {
       asciiToKeyboard(content[i]);
     }
     else if (chMap[content[i]]) {
@@ -56,6 +108,9 @@ function showColors() {
     if (keyValue[i]) targetKeyValue[i-97+65] += keyValue[i];
     if (keyValue[i-97+65]) targetKeyValue[i-97+65] += keyValue[i-97+65];
   }
+  for (var i in npValues) {
+    if (keyValue[npValues[i]]) targetKeyValue[npValues[i]] = keyValue[npValues[i]];
+  }
   var max = Number.MIN_VALUE, min = Number.MAX_VALUE;
   targetKeyValue.forEach( function (v) {
     if (v!=undefined) {
@@ -73,6 +128,15 @@ function showColors() {
     key.style.background = range[index];
     key.title = targetKeyValue[i];
   }
+  for (var i in npValues) {
+    var v = targetKeyValue[npValues[i]];
+    newValue.push(v);
+    if (v === 0) continue;
+    var index = Math.floor((v - min) / (max - min+1) * 7);
+    var key = document.querySelector('.key.c' + npValues[i]);
+    key.style.background = range[index];
+    key.title = v;
+  }
   myChart.setOption({
     series : [{data: newValue}]
   });
@@ -86,7 +150,7 @@ function reset() {
     keys[i].title = '';
   }
   myChart.setOption({
-    series : [{data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] }]
+    series : [{data: empty}]
   });
 }
 

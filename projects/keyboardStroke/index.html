@@ -356,7 +356,7 @@ ul, ol {padding: 0px; margin: 0;}
     </cite>
     <div id='mainChart'></div>
     <div id='fileUpload' style='position: relative; margin: 0px auto;'>
-      Upload your text file. <br><input id='fileUploadInput' type="file" accept='text/plain'>
+      Upload your text file. <br><input id='fileUploadInput' type="file" accept='text/plain,text/html'>
     </div>
 
     <!--div id='fileDragAndDrop' style='position: relative; margin: 0px auto;'>
@@ -365,6 +365,9 @@ ul, ol {padding: 0px; margin: 0;}
     <script src="./assets/echarts.js"></script>
     <script type="text/javascript">
         var myChart;
+        var empty = [];
+        var size = 69;
+        while(size--) empty[size] = 0;
         require.config({
             paths: {
                 echarts: './assets'
@@ -399,7 +402,7 @@ ul, ol {padding: 0px; margin: 0;}
               xAxis : [
                   {
                       type : 'category',
-                      data: ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+                      data: ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', '`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', '[', ']', '\\', ';', '\'', '↵', ',', '.', '/']
                   }
               ],
               yAxis : [
@@ -411,7 +414,7 @@ ul, ol {padding: 0px; margin: 0;}
                   {
                       name:'count',
                       type:'bar',
-                      data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                      data: empty,
                       markPoint : {
                           data : [
                               {type : 'max', name: 'max'},
