@@ -33,7 +33,7 @@
 
   color = d3.scale.category10();
 
-  d3.csv("data/iris.csv", function(error, data) {
+  d3.csv("assets/data/iris.csv", function(error, data) {
     var cell, cross, domainByTrait, n, plot, svg, traits;
     if (error) {
       throw error;
