@@ -1,0 +1,1 @@
+(function(){var t;t=new Vivus("svgTitle",{type:"delayed",duration:150,delay:100},function(){}),$("header").ready(function(){return $(this).stellar({positionProperty:"transform"})}),$("div.top").on("click",function(){return $.scrollTo("#top",300)})}).call(this);
